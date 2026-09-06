@@ -44,17 +44,18 @@ autonomous-ai-agents (5)
 ├── hermes-agent      — hermes, configure, theme, extend, orchestrate, bot, gateway
 └── ai-task-agent-cli      — coding, delegate, opencode, cli, pr, review, agent
 
-creative (10)
+creative (11)
 ├── svg-arch-diagram — diagram, svg, architecture, cloud, infra, html, dark
 ├── ascii-video          — video, ascii, convert, colored, mp4, gif
 ├── infographic-generator    — infographic, info, chart, 可视化, 信息图, template
 ├── claude-design        — design, html, landing, deck, prototype, one-off
 ├── design-tokens-spec      — design, token, spec, google, validate, export
-├── ai-text-detox        — humanize, text, voice, ai-isms, rewrite, tone
+├── ai_text-detox        — humanize, text, voice, ai-isms, rewrite, tone
 ├── manim-video          — video, math, animation, 3blue1brown, manim, algo
 ├── p5js                 — p5js, gen-art, shader, interactive, 3d, creative-coding
 ├── popular-web-designs  — design, web, stripe, linear, vercel, system, html
-└── songwriting-and-ai-music — song, music, suno, prompt, writing, audio
+├── songwriting-and-ai-music — song, music, suno, prompt, writing, audio
+└── craft-director       — design, ui, ux, critique, audit, polish, layout, type, motion, a11y
 
 devops (1)
 └── sdlc-review          — devops, kanban, review, handoff, route, verified
