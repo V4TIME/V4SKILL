@@ -206,3 +206,32 @@ skill-compass --refresh
 ```
 
 This re-reads every `SKILL.md` under `~/.hermes/skills/` and rewrites this reference. The `hermes-agent-skill-authoring` skill can also trigger a refresh after writing a new skill.
+
+## Renaming or Migrating a Skill
+
+When a skill needs a new name (more descriptive, function-based, not derived from the old name), follow this procedure ONE skill at a time — never batch multiple renames.
+
+### Procedure
+
+1. **Read the skill's SKILL.md** — understand what it does before choosing a new name.
+2. **Choose a new name** — descriptive of function, completely different from the old name.
+3. **Patch the SKILL.md `name:` field** — `name: old-name` → `name: new-name`.
+4. **Rename the folder** — `mv old-name new-name`. Verify with `ls` after.
+5. **Find and patch cross-references** — grep for the old name across all skills:
+   ```
+   grep -rn "old-name" ~/.hermes/skills/ --include="*.md"
+   ```
+   Patch every match in other skills' SKILL.md files. Leave source attributions (original repo names) intact.
+6. **Update skill-compass** — patch BOTH:
+   - The category tree line (`├── old-name` → `├── new-name`)
+   - The quick lookup table row (`| category | old-name | tags |` → `| category | new-name | tags |`)
+7. **Verify** — grep again; zero stale references should remain (excluding source attributions and the renamed skill's own files).
+
+### Pitfalls
+
+- **Folder move fails if directory is not empty.** Use `mv` on the whole directory, not `rmdir`. Check with `ls` after the move.
+- **Cross-references in other skills are easy to miss.** Always grep after renaming — don't assume you found them all.
+- **skill-compass has TWO places to update:** the category tree and the lookup table. Missing one leaves a stale reference.
+- **Don't batch rename multiple skills.** One at a time: rename, verify, then move to the next. Batch operations miss cross-references.
+- **Source attributions stay.** References to the original upstream repo name (e.g., "pimalaya/himalaya") in the skill's own SKILL.md are historical attribution — do NOT change these.
+
