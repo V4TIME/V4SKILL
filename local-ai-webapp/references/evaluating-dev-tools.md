@@ -1,6 +1,6 @@
 # Evaluating and Installing Dev Tools on Termux Phone
 
-When the user pastes install instructions for an external dev tool (CodeGraph, RTK/headroom, ui-ux-pro-max-skill, etc.) and says "install this and use it", follow this workflow.
+When the user pastes install instructions for an external dev tool (CodeGraph, RTK/headroom, webmxerz, etc.) and says "install this and use it", follow this workflow.
 
 ## Step 1: Read what the tool is
 

@@ -51,7 +51,7 @@ Before building anything, check if `webmxerz` or `impeccable` is available:
 
 ```bash
 # WebMXERZ (design intelligence: colors, typography, styles, UX patterns)
-ls ~/tmp/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py 2>/dev/null && \
+ls ~/tmp/webmxerz/src/webmxerz/scripts/search.py 2>/dev/null && \
   python3 ~/tmp/webmxerz/src/webmxerz/scripts/search.py "<query>" --domain <style|typography|color|ux|product|...> -n 5
 
 # If not cloned yet:
