@@ -1,12 +1,12 @@
-# ui-ux-pro-max-skill -- quick reference (2026-09-03)
+# WebMXERZ -- quick reference (2026-09-03)
 
-Repo: `https://github.com/nextlevelbuilder/ui-ux-pro-max-skill`
-Cloned to: `~/tmp/ui-ux-pro-max-skill/`
-Entry point: `python3 src/ui-ux-pro-max/scripts/search.py`
+Repo: `https://github.com/nextlevelbuilder/webmxerz`
+Cloned to: `~/tmp/webmxerz/`
+Entry point: `python3 src/webmxerz/scripts/search.py`
 
 ## Install (for future use)
 ```bash
-git clone https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git ~/tmp/ui-ux-pro-max-skill
+git clone https://github.com/nextlevelbuilder/webmxerz.git ~/tmp/webmxerz
 ```
 No npm install needed -- the search scripts are pure Python (BM25 + regex).
 
@@ -153,5 +153,5 @@ Lovable's `public/sayip/style.css` gave us the base tokens. We fixed the low-con
 ## Notes
 - The skill is React/Tailwind-oriented. For plain HTML/CSS/JS stacks (like Sayip's Flask + vanilla), extract the design principles (colors, typography, spacing, patterns) and implement in plain CSS -- don't copy React component code.
 - 21st.dev is a React component registry -- browse for inspiration but don't try to drop components into a non-React project.
-- Impeccable and ui-ux-pro-max-skill are complementary: Impeccable finds technical problems, ui-ux-pro-max-skill gives design direction.
+- Impeccable and webmxerz are complementary: Impeccable finds technical problems, webmxerz gives design direction.
 - **When porting a Lovable layout into an existing project**, see the `lovable-port` skill for the full workflow.

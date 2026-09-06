@@ -124,8 +124,8 @@ software-development (13)
 ├── test-driven-development — tdd, test, red-green-refactor, enforce
 └── systematic-agent       — coding, disciplined, inspect, plan, verify, diagnose
 
-ui-ux-pro-max (1)
-└── ui-ux-pro-max      — ui, ux, design, system, component, max
+webmxerz (1)
+└── webmxerz      — ui, ux, design, system, component, max
 
 web (1)
 └── blocked-page-recovery — web, blocked, 403, 429, paywall, waf, bot, fetch
@@ -194,7 +194,7 @@ web (1)
 | Caveman quick reference | `caveman-help` | help, caveman, quick-ref |
 | Delegate to investigator | `cavecrew` | delegate, investigator |
 | Make web UI look human-built | `human-first-ui` | ui, human, web, not-ai |
-| Make UI component library | `ui-ux-pro-max` | ui, ux, design, system |
+| Make UI component library | `webmxerz` | ui, ux, design, system |
 | Disciplined coding (every task) | `systematic-agent` | coding, disciplined, inspect |
 
 ## Refresh Procedure

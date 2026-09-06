@@ -176,5 +176,5 @@ Before reporting a coding task complete, confirm each item:
 - When `test-driven-development` is active, TDD is the testing method; this skill governs the overall discipline
 - When `systematic-debugging` is active, debugging has its own detailed procedure; this skill's rule 6 still applies
 - When `spike` is active (throwaway experiment), the "inspect before change" and "verify after" rules still apply — spikes can be messy but not careless
-- When `human-first-ui` or `ui-ux-pro-max` are active for design work, this skill governs the code changes that implement the design — design skills inform WHAT to build, this skill governs HOW to build it safely
-- Skills are loaded on demand via `skill_view(name)` — they are NOT continuously active background processes. A skill is in play only during the session turn(s) it is loaded. Design-assist skills (ui-ux-pro-max, human-first-ui) are consulted for specific UI tasks; this skill remains the baseline for the code work that implements the design.
+- When `human-first-ui` or `webmxerz` are active for design work, this skill governs the code changes that implement the design — design skills inform WHAT to build, this skill governs HOW to build it safely
+- Skills are loaded on demand via `skill_view(name)` — they are NOT continuously active background processes. A skill is in play only during the session turn(s) it is loaded. Design-assist skills (webmxerz, human-first-ui) are consulted for specific UI tasks; this skill remains the baseline for the code work that implements the design.

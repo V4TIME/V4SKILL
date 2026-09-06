@@ -12,7 +12,7 @@ Build interfaces that look like a person with taste made them — not a template
 
 - User says the UI "looks like it was made by ChatGPT" or "looks AI-generated"
 - User wants a "minimal, premium, human" look
-- User references Emil Kowalski, Impeccable, 21st.dev, ui-ux-pro-max-skill, or similar design-quality signals
+- User references Emil Kowalski, Impeccable, 21st.dev, webmxerz, or similar design-quality signals
 - Building or reviewing any web UI where the look matters
 
 ## Core principles
@@ -47,22 +47,22 @@ Design for the phone. Hamburger menus, overlay sidebars, large touch targets, re
 ## Workflow
 
 ### Step 1: Check the skill library
-Before building anything, check if `ui-ux-pro-max-skill` or `impeccable` is available:
+Before building anything, check if `webmxerz` or `impeccable` is available:
 
 ```bash
-# ui-ux-pro-max-skill (design intelligence: colors, typography, styles, UX patterns)
+# WebMXERZ (design intelligence: colors, typography, styles, UX patterns)
 ls ~/tmp/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py 2>/dev/null && \
-  python3 ~/tmp/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py "<query>" --domain <style|typography|color|ux|product|...> -n 5
+  python3 ~/tmp/webmxerz/src/webmxerz/scripts/search.py "<query>" --domain <style|typography|color|ux|product|...> -n 5
 
 # If not cloned yet:
-git clone https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git ~/tmp/ui-ux-pro-max-skill
+git clone https://github.com/nextlevelbuilder/webmxerz.git ~/tmp/webmxerz
 ```
 
 **Preferred: use `--design-system` for a complete system in one pass** rather than per-domain searches:
 
 ```bash
 # Full design system with design dials tuned for the project
-python3 ~/tmp/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py "<description>" \
+python3 ~/tmp/webmxerz/src/webmxerz/scripts/search.py "<description>" \
   --design-system \
   --variance <1-10> \
   --motion <1-10> \
@@ -75,7 +75,7 @@ python3 ~/tmp/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py "<descript
 
 ```bash
 # Save MASTER.md (and optionally a page override)
-python3 ~/tmp/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py "<query>" \
+python3 ~/tmp/webmxerz/src/webmxerz/scripts/search.py "<query>" \
   --design-system -p <project> --persist -o <project-dir> [--page <page-name>]
 ```
 
@@ -85,16 +85,16 @@ Then when working on a specific page, check `design-system/<project>/pages/<page
 
 ```bash
 # Find a style that matches what the user wants
-python3 ~/tmp/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py "<description>" --domain style -n 3
+python3 ~/tmp/webmxerz/src/webmxerz/scripts/search.py "<description>" --domain style -n 3
 
 # Find typography
-python3 ~/tmp/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py "<mood>" --domain typography -n 3
+python3 ~/tmp/webmxerz/src/webmxerz/scripts/search.py "<mood>" --domain typography -n 3
 
 # Find a color palette for the product type
-python3 ~/tmp/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py "<product type>" --domain color -n 3
+python3 ~/tmp/webmxerz/src/webmxerz/scripts/search.py "<product type>" --domain color -n 3
 
 # Find UX patterns
-python3 ~/tmp/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py "<pattern>" --domain ux -n 5
+python3 ~/tmp/webmxerz/src/webmxerz/scripts/search.py "<pattern>" --domain ux -n 5
 ```
 
 Adapt the results to the actual stack. If the project is plain HTML/CSS/JS (not React/Tailwind), extract the design principles (colors, fonts, spacing, patterns) and implement in plain CSS. Do NOT copy React component code.
@@ -122,7 +122,7 @@ Show the result. If the user says it still looks AI-generated or wrong, ask spec
 ## Known pitfalls
 
 - **Over-decorating to "fix" AI look:** Adding more decoration doesn't make it look human -- it makes it look decorated. Restraint is the signal.
-- **Using ui-ux-pro-max-skill React code in a non-React project:** The skill's data (styles.csv, colors.csv, typography.csv, ux-guidelines.csv) is stack-agnostic and useful. Its React component examples are not. Extract principles, skip component code.
+- **Using webmxerz React code in a non-React project:** The skill's data (styles.csv, colors.csv, typography.csv, ux-guidelines.csv) is stack-agnostic and useful. Its React component examples are not. Extract principles, skip component code.
 - **Impeccable as design review:** It catches technical anti-patterns (contrast, sizes, hierarchy). It does NOT judge taste, balance, or whether the overall aesthetic feels human. Use it as a lint pass, not a substitute for design judgment.
 - **21st.dev components in non-React projects:** 21st.dev is a React + Tailwind registry. Its components won't drop into Flask/Jinja2/vanilla HTML projects. Browse for visual inspiration only.
 - **Pinned color values from search results:** Search result palettes give hex values as starting points, not final answers. Adapt the accent color to what the user actually likes.
@@ -132,7 +132,7 @@ Show the result. If the user says it still looks AI-generated or wrong, ask spec
 ## Reference files
 
 - `references/impeccable-findings.md` -- Impeccable scan results from the Sayip session (what was found, what was fixed, how to run)
-- `references/ui-ux-pro-max-quickref.md` -- quick reference for ui-ux-pro-max-skill search domains, flags, design dials, --persist, reasoning contract, and the Sayip-derived palette with contrast fixes
+- `references/webmxerz-quickref.md` -- quick reference for webmxerz search domains, flags, design dials, --persist, reasoning contract, and the Sayip-derived palette with contrast fixes
 - `references/lovable-port-checklist.md` -- checklist for porting a Lovable-built layout into an existing project (clone, audit tokens, port structure, keep features, lint, test)
 
 ## Related skills

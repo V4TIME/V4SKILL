@@ -101,7 +101,7 @@ command -v <tool>
 |------|-------------|----------------|-------------------|
 | **CodeGraph** (colbymchenry/codegraph) | Code indexer/graph for agents; wires into Claude Code, Cursor, Codex, opencode, Hermes Agent, Gemini CLI, Antigravity, Copilot | Standalone binary (curl|sh) or npm | `codegraph install` wires into Hermes Agent |
 | **RTK / headroom** (headroomlabs-ai/headroom) | Compresses shell command output before it reaches the LLM; reduces bash tokens by up to 90% | `cargo install rtk` or pip wheel | `rtk init --agent hermes` for Hermes plugin |
-| **ui-ux-pro-max-skill** (nextlevelbuilder/ui-ux-pro-max-skill) | Design reference skill: BM25 search over 13 CSV databases (style, color, typography, icons, motion, UX, etc.) + `--design-system` mode | Clone repo; Python 3 script | Installed as Hermes skill at `~/.hermes/skills/ui-ux-pro-max/` |
+| **WebMXERZ** (nextlevelbuilder/webmxerz) | Design reference skill: BM25 search over 13 CSV databases (style, color, typography, icons, motion, UX, etc.) + `--design-system` mode | Clone repo; Python 3 script | Installed as Hermes skill at `~/.hermes/skills/webmxerz/` |
 | **systematic-agent skill** | Engineering discipline: read before touch, inspect before change, plan before execute, verify with tools not guesses, test after modification, diagnose actual error, don't declare done until verified | Created at `~/.hermes/skills/systematic-agent/SKILL.md` | N/A (Hermes-side skill) |
 
 ## Step 7: After installing, actually use it per the user's instructions

@@ -48,11 +48,11 @@ Reference URLs (canonical):
 - Skills: `https://raw.githubusercontent.com/mikesmarcos/hermes-agent-NousResearch/main/website/docs/user-guide/features/skills.md`
 - Agent skills (example pack): `https://github.com/addyosmani/agent-skills`
 
-## ui-ux-pro-max Usage Pattern (from this session)
+## webmxerz Usage Pattern (from this session)
 
-- The `ui-ux-pro-max` skill was consulted earlier in this session for design
+- The `webmxerz` skill was consulted earlier in this session for design
   guidance (color palette, typography, UX principles) and applied to `style.css`
-- It is a reference skill loaded on demand via `skill_view("ui-ux-pro-max")` —
+- It is a reference skill loaded on demand via `skill_view("webmxerz")` —
   it is NOT a continuously active background process
 - When doing UI work, invoke it for design guidance; when doing the code changes
   that implement the design, this systematic-agent skill governs the HOW

@@ -53,7 +53,7 @@ Before inventing a color, type, or spacing system from scratch, check whether a 
 5. **Drill into specific domains only when needed** — use per-domain search when the design system doesn't cover a specific question (e.g. "what icon for X?", "how to handle this UX case?").
 6. **Reference the persisted design system while building** — read the page override first, then MASTER.md. Build by the checklist. Don't invent tokens that contradict the system.
 
-**What a design intelligence toolkit typically gives you** (from the `ui-ux-pro-max-skill` example used in this session):
+**What a design intelligence toolkit typically gives you** (from the `webmxerz` example used in this session):
 
 | Sayip question | Where the toolkit answered it |
 |---|---|

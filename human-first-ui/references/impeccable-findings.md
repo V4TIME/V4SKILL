@@ -42,4 +42,4 @@ Exit code 0 = clean. Exit code 2 = findings (review each).
 - Whether font choices feel right (it checks sizes/contrast, not pairing quality)
 - Visual balance, whitespace rhythm, component proportions
 
-Use Impeccable as a lint pass, not a design review. For taste, reference Emil Kowalski's principles and the ui-ux-pro-max-skill database.
+Use Impeccable as a lint pass, not a design review. For taste, reference Emil Kowalski's principles and the webmxerz database.

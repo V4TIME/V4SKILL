@@ -1,6 +1,6 @@
-# UI/UX Pro-Max — Consolidated Knowledge Reference
+# WebMXERZ — Consolidated Knowledge Reference
 
-> Combined reference for the ui-ux-pro-max skill: accessibility, touch/gesture, forms, feedback, performance, React optimization, JavaScript patterns, rendering, advanced patterns, color palettes, charts, animation, landing pages, icons, and product→style mappings. Read this when you need to understand WHY a design decision matters — not just WHAT the rule says.
+> Combined reference for the webmxerz skill: accessibility, touch/gesture, forms, feedback, performance, React optimization, JavaScript patterns, rendering, advanced patterns, color palettes, charts, animation, landing pages, icons, and product→style mappings. Read this when you need to understand WHY a design decision matters — not just WHAT the rule says.
 
 ---
 
