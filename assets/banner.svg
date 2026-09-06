@@ -26,93 +26,100 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+    <filter id="neon">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
   <!-- Background -->
   <rect width="1200" height="300" fill="url(#bg)"/>
 
   <!-- Grid pattern -->
-  <g opacity="0.04" stroke="#8957e5" stroke-width="1">
-    <line x1="0" y1="0" x2="0" y2="300"/>
-    <line x1="40" y1="0" x2="40" y2="300"/>
-    <line x1="80" y1="0" x2="80" y2="300"/>
-    <line x1="120" y1="0" x2="120" y2="300"/>
-    <line x1="160" y1="0" x2="160" y2="300"/>
-    <line x1="200" y1="0" x2="200" y2="300"/>
-    <line x1="240" y1="0" x2="240" y2="300"/>
-    <line x1="280" y1="0" x2="280" y2="300"/>
-    <line x1="320" y1="0" x2="320" y2="300"/>
-    <line x1="360" y1="0" x2="360" y2="300"/>
-    <line x1="400" y1="0" x2="400" y2="300"/>
-    <line x1="440" y1="0" x2="440" y2="300"/>
-    <line x1="480" y1="0" x2="480" y2="300"/>
-    <line x1="520" y1="0" x2="520" y2="300"/>
-    <line x1="560" y1="0" x2="560" y2="300"/>
-    <line x1="600" y1="0" x2="600" y2="300"/>
-    <line x1="640" y1="0" x2="600" y2="300"/>
-    <line x1="680" y1="0" x2="680" y2="300"/>
-    <line x1="720" y1="0" x2="720" y2="300"/>
-    <line x1="760" y1="0" x2="760" y2="300"/>
-    <line x1="800" y1="0" x2="800" y2="300"/>
-    <line x1="840" y1="0" x2="840" y2="300"/>
-    <line x1="880" y1="0" x2="880" y2="300"/>
-    <line x1="920" y1="0" x2="920" y2="300"/>
-    <line x1="960" y1="0" x2="960" y2="300"/>
-    <line x1="1000" y1="0" x2="1000" y2="300"/>
-    <line x1="1040" y1="0" x2="1040" y2="300"/>
-    <line x1="1080" y1="0" x2="1080" y2="300"/>
-    <line x1="1120" y1="0" x2="1120" y2="300"/>
-    <line x1="1160" y1="0" x2="1160" y2="300"/>
+  <g opacity="0.035" stroke="#8957e5" stroke-width="1">
+    <line x1="0" y1="0" x2="0" y2="300"/><line x1="60" y1="0" x2="60" y2="300"/>
+    <line x1="120" y1="0" x2="120" y2="300"/><line x1="180" y1="0" x2="180" y2="300"/>
+    <line x1="240" y1="0" x2="240" y2="300"/><line x1="300" y1="0" x2="300" y2="300"/>
+    <line x1="360" y1="0" x2="360" y2="300"/><line x1="420" y1="0" x2="420" y2="300"/>
+    <line x1="480" y1="0" x2="480" y2="300"/><line x1="540" y1="0" x2="540" y2="300"/>
+    <line x1="600" y1="0" x2="600" y2="300"/><line x1="660" y1="0" x2="660" y2="300"/>
+    <line x1="720" y1="0" x2="720" y2="300"/><line x1="780" y1="0" x2="780" y2="300"/>
+    <line x1="840" y1="0" x2="840" y2="300"/><line x1="900" y1="0" x2="900" y2="300"/>
+    <line x1="960" y1="0" x2="960" y2="300"/><line x1="1020" y1="0" x2="1020" y2="300"/>
+    <line x1="1080" y1="0" x2="1080" y2="300"/><line x1="1140" y1="0" x2="1140" y2="300"/>
     <line x1="1200" y1="0" x2="1200" y2="300"/>
   </g>
 
-  <!-- Decorative circles -->
-  <circle cx="1050" cy="80" r="60" fill="none" stroke="url(#accent2)" stroke-width="1.5" opacity="0.25" filter="url(#glow2)"/>
-  <circle cx="1050" cy="80" r="40" fill="none" stroke="url(#accent2)" stroke-width="1" opacity="0.4" filter="url(#glow)"/>
-  <circle cx="180" cy="220" r="45" fill="none" stroke="url(#accent)" stroke-width="1" opacity="0.2" filter="url(#glow2)"/>
+  <!-- Decorative elements -->
+  <circle cx="1080" cy="75" r="80" fill="none" stroke="url(#accent2)" stroke-width="1" opacity="0.12" filter="url(#glow2)"/>
+  <circle cx="1080" cy="75" r="50" fill="none" stroke="url(#accent2)" stroke-width="1.5" opacity="0.2" filter="url(#glow)"/>
+  <circle cx="1080" cy="75" r="25" fill="none" stroke="url(#accent2)" stroke-width="1" opacity="0.35"/>
 
-  <!-- Hexagon logo mark -->
-  <g transform="translate(120, 150)" filter="url(#glow)">
-    <polygon points="0,-55 55,-27.5 55,27.5 0,55 -55,27.5 -55,-27.5"
-             fill="none" stroke="url(#accent)" stroke-width="3"/>
-    <polygon points="0,-35 35,-17.5 35,17.5 0,35 -35,17.5 -35,-17.5"
-             fill="url(#accent)" opacity="0.15" stroke="none"/>
-    <text x="0" y="8" text-anchor="middle" fill="#58a6ff" font-family="monospace"
-          font-size="28" font-weight="bold" filter="url(#glow)">V</text>
+  <circle cx="160" cy="230" r="55" fill="none" stroke="url(#accent)" stroke-width="1" opacity="0.1" filter="url(#glow2)"/>
+  <circle cx="160" cy="230" r="30" fill="none" stroke="url(#accent)" stroke-width="1" opacity="0.18"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="60" width="4" height="180" fill="url(#accent2)" opacity="0.5" rx="2"/>
+
+  <!-- V4TIME — main identity -->
+  <text x="90" y="130" text-anchor="start" fill="#f0f6fc" font-family="monospace"
+        font-size="72" font-weight="bold" letter-spacing="6" filter="url(#neon)">V4TIME</text>
+
+  <!-- Hexagon icon next to name -->
+  <g transform="translate(90, 195)">
+    <polygon points="0,-22 22,-11 22,11 0,22 -22,11 -22,-11"
+             fill="none" stroke="url(#accent)" stroke-width="2" filter="url(#glow)"/>
+    <polygon points="0,-14 14,-7 14,7 0,14 -14,7 -14,-7"
+             fill="url(#accent)" opacity="0.12"/>
+    <text x="0" y="5" text-anchor="middle" fill="#58a6ff"
+          font-family="monospace" font-size="13" font-weight="bold">V</text>
   </g>
 
-  <!-- V4SKILL text -->
-  <text x="210" y="130" text-anchor="start" fill="#f0f6fc" font-family="monospace"
-        font-size="64" font-weight="bold" letter-spacing="4">V4SKILL</text>
+  <!-- Subtitle -->
+  <text x="130" y="195" text-anchor="start" fill="#8b949e" font-family="monospace"
+        font-size="14" letter-spacing="3">GITHUB PROFILE — SKILLS COLLECTION</text>
 
-  <!-- Tagline -->
-  <text x="212" y="172" text-anchor="start" fill="#8b949e" font-family="monospace"
-        font-size="18" letter-spacing="2">HERMES AGENT SKILLS COLLECTION</text>
+  <!-- Accent divider -->
+  <rect x="130" y="210" width="200" height="2" fill="url(#accent)" opacity="0.6" rx="1"/>
 
-  <!-- Accent line -->
-  <rect x="212" y="188" width="280" height="2" fill="url(#accent)" opacity="0.7" rx="1"/>
+  <!-- Right panel — skills stats -->
+  <g transform="translate(660, 80)">
+    <rect x="0" y="0" width="500" height="150" rx="10" fill="#0d1117"
+          stroke="#30363d" stroke-width="1" opacity="0.92"/>
 
-  <!-- Stats on right side -->
-  <g transform="translate(680, 120)">
-    <rect x="0" y="0" width="440" height="130" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1" opacity="0.9"/>
+    <!-- Header -->
+    <rect x="0" y="0" width="500" height="36" rx="10" fill="url(#bg)"/>
+    <rect x="0" y="20" width="500" height="16" fill="url(#bg)"/>
+    <text x="20" y="24" fill="#8b949e" font-family="monospace" font-size="11" letter-spacing="2">REPO STATS</text>
 
-    <text x="20" y="32" fill="#8b949e" font-family="monospace" font-size="11" letter-spacing="1.5">STATS</text>
+    <!-- Skill count -->
+    <text x="24" y="68" fill="#f0f6fc" font-family="monospace" font-size="36" font-weight="bold">69</text>
+    <text x="82" y="74" fill="#8b949e" font-family="monospace" font-size="14">skills across</text>
 
-    <text x="20" y="58" fill="#f0f6fc" font-family="monospace" font-size="28" font-weight="bold">69</text>
-    <text x="70" y="62" fill="#8b949e" font-family="monospace" font-size="13">skills</text>
+    <line x1="24" y1="90" x2="476" y2="90" stroke="#21262d" stroke-width="1"/>
 
-    <line x1="20" y1="80" x2="420" y2="80" stroke="#21262d" stroke-width="1"/>
+    <!-- Category count -->
+    <text x="24" y="114" fill="#f0f6fc" font-family="monospace" font-size="36" font-weight="bold">14</text>
+    <text x="82" y="120" fill="#8b949e" font-family="monospace" font-size="14">categories</text>
 
-    <text x="20" y="104" fill="#f0f6fc" font-family="monospace" font-size="28" font-weight="bold">14</text>
-    <text x="70" y="108" fill="#8b949e" font-family="monospace" font-size="13">categories</text>
+    <!-- Dots decoration -->
+    <circle cx="440" cy="52" r="3" fill="#58a6ff" opacity="0.6"/>
+    <circle cx="455" cy="52" r="3" fill="#8957e5" opacity="0.6"/>
+    <circle cx="470" cy="52" r="3" fill="#f0f6fc" opacity="0.3"/>
   </g>
 
-  <!-- Bottom slogan -->
-  <text x="212" y="230" text-anchor="start" fill="#6e7681" font-family="monospace"
-        font-size="13" letter-spacing="1">AI CODING AGENTS · EMAIL AUTOMATION · DOCUMENTS · RESEARCH · CREATIVE · APPLE · CLOUD APIs</text>
+  <!-- Bottom keyword strip -->
+  <text x="90" y="268" text-anchor="start" fill="#484f58" font-family="monospace"
+        font-size="11" letter-spacing="1.5">
+    AI CODING · EMAIL · DOCUMENTS · RESEARCH · CREATIVE · APPLE · CLOUD · SOCIAL · DEBUG · QA
+  </text>
 
-  <!-- Small accents -->
-  <rect x="212" y="244" width="12" height="12" fill="url(#accent2)" opacity="0.6" rx="2"/>
-  <rect x="228" y="244" width="12" height="12" fill="none" stroke="url(#accent)" stroke-width="1.5" rx="2" opacity="0.5"/>
-  <rect x="244" y="244" width="12" height="12" fill="url(#accent)" opacity="0.3" rx="2"/>
+  <!-- Corner accents -->
+  <rect x="60" y="272" width="8" height="8" fill="url(#accent)" opacity="0.4" rx="1"/>
+  <rect x="72" y="272" width="8" height="8" fill="none" stroke="url(#accent2)" stroke-width="1" rx="1" opacity="0.4"/>
+  <rect x="84" y="272" width="8" height="8" fill="url(#accent2)" opacity="0.2" rx="1"/>
 </svg>
