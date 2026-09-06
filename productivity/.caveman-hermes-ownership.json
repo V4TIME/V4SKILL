@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "integration": "hermes",
+  "entries": {
+    "caveman": {
+      "installedDigest": "98be5b0e85adef1efdbcfca3ded190ecadd5c122b08e35c12669f8b74d105b2f"
+    },
+    "caveman-commit": {
+      "installedDigest": "e488a12b9c86a24142af4f9467e3cb416b2e70a700b831893a8f229d1d7afcb5"
+    },
+    "caveman-review": {
+      "installedDigest": "19633b05c6be6b27c38f7a888e75d627a03e6563fdc05d38ed1162e375b0f287"
+    },
+    "caveman-help": {
+      "installedDigest": "295b5cc68ea78e0aee947018d0dc038f777a7c35612ffce5cc17f5595a394fa6"
+    },
+    "caveman-stats": {
+      "installedDigest": "b09523b344cecf89d5b356510f4dd30eb47d0c9f2fddfcc3c5e2eb98ebbbaada"
+    },
+    "caveman-compress": {
+      "installedDigest": "24f452e82b7bb4b46a617dadfee5081cec61e4d8e0f1625a06e69556e068de80"
+    },
+    "cavecrew": {
+      "installedDigest": "b54dbccea21bbe964b23d28e651aaa89a70a1b859020dd5ee5826b1c2456af0e"
+    }
+  }
+}

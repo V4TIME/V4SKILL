@@ -1,0 +1,49 @@
+# Cache and state files
+*.lock
+.usage.json
+.usage.json.lock
+.bundled_manifest
+.curator_ledger.jsonl
+.curator_state
+.termux_bundled_sync_stamp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.dist-info/
+
+# Node
+node_modules/
+*.tgz
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Large binary files (skills don't need these)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.mp3
+*.wav
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+
+# Secrets (if any skill accidentally has them)
+*.env
+.env.*
+.env.local
+*.pem
+*.key
