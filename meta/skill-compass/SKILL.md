@@ -157,9 +157,9 @@ web (1)
 | p5.js gen-art/shader | `p5js` | p5js, gen-art, shader, interactive |
 | Real design systems (Stripe/etc) | `popular-web-designs` | design, web, stripe, linear |
 | Songwriting + Suno prompts | `songwriting-and-ai-music` | song, music, suno, prompt |
-||| GIF search/download | `gif-search` | gif, search, download, tenor |
-||| Motion graphics/animation/video reference | `motion-craft-kit` | motion, animation, video, gsap, 3d, webgl, manim |
-||| Audio features/spectrogram | `song-spectrum-cli` | audio, spectrogram, mel, chroma ||
+|| GIF search/download | `gif-search` | gif, search, download, tenor |
+|| Motion graphics/animation/video reference | `motion-craft-kit` | motion, animation, video, gsap, 3d, webgl, manim |
+|| Audio features/spectrogram | `song-spectrum-cli` | audio, spectrogram, mel, chroma ||
 | Send/receive email (IMAP/SMTP) | `term-mail-cli` | email, imap, smtp, cli ||
 | Triage an inbox | `email-inbox-triage` | email, triage, inbox, draft |
 | Read/create Obsidian notes | `obsidian` | note, obsidian, vault |
