@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.svg" width="100%" alt="V4SKILL — Hermes Agent Skills Collection" />
+</p>
+
 # Hermes Agent Skills — 69 AI Agent Skills for Productivity, Coding, Research, Creative Work & System Automation
 
 > A comprehensive collection of **69 Hermes Agent skills** spanning **14 categories** — AI coding assistants (Claude Code, OpenAI Codex, OpenCode), email automation (IMAP/SMTP, Gmail, inbox triage), document processing (PDF, DOCX, XLSX, PPTX), research tools (arXiv, grounded citations, wiki knowledge bases), creative tools (infographics, SVG architecture diagrams, ASCII video, Manim math animations, p5.js generative art), Apple ecosystem automation (Notes, Reminders, iMessage, Find My), cloud APIs (Google Workspace, Box, Airtable, Notion), social media (X/Twitter CLI), debugging & code review (systematic debugging, TDD, pre-commit security scans), and meta skills (skill-compass tag lookup, caveman ultra-short communication modes). All skills include **YAML frontmatter with tags** for instant skill-compass lookup. Designed for **Hermes Agent** on Linux, macOS, and Windows — install via `skill-compass --refresh` or clone this repo into `~/.hermes/skills/`.

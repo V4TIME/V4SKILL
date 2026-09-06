@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#79c0ff"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8957e5"/>
+      <stop offset="100%" stop-color="#a371f7"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.04" stroke="#8957e5" stroke-width="1">
+    <line x1="0" y1="0" x2="0" y2="300"/>
+    <line x1="40" y1="0" x2="40" y2="300"/>
+    <line x1="80" y1="0" x2="80" y2="300"/>
+    <line x1="120" y1="0" x2="120" y2="300"/>
+    <line x1="160" y1="0" x2="160" y2="300"/>
+    <line x1="200" y1="0" x2="200" y2="300"/>
+    <line x1="240" y1="0" x2="240" y2="300"/>
+    <line x1="280" y1="0" x2="280" y2="300"/>
+    <line x1="320" y1="0" x2="320" y2="300"/>
+    <line x1="360" y1="0" x2="360" y2="300"/>
+    <line x1="400" y1="0" x2="400" y2="300"/>
+    <line x1="440" y1="0" x2="440" y2="300"/>
+    <line x1="480" y1="0" x2="480" y2="300"/>
+    <line x1="520" y1="0" x2="520" y2="300"/>
+    <line x1="560" y1="0" x2="560" y2="300"/>
+    <line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="640" y1="0" x2="600" y2="300"/>
+    <line x1="680" y1="0" x2="680" y2="300"/>
+    <line x1="720" y1="0" x2="720" y2="300"/>
+    <line x1="760" y1="0" x2="760" y2="300"/>
+    <line x1="800" y1="0" x2="800" y2="300"/>
+    <line x1="840" y1="0" x2="840" y2="300"/>
+    <line x1="880" y1="0" x2="880" y2="300"/>
+    <line x1="920" y1="0" x2="920" y2="300"/>
+    <line x1="960" y1="0" x2="960" y2="300"/>
+    <line x1="1000" y1="0" x2="1000" y2="300"/>
+    <line x1="1040" y1="0" x2="1040" y2="300"/>
+    <line x1="1080" y1="0" x2="1080" y2="300"/>
+    <line x1="1120" y1="0" x2="1120" y2="300"/>
+    <line x1="1160" y1="0" x2="1160" y2="300"/>
+    <line x1="1200" y1="0" x2="1200" y2="300"/>
+  </g>
+
+  <!-- Decorative circles -->
+  <circle cx="1050" cy="80" r="60" fill="none" stroke="url(#accent2)" stroke-width="1.5" opacity="0.25" filter="url(#glow2)"/>
+  <circle cx="1050" cy="80" r="40" fill="none" stroke="url(#accent2)" stroke-width="1" opacity="0.4" filter="url(#glow)"/>
+  <circle cx="180" cy="220" r="45" fill="none" stroke="url(#accent)" stroke-width="1" opacity="0.2" filter="url(#glow2)"/>
+
+  <!-- Hexagon logo mark -->
+  <g transform="translate(120, 150)" filter="url(#glow)">
+    <polygon points="0,-55 55,-27.5 55,27.5 0,55 -55,27.5 -55,-27.5"
+             fill="none" stroke="url(#accent)" stroke-width="3"/>
+    <polygon points="0,-35 35,-17.5 35,17.5 0,35 -35,17.5 -35,-17.5"
+             fill="url(#accent)" opacity="0.15" stroke="none"/>
+    <text x="0" y="8" text-anchor="middle" fill="#58a6ff" font-family="monospace"
+          font-size="28" font-weight="bold" filter="url(#glow)">V</text>
+  </g>
+
+  <!-- V4SKILL text -->
+  <text x="210" y="130" text-anchor="start" fill="#f0f6fc" font-family="monospace"
+        font-size="64" font-weight="bold" letter-spacing="4">V4SKILL</text>
+
+  <!-- Tagline -->
+  <text x="212" y="172" text-anchor="start" fill="#8b949e" font-family="monospace"
+        font-size="18" letter-spacing="2">HERMES AGENT SKILLS COLLECTION</text>
+
+  <!-- Accent line -->
+  <rect x="212" y="188" width="280" height="2" fill="url(#accent)" opacity="0.7" rx="1"/>
+
+  <!-- Stats on right side -->
+  <g transform="translate(680, 120)">
+    <rect x="0" y="0" width="440" height="130" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1" opacity="0.9"/>
+
+    <text x="20" y="32" fill="#8b949e" font-family="monospace" font-size="11" letter-spacing="1.5">STATS</text>
+
+    <text x="20" y="58" fill="#f0f6fc" font-family="monospace" font-size="28" font-weight="bold">69</text>
+    <text x="70" y="62" fill="#8b949e" font-family="monospace" font-size="13">skills</text>
+
+    <line x1="20" y1="80" x2="420" y2="80" stroke="#21262d" stroke-width="1"/>
+
+    <text x="20" y="104" fill="#f0f6fc" font-family="monospace" font-size="28" font-weight="bold">14</text>
+    <text x="70" y="108" fill="#8b949e" font-family="monospace" font-size="13">categories</text>
+  </g>
+
+  <!-- Bottom slogan -->
+  <text x="212" y="230" text-anchor="start" fill="#6e7681" font-family="monospace"
+        font-size="13" letter-spacing="1">AI CODING AGENTS · EMAIL AUTOMATION · DOCUMENTS · RESEARCH · CREATIVE · APPLE · CLOUD APIs</text>
+
+  <!-- Small accents -->
+  <rect x="212" y="244" width="12" height="12" fill="url(#accent2)" opacity="0.6" rx="2"/>
+  <rect x="228" y="244" width="12" height="12" fill="none" stroke="url(#accent)" stroke-width="1.5" rx="2" opacity="0.5"/>
+  <rect x="244" y="244" width="12" height="12" fill="url(#accent)" opacity="0.3" rx="2"/>
+</svg>
