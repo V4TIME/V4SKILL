@@ -69,7 +69,7 @@ gh repo clone owner/repo-name
 gh repo clone owner/repo-name -- --depth 1
 ```
 
-## 2. Creating Repositories
+## Creating Repositories
 
 **With gh:**
 
@@ -88,7 +88,7 @@ cd /path/to/existing/project
 gh repo create my-project --source . --public --push
 ```
 
-**With git + curl:**
+**With git + curl (requires `GITHUB_TOKEN` in env or `~/.hermes/.env`):**
 
 ```bash
 # Create the remote repo via API
@@ -115,6 +115,20 @@ git commit -m "Initial commit"
 git remote add origin https://github.com/$GH_USER/my-new-project.git
 git push -u origin main
 ```
+
+**When neither `gh` nor `GITHUB_TOKEN` is available (e.g. Termux on Android):**
+
+- `gh` is not reliably installable on Termux (see `local-ai-webapp/references/termux-git-ssh.md` → "`gh` CLI unavailable on Termux").
+- The GitHub REST API returns `401 Requires authentication` without a PAT — the SSH key alone does not authorize API calls.
+- The only working path is the **web UI**: open `https://github.com/new` in a browser, create an empty repo (no README/.gitignore/LICENSE), then push locally over SSH:
+  ```bash
+  git init
+  git add -A
+  git commit -m "Initial commit"
+  git remote add origin git@github.com:V4TIME/my-repo.git
+  git push -u origin main
+  ```
+- If a PAT is later added to `~/.hermes/.env` as `GITHUB_TOKEN=ghp_...`, the `curl` path above becomes available and `gh` can be installed on a desktop to handle API-heavy workflows (Actions secrets, etc.) that SSH alone cannot do.
 
 To create under an organization:
 

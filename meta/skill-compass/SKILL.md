@@ -38,7 +38,7 @@ apple (4)
 └── imessage        — imessage, sms, send, receive, imsg, apple
 
 autonomous-ai-agents (5)
-├── claude-code       — coding, delegate, claude, cli, pr, agent
+├── code-cli-ctrl       — coding, delegate, claude, cli, pr, agent
 ├── code-task-runner       — coding, delegate, openai, cli, pr, agent
 ├── desk-automation-bg     — desktop, automate, drive, background, escalate, ui
 ├── hermes-agent      — hermes, configure, theme, extend, orchestrate, bot, gateway
@@ -135,7 +135,7 @@ web (1)
 
 | You want to... | Use skill | Tags |
 |---|---|---|---|
-|| Code with an external LLM CLI | `claude-code`, `code-task-runner`, or `ai-task-agent-cli` | coding, delegate, agent, pr |
+| Code with an external LLM CLI | `code-cli-ctrl`, `code-task-runner`, or `ai-task-agent-cli` | coding, delegate, agent, pr |
 | Build a Flask webapp in Termux | `local-ai-webapp` | flask, webapp, ai, nara, termux |
 | Make text sound human, not AI | `ai-text-detox` | humanize, text, voice, ai-isms |
 | Search/read YouTube transcripts | `youtube-content` | youtube, transcript, summary |
