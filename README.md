@@ -4,8 +4,8 @@
 ## INFO
 
 | | |
--|---|-
-| **What it is** | A collection of 69 Hermes Agent skills across 14 categories — AI coding agents, email automation, document processing, research tools, creative media, Apple ecosystem, cloud APIs, social media, debugging, QA, and meta utilities |
+|---|---|
+| **What it is** | A collection of 71 Hermes Agent skills across 14 categories — AI coding agents, email automation, document processing, research tools, creative media, Apple ecosystem, cloud APIs, social media, debugging, QA, design direction, and meta utilities |
 | **Platform** | Hermes Agent on Linux, macOS, Windows |
 | **Install** | `git clone https://github.com/V4TIME/V4SKILL.git ~/.hermes/skills` then `skill-compass --refresh` |
 | **Browse** | Load `skill-compass` to find any skill by tag, or scan the [Categories Overview](#categories-overview) below |
