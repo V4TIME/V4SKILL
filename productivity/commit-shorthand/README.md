@@ -1,4 +1,4 @@
-# caveman-commit
+# commit-shorthand
 
 Terse Conventional Commits. Why over what.
 
@@ -11,7 +11,7 @@ Outputs only the message. Does not stage, commit, or amend.
 ## How to invoke
 
 ```
-/caveman-commit
+/commit-shorthand
 ```
 
 Also triggers on phrases like "write a commit", "commit message", "generate commit".

@@ -1,10 +1,10 @@
-# caveman
+# drytalk
 
-Talk like smart caveman. Same brain, fewer tokens.
+Talk like smart drytalk. Same brain, fewer tokens.
 
 ## What it does
 
-Compress model responses to caveman-style prose by dropping articles, filler,
+Compress model responses to drytalk-style prose by dropping articles, filler,
 pleasantries, and hedging. Instruction preserves technical detail, code blocks,
 error strings, and symbols. Result depends on model and workload; no aggregate
 reduction or quality-equivalence claim is published, and mode persists until
@@ -21,16 +21,16 @@ Six intensity levels:
 | `wenyan-full` | Maximum 文言文 compression. |
 | `wenyan-ultra` | Extreme classical compression. |
 
-Auto-clarity rule: caveman drops to normal prose for security warnings, irreversible-action confirmations, multi-step sequences where fragment ambiguity risks misread, and when user repeats a question. Resumes after the clear part.
+Auto-clarity rule: drytalk drops to normal prose for security warnings, irreversible-action confirmations, multi-step sequences where fragment ambiguity risks misread, and when user repeats a question. Resumes after the clear part.
 
 ## How to invoke
 
 ```
-/caveman              # full mode (default)
-/caveman lite         # lighter compression
-/caveman ultra        # extreme compression
-/caveman wenyan       # classical Chinese
-stop caveman          # back to normal prose
+/drytalk              # full mode (default)
+/drytalk lite         # lighter compression
+/drytalk ultra        # extreme compression
+/drytalk wenyan       # classical Chinese
+stop drytalk          # back to normal prose
 ```
 
 ## Example output

@@ -2,7 +2,7 @@
   <img src="https://em-content.zobj.net/source/apple/391/rock_1faa8.png" width="80" />
 </p>
 
-<h1 align="center">caveman-compress</h1>
+<h1 align="center">memoshrink</h1>
 
 <p align="center">
   <strong>shrink memory file. save token every session.</strong>
@@ -11,7 +11,7 @@
 ---
 
 A Claude Code skill that compresses project memory files (`CLAUDE.md`, todos,
-preferences) into caveman format, reducing repeated input size.
+preferences) into drytalk format, reducing repeated input size.
 
 Claude loads `CLAUDE.md` on every session start, so large files add repeated
 input tokens. Caveman shortens supported natural-language files.
@@ -19,7 +19,7 @@ input tokens. Caveman shortens supported natural-language files.
 ## What It Do
 
 ```
-/caveman-compress CLAUDE.md
+/memoshrink CLAUDE.md
 ```
 
 ```
@@ -29,8 +29,8 @@ CLAUDE.original.md ← human-readable backup (you edit this)
 
 Original remains in data directory rather than next to live file, so skill
 auto-loaders do not read it twice. Path is
-`$XDG_DATA_HOME/caveman-compress/backups/<parent-dir-name>/` on macOS and Linux,
-or `%LOCALAPPDATA%\caveman-compress\backups\<parent-dir-name>\` on Windows. Edit
+`$XDG_DATA_HOME/memoshrink/backups/<parent-dir-name>/` on macOS and Linux,
+or `%LOCALAPPDATA%\memoshrink\backups\<parent-dir-name>\` on Windows. Edit
 `.original.md` there, then run skill again to re-compress.
 
 ## Benchmarks
@@ -75,18 +75,18 @@ result does not prove semantic equivalence on other files or models.
 
 ## Security
 
-`caveman-compress` is flagged as Snyk High Risk due to subprocess and file I/O
+`memoshrink` is flagged as Snyk High Risk due to subprocess and file I/O
 patterns detected by static analysis. See [SECURITY.md](./SECURITY.md) for why
 these operations exist and how paths are constrained.
 
 ## Install
 
-Compress is built in with the `caveman` plugin. Install `caveman` once, then use `/caveman-compress`.
+Compress is built in with the `drytalk` plugin. Install `drytalk` once, then use `/memoshrink`.
 
 If you need local files, the compress skill lives at:
 
 ```bash
-skills/caveman-compress/
+skills/memoshrink/
 ```
 
 Requires Python 3.10 or newer.
@@ -94,14 +94,14 @@ Requires Python 3.10 or newer.
 ## Usage
 
 ```
-/caveman-compress <filepath>
+/memoshrink <filepath>
 ```
 
 Examples:
 ```
-/caveman-compress CLAUDE.md
-/caveman-compress docs/preferences.md
-/caveman-compress todos.md
+/memoshrink CLAUDE.md
+/memoshrink docs/preferences.md
+/memoshrink todos.md
 ```
 
 ### What files work
@@ -116,7 +116,7 @@ Examples:
 ## How It Work
 
 ```
-/caveman-compress CLAUDE.md
+/memoshrink CLAUDE.md
         ↓
 basic checks: file exists, under 500KB, not a sensitive filename
         ↓
@@ -174,7 +174,7 @@ general semantic or task-quality equivalence.
 
 ## Part of Caveman
 
-This skill is part of the [caveman](https://github.com/JuliusBrussee/caveman) toolkit.
+This skill is part of the [drytalk](https://github.com/JuliusBrussee/caveman) toolkit.
 
-- `caveman`: ask Claude to answer in shorter prose
-- `caveman-compress`: shorten supported project-memory files with backups and validation
+- `drytalk`: ask Claude to answer in shorter prose
+- `memoshrink`: shorten supported project-memory files with backups and validation

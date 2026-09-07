@@ -67,8 +67,8 @@ email (2)
 human-first-ui (1)
 └── human-first-ui        — ui, human, web, design, not-ai, polished
 
-local-ai-webapp (1)
-└── local-ai-webapp       — flask, webapp, ai, nara, termux, localhost
+termux-flask (1)
+└── termux-flask       — flask, webapp, ai, nara, termux, localhost
 
 media (4)
 ├── gif-search        — gif, search, download, tenor, curl, image
@@ -82,13 +82,13 @@ note-taking (1)
 productivity (21)
 ├── airtable               — airtable, api, curl, record, crud, filter, upsert
 ├── box                    — box, cloud, file, share, search, metadata
-├── cavecrew               — delegate, investigator, locate, code, task
-├── caveman                — compress, ultra-short, mode, communication
-├── caveman-commit         — commit, conventional, compress, git
-├── caveman-compress       — compress, memory, file, shorten
-├── caveman-help           — help, caveman, quick-ref, mode, skill
-├── caveman-review         — review, code, compressed, line, finding
-├── caveman-stats          — stats, token, usage, savings, estimate
+├── swarm-brief            — delegate, investigator, locate, code, task, subagent
+├── drytalk                — compress, ultra-short, mode, communication, terse
+├── commit-shorthand       — commit, conventional, compress, git, message
+├── memoshrink             — compress, memory, file, shorten, backup
+├── brevity-card           — help, brevity, quick-ref, mode, card, reference
+├── pr-shorthand           — review, code, compressed, line, finding, pr
+├── token-audit            — stats, token, usage, savings, estimate, session
 ├── document-to-action-items — document, action, obligation, deadline, task
 ├── docx                   — word, docx, create, read, edit, template, review
 ├── google-workspace       — google, gmail, calendar, drive, docs, sheets, gws
@@ -138,7 +138,7 @@ web (1)
 | You want to... | Use skill | Tags |
 |---|---|---|---|
 | Code with an external LLM CLI | `code-cli-ctrl`, `code-task-runner`, or `ai-task-agent-cli` | coding, delegate, agent, pr |
-| Build a Flask webapp in Termux | `local-ai-webapp` | flask, webapp, ai, nara, termux |
+| Build a Flask webapp in Termux | `termux-flask` | flask, webapp, ai, nara, termux, localhost |
 | Make text sound human, not AI | `ai-text-detox` | humanize, text, voice, ai-isms |
 | Search/read YouTube transcripts | `youtube-content` | youtube, transcript, summary |
 | Search arXiv papers | `arxiv` | arxiv, paper, search, academic |
@@ -189,13 +189,13 @@ web (1)
 | Herms config/theme/bots | `hermes-agent` | hermes, configure, theme, bot |
 | Write a new skill | `hermes-agent-skill-authoring` | skill, author, skil.md |
 | Desktop app DOM/CSS inspect | `inspecting-hermes-desktop-dom` | desktop, dom, css, cdp |
-| Ultra-short communication | `caveman` | compress, ultra-short |
-| Conventional commit (compressed) | `caveman-commit` | commit, conventional, compress |
-| Compress a memory file | `caveman-compress` | compress, memory |
-| Compressed code review | `caveman-review` | review, code, compressed |
-| Token usage stats | `caveman-stats` | stats, token, usage |
-| Caveman quick reference | `caveman-help` | help, caveman, quick-ref |
-| Delegate to investigator | `cavecrew` | delegate, investigator |
+| Ultra-short communication | `drytalk` | compress, ultra-short |
+| Conventional commit (compressed) | `commit-shorthand` | commit, conventional, compress |
+| Compress a memory file | `memoshrink` | compress, memory |
+| Compressed code review | `pr-shorthand` | review, code, compressed |
+| Token usage stats | `token-audit` | stats, token, usage |
+| Caveman quick reference | `brevity-card` | help, drytalk, quick-ref |
+| Delegate to investigator | `swarm-brief` | delegate, investigator |
 | Make web UI look human-built | `human-first-ui` | ui, human, web, not-ai |
 | Make UI component library | `webmxerz` | ui, ux, design, system |
 | Disciplined coding (every task) | `systematic-agent` | coding, disciplined, inspect |

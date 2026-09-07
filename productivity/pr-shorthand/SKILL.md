@@ -1,9 +1,9 @@
 ---
-name: caveman-review
+name: pr-shorthand
 description: >
   Compressed code review - one line per finding with location, problem and fix.
-  Use for /caveman-review, "review this PR", or "review the diff".
-tags: [caveman, review, code, compressed, pr, diff, finding, one-line, severity]
+  Use for /pr-shorthand, "review this PR", or "review the diff".
+tags: [drytalk, review, code, compressed, pr, diff, finding, one-line, severity]
 ---
 
 Write code review comments terse and actionable. One line per finding. Location, problem, fix. No throat-clearing.
@@ -51,4 +51,4 @@ Drop terse mode for: security findings (CVE-class bugs need full explanation + r
 
 ## Boundaries
 
-Reviews only — does not write the code fix, does not approve/request-changes, does not run linters. Output the comment(s) ready to paste into the PR. "stop caveman-review" or "normal mode": revert to verbose review style.
+Reviews only — does not write the code fix, does not approve/request-changes, does not run linters. Output the comment(s) ready to paste into the PR. "stop pr-shorthand" or "normal mode": revert to verbose review style.

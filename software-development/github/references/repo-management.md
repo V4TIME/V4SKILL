@@ -118,7 +118,7 @@ git push -u origin main
 
 **When neither `gh` nor `GITHUB_TOKEN` is available (e.g. Termux on Android):**
 
-- `gh` is not reliably installable on Termux (see `local-ai-webapp/references/termux-git-ssh.md` → "`gh` CLI unavailable on Termux").
+- `gh` is not reliably installable on Termux (see `termux-flask/references/termux-git-ssh.md` → "`gh` CLI unavailable on Termux").
 - The GitHub REST API returns `401 Requires authentication` without a PAT — the SSH key alone does not authorize API calls.
 - The only working path is the **web UI**: open `https://github.com/new` in a browser, create an empty repo (no README/.gitignore/LICENSE), then push locally over SSH:
   ```bash

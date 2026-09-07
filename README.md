@@ -15,7 +15,7 @@
 
 # Hermes Agent Skills — 69 AI Agent Skills for Productivity, Coding, Research, Creative Work & System Automation
 
-> A comprehensive collection of **69 Hermes Agent skills** spanning **14 categories** — AI coding assistants (Claude Code, OpenAI Codex, OpenCode), email automation (IMAP/SMTP, Gmail, inbox triage), document processing (PDF, DOCX, XLSX, PPTX), research tools (arXiv, grounded citations, wiki knowledge bases), creative tools (infographics, SVG architecture diagrams, ASCII video, Manim math animations, p5.js generative art), Apple ecosystem automation (Notes, Reminders, iMessage, Find My), cloud APIs (Google Workspace, Box, Airtable, Notion), social media (X/Twitter CLI), debugging & code review (systematic debugging, TDD, pre-commit security scans), and meta skills (skill-compass tag lookup, caveman ultra-short communication modes). All skills include **YAML frontmatter with tags** for instant skill-compass lookup. Designed for **Hermes Agent** on Linux, macOS, and Windows — install via `skill-compass --refresh` or clone this repo into `~/.hermes/skills/`.
+> A comprehensive collection of **69 Hermes Agent skills** spanning **14 categories** — AI coding assistants (Claude Code, OpenAI Codex, OpenCode), email automation (IMAP/SMTP, Gmail, inbox triage), document processing (PDF, DOCX, XLSX, PPTX), research tools (arXiv, grounded citations, wiki knowledge bases), creative tools (infographics, SVG architecture diagrams, ASCII video, Manim math animations, p5.js generative art), Apple ecosystem automation (Notes, Reminders, iMessage, Find My), cloud APIs (Google Workspace, Box, Airtable, Notion), social media (X/Twitter CLI), debugging & code review (systematic debugging, TDD, pre-commit security scans), and meta skills (skill-compass tag lookup, drytalk ultra-short communication modes). All skills include **YAML frontmatter with tags** for instant skill-compass lookup. Designed for **Hermes Agent** on Linux, macOS, and Windows — install via `skill-compass --refresh` or clone this repo into `~/.hermes/skills/`.
 
 ---
 
@@ -81,7 +81,7 @@ This is a **skills registry for Hermes Agent** — an AI agent framework that us
 | Software Development & QA | 12 | GitHub, code review, TDD, debugging, codebase inspection, dogfood QA, SDLC review |
 | Productivity & Documents | 9 | PDF, DOCX, XLSX, PPTX, meeting notes, weekly planning, price monitoring, doc→action items, Teams pipeline, Obsidian |
 | Web & Infrastructure | 2 | Blocked page recovery (403/429/paywall), Flask webapp (Termux) |
-| Meta & Utilities | 10 | Skill-compass tag lookup, Hermes Agent orchestration, caveman compression modes (7), cavecrew investigator, skill authoring |
+| Meta & Utilities | 10 | Skill-compass tag lookup, Hermes Agent orchestration, drytalk compression modes (7), swarm-brief investigator, skill authoring |
 
 **Total: 69 skills**
 
@@ -479,47 +479,47 @@ Skills for creating, reading, editing, and automating documents and productivity
 - **Main contents:** Category tree (indented ├── structure showing all 14 categories and their skills), quick tag→skill lookup table (what you want to do → use skill → tags), refresh procedure (`skill-compass --refresh` re-reads every SKILL.md and rewrites the reference), tags on every skill (for lookup and routing), skill registration (when new skills are installed, run refresh to add them).
 - **Keywords:** compass, lookup, registry, skills, meta, index, routing, tool selection, skill lookup, tag-based routing, skill registry, Hermes Agent skills, skill index, skill catalog.
 
-**caveman (Ultra-Short Communication Mode — Compress to the Bone)**
-- **What it does:** An ultra-short communication mode that compresses messages to the absolute minimum — cuts all filler, reduces to intent-only statements. Part of the caveman family of compressed communication skills.
+**drytalk (Ultra-Short Communication Mode)**
+- **What it does:** An ultra-short communication mode that compresses messages to the absolute minimum — cuts all filler, reduces to intent-only statements. Part of the drytalk family of compressed communication skills.
 - **Why use it:** When you want ultra-brief, token-efficient communication — maximum compression, minimum words, just the intent.
-- **Main contents:** Caveman mode overview, compression techniques, ultra-short communication patterns, token savings, session style, related skills (caveman-commit, caveman-compress, caveman-help, caveman-review, caveman-stats, cavecrew).
-- **Keywords:** caveman, compress, ultra-short, mode, communication, terse, tokens, session, style, ultra compressed, minimal communication, token-efficient, brevity.
+- **Main contents:** Caveman mode overview, compression techniques, ultra-short communication patterns, token savings, session style, related skills (commit-shorthand, memoshrink, brevity-card, pr-shorthand, token-audit, swarm-brief).
+- **Keywords:** drytalk, compress, ultra-short, mode, communication, terse, tokens, session, style, ultra compressed, minimal communication, token-efficient, brevity.
 
-**caveman-commit (Conventional Commits — Compressed)**
-- **What it does:** Writes conventional commit messages in compressed caveman style — follows Conventional Commits format but with minimum words.
+**commit-shorthand (Conventional Commits — Compressed)**
+- **What it does:** Writes conventional commit messages in compressed drytalk style — follows Conventional Commits format but with minimum words.
 - **Why use it:** When committing code and you want a conventional commit message that's also ultra-short — follows the convention, saves tokens.
-- **Main contents:** Conventional Commits format, caveman-style compression, commit message templates, git integration.
-- **Keywords:** caveman, commit, conventional, git, terse, message, version control, Conventional Commits, commit message, compressed commit.
+- **Main contents:** Conventional Commits format, drytalk-style compression, commit message templates, git integration.
+- **Keywords:** drytalk, commit, conventional, git, terse, message, version control, Conventional Commits, commit message, compressed commit.
 
-**caveman-compress (Compress Memory Files — Backup, Shorten, Markdown)**
+**memoshrink (Compress Memory Files — Backup, Shorten, Markdown)**
 - **What it does:** Compresses memory files (like MEMORY.md or todo lists) into shorter form — backs up the original, produces a shortened version, handles markdown compression.
 - **Why use it:** When you need to shrink a memory file or document to save space while keeping the essential content — compress, backup, shorten.
 - **Main contents:** Compression workflow, backup before compress, markdown shortening, memory file compression, token savings.
-- **Keywords:** caveman, compress, memory, tokens, backup, shorten, markdown, memory compression, file compression, context compression, token savings.
+- **Keywords:** drytalk, compress, memory, tokens, backup, shorten, markdown, memory compression, file compression, context compression, token savings.
 
-**caveman-help (Caveman Quick Reference — Modes, Commands, Card)**
-- **What it does:** Quick reference card for caveman modes, commands, and usage — the go-to reference when you need to use caveman compression modes.
-- **Why use it:** When you need a quick reminder of caveman modes and how to use them — single reference card.
+**brevity-card (Quick Reference — Modes, Commands, Card)**
+- **What it does:** Quick reference card for drytalk modes, commands, and usage — the go-to reference when you need to use drytalk compression modes.
+- **Why use it:** When you need a quick reminder of drytalk modes and how to use them — single reference card.
 - **Main contents:** Caveman modes reference, commands, usage patterns, quick reference card, mode overview.
-- **Keywords:** caveman, help, quick-ref, reference, modes, commands, card, quick reference, caveman modes, caveman commands.
+- **Keywords:** drytalk, help, quick-ref, reference, modes, commands, card, quick reference, drytalk modes, drytalk commands.
 
-**caveman-review (Compressed Code Review — One Line per Finding, Severity)**
-- **What it does:** Performs code review in compressed caveman style — one line per finding with severity, minimal words, maximum signal.
+**pr-shorthand (Compressed Code Review — One Line per Finding, Severity)**
+- **What it does:** Performs code review in compressed drytalk style — one line per finding with severity, minimal words, maximum signal.
 - **Why use it:** When reviewing code and you want findings in ultra-short format — one line per issue, severity tagged, no filler.
 - **Main contents:** Compressed review format, one-line-per-finding pattern, severity tagging, PR diff review, code finding compression.
-- **Keywords:** caveman, review, code, compressed, PR, diff, finding, one-line, severity, code review, compressed review, PR review.
+- **Keywords:** drytalk, review, code, compressed, PR, diff, finding, one-line, severity, code review, compressed review, PR review.
 
-**caveman-stats (Token Usage Stats — Estimate Savings, Session Overhead)**
-- **What it does:** Reports token usage statistics for caveman sessions — estimates savings from compression, measures session overhead, tracks token efficiency.
-- **Why use it:** When you want to know how much token savings caveman compression achieved — stats, estimates, overhead measurement.
+**token-audit (Token Usage Stats — Estimate Savings, Session Overhead)**
+- **What it does:** Reports token usage statistics for drytalk sessions — estimates savings from compression, measures session overhead, tracks token efficiency.
+- **Why use it:** When you want to know how much token savings drytalk compression achieved — stats, estimates, overhead measurement.
 - **Main contents:** Token usage tracking, savings estimation, session overhead measurement, compression statistics, token efficiency metrics.
-- **Keywords:** caveman, stats, token, usage, savings, estimate, session, overhead, token stats, compression savings, token usage tracking.
+- **Keywords:** drytalk, stats, token, usage, savings, estimate, session, overhead, token stats, compression savings, token usage tracking.
 
-**cavecrew (Delegate to Investigator — Locate Code, Context, Edit Targets)**
-- **What it does:** Delegates to a cavecrew investigator subagent — locates code, finds context, identifies edit targets. Used when you need to find something in a codebase before making changes.
-- **Why use it:** When you need to locate code, understand context, or find edit targets in a codebase — delegate to a cavecrew investigator.
+**swarm-brief (Delegate to Subagent Crew — Locate Code, Context, Edit Targets)**
+- **What it does:** Delegates to a swarm-brief investigator subagent — locates code, finds context, identifies edit targets. Used when you need to find something in a codebase before making changes.
+- **Why use it:** When you need to locate code, understand context, or find edit targets in a codebase — delegate to a swarm-brief investigator.
 - **Main contents:** Investigator delegation pattern, code location, context finding, edit target identification, subagent delegation, locate-and-edit workflow.
-- **Keywords:** cavecrew, delegate, investigator, builder, reviewer, compressed, context, locate, edit, code location, context finding, subagent delegation, code investigation.
+- **Keywords:** swarm-brief, delegate, investigator, builder, reviewer, compressed, context, locate, edit, code location, context finding, subagent delegation, code investigation.
 
 ---
 
@@ -632,7 +632,7 @@ If you're searching for this repository on GitHub, these are the keywords its de
 
 **Desktop & Automation:** computer use, desktop automation, background, cua-driver, GUI automation, click by element index, screenshot, AX tree, accessibility, cross-platform, macOS, Windows, Linux, Wayland, X11, foreground escalation, prompt injection safety, desktop, Electron, CDP, DOM, CSS, UI verification, self-inspection, inspector, Chrome DevTools Protocol, Hermes desktop, theme verification, widget inspection.
 
-**Meta & Communication:** Hermes Agent, orchestration, configuration, theme, plugin, MCP, slash commands, multi-agent, CLI, setup, bot, gateway, spawning, agentic workflow, Nous Research, Termux, Linux, macOS, Windows, skill-compass, lookup, registry, skills, meta, index, routing, tool selection, skill lookup, tag-based routing, skill registry, skill index, skill catalog, caveman, compress, ultra-short, mode, communication, terse, tokens, session, style, ultra compressed, minimal communication, token-efficient, brevity, caveman-commit, conventional, git, terse, message, version control, Conventional Commits, commit message, compressed commit, caveman-compress, memory, tokens, backup, shorten, markdown, memory compression, file compression, context compression, token savings, caveman-help, quick-ref, reference, modes, commands, card, quick reference, caveman modes, caveman commands, caveman-review, code, compressed, PR, diff, finding, one-line, severity, code review, compressed review, PR review, caveman-stats, token, usage, savings, estimate, session, overhead, token stats, compression savings, token usage tracking, cavecrew, delegate, investigator, builder, reviewer, compressed, context, locate, edit, code location, context finding, subagent delegation, code investigation.
+**Meta & Communication:** Hermes Agent, orchestration, configuration, theme, plugin, MCP, slash commands, multi-agent, CLI, setup, bot, gateway, spawning, agentic workflow, Nous Research, Termux, Linux, macOS, Windows, skill-compass, lookup, registry, skills, meta, index, routing, tool selection, skill lookup, tag-based routing, skill registry, skill index, skill catalog, drytalk, compress, ultra-short, mode, communication, terse, tokens, session, style, ultra compressed, minimal communication, token-efficient, brevity, commit-shorthand, conventional, git, terse, message, version control, Conventional Commits, commit message, compressed commit, memoshrink, memory, tokens, backup, shorten, markdown, memory compression, file compression, context compression, token savings, brevity-card, quick-ref, reference, modes, commands, card, quick reference, drytalk modes, drytalk commands, pr-shorthand, code, compressed, PR, diff, finding, one-line, severity, code review, compressed review, PR review, token-audit, token, usage, savings, estimate, session, overhead, token stats, compression savings, token usage tracking, swarm-brief, delegate, investigator, builder, reviewer, compressed, context, locate, edit, code location, context finding, subagent delegation, code investigation.
 
 ---
 
