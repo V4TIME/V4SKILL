@@ -83,7 +83,7 @@ This is a **skills registry for Hermes Agent** — an AI agent framework that us
 | Web & Infrastructure | 2 | Blocked page recovery (403/429/paywall), Flask webapp (Termux) |
 | Meta & Utilities | 10 | Skill-compass tag lookup, Hermes Agent orchestration, caveman compression modes (7), cavecrew investigator, skill authoring |
 
-**Total: 71 skills**
+**Total: 69 skills**
 
 ---
 
