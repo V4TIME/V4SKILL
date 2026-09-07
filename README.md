@@ -70,18 +70,18 @@ This is a **skills registry for Hermes Agent** — an AI agent framework that us
 
 | Category | Count | Focus |
 |----------|-------|-------|
-| AI Coding Agents & Delegation | 3 | Claude Code, OpenAI Codex, OpenCode CLI |
-| Desktop Automation | 1 | Background-first desktop GUI driving (cua-driver) |
-| Creative & Media | 11 | Infographics, SVG diagrams, ASCII video, Manim, p5.js, GIF search, motion graphics, design director, music |
+| AI Coding Agents & Delegation | 3 | Claude Code, OpenAI Codex, OpenCode CLI, agent delegation |
+| Desktop Automation | 2 | Background-first desktop GUI driving (cua-driver), DOM/CSS inspect (CDP) |
+| Creative & Media | 17 | Infographics, SVG diagrams, ASCII video, Manim, p5.js, GIF search, motion graphics, design director, music, UI/UX, component library, design tokens |
 | Apple Ecosystem | 4 | Notes, Reminders, Find My, iMessage |
 | Email & Messaging | 2 | Terminal email (IMAP/SMTP), inbox triage |
 | Google Workspace & Cloud APIs | 5 | Gmail/Calendar/Drive/Docs/Sheets, Box, Airtable, Notion, Maps |
-| Research & Knowledge | 5 | arXiv, grounded citations, wiki knowledge base, competitor news |
+| Research & Knowledge | 4 | arXiv, grounded citations, wiki knowledge base, competitor news |
 | Social Media | 1 | X/Twitter CLI (xurl) |
-| Software Development & QA | 12 | GitHub, code review, TDD, debugging, codebase inspection, dogfood QA |
-| Productivity & Documents | 10 | PDF, DOCX, XLSX, PPTX, meeting notes, weekly planning, price monitoring |
-| Web & Infrastructure | 1 | Blocked page recovery (403/429/paywall) |
-| Meta & Utilities | 2 | Skill-compass tag lookup, Hermes Agent orchestration |
+| Software Development & QA | 12 | GitHub, code review, TDD, debugging, codebase inspection, dogfood QA, SDLC review |
+| Productivity & Documents | 9 | PDF, DOCX, XLSX, PPTX, meeting notes, weekly planning, price monitoring, doc→action items, Teams pipeline, Obsidian |
+| Web & Infrastructure | 2 | Blocked page recovery (403/429/paywall), Flask webapp (Termux) |
+| Meta & Utilities | 10 | Skill-compass tag lookup, Hermes Agent orchestration, caveman compression modes (7), cavecrew investigator, skill authoring |
 
 **Total: 71 skills**
 
