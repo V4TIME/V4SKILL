@@ -47,3 +47,7 @@ node_modules/
 .env.local
 *.pem
 *.key
+
+# Local backup repos (never commit bare/backup .git directories)
+*-BACKUP*.git/
+*.bundle

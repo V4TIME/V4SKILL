@@ -5,17 +5,17 @@
 
 | | |
 |---|---|
-| **What it is** | A collection of 71 Hermes Agent skills across 14 categories — AI coding agents, email automation, document processing, research tools, creative media, Apple ecosystem, cloud APIs, social media, debugging, QA, design direction, and meta utilities |
+| **What it is** | A collection of 73 Hermes Agent skills across 12 categories — AI coding agents, email automation, document processing, research tools, creative media, Apple ecosystem, cloud APIs, social media, debugging, QA, design direction, and meta utilities |
 | **Platform** | Hermes Agent on Linux, macOS, Windows |
-| **Install** | `git clone https://github.com/V4TIME/V4SKILL.git ~/.hermes/skills` then `skill-compass --refresh` |
+| **Install** | `git clone https://github.com/V4TIME/V4SKILL.git ~/.hermes/skills/v4skill` then `skill-compass --refresh` |
 | **Browse** | Load `skill-compass` to find any skill by tag, or scan the [Categories Overview](#categories-overview) below |
 | **License** | MIT (Hermes-authored) / original license (externally-sourced) — see each skill's SKILL.md |
 
 ---
 
-# Hermes Agent Skills — 69 AI Agent Skills for Productivity, Coding, Research, Creative Work & System Automation
+# Hermes Agent Skills — 73 AI Agent Skills for Productivity, Coding, Research, Creative Work & System Automation
 
-> A comprehensive collection of **69 Hermes Agent skills** spanning **14 categories** — AI coding assistants (Claude Code, OpenAI Codex, OpenCode), email automation (IMAP/SMTP, Gmail, inbox triage), document processing (PDF, DOCX, XLSX, PPTX), research tools (arXiv, grounded citations, wiki knowledge bases), creative tools (infographics, SVG architecture diagrams, ASCII video, Manim math animations, p5.js generative art), Apple ecosystem automation (Notes, Reminders, iMessage, Find My), cloud APIs (Google Workspace, Box, Airtable, Notion), social media (X/Twitter CLI), debugging & code review (systematic debugging, TDD, pre-commit security scans), and meta skills (skill-compass tag lookup, drytalk ultra-short communication modes). All skills include **YAML frontmatter with tags** for instant skill-compass lookup. Designed for **Hermes Agent** on Linux, macOS, and Windows — install via `skill-compass --refresh` or clone this repo into `~/.hermes/skills/`.
+> A comprehensive collection of **73 Hermes Agent skills** spanning **12 categories** — AI coding assistants (Claude Code, OpenAI Codex, OpenCode), email automation (IMAP/SMTP, Gmail, inbox triage), document processing (PDF, DOCX, XLSX, PPTX), research tools (arXiv, grounded citations, wiki knowledge bases), creative tools (infographics, SVG architecture diagrams, ASCII video, Manim math animations, p5.js generative art), Apple ecosystem automation (Notes, Reminders, iMessage, Find My), cloud APIs (Google Workspace, Box, Airtable, Notion), social media (X/Twitter CLI), debugging & code review (systematic debugging, TDD, pre-commit security scans), and meta skills (skill-compass tag lookup, drytalk ultra-short communication modes). All skills include **YAML frontmatter with tags** for instant skill-compass lookup. Designed for **Hermes Agent** on Linux, macOS, and Windows — install via `skill-compass --refresh` or clone this repo into `~/.hermes/skills/v4skill/`.
 
 ---
 
@@ -23,7 +23,7 @@
 
 - [Why This Repository](#why-this-repository)
 - [Categories Overview](#categories-overview)
-- [All 69 Skills — Detailed Descriptions](#all-69-skills--detailed-descriptions)
+- [All 73 Skills — Detailed Descriptions](#all-73-skills--detailed-descriptions)
   - [AI Coding Agents & Delegation](#ai-coding-agents--delegation)
   - [Productivity & Documents](#productivity--documents)
   - [Email & Messaging](#email--messaging)
@@ -50,7 +50,7 @@ This is a **skills registry for Hermes Agent** — an AI agent framework that us
 
 ### What makes this collection useful:
 
-- **69 skills across 14 categories** — from coding agents to PDF editing to Apple Reminders
+- **73 skills across 12 categories** — from coding agents to PDF editing to Apple Reminders
 - **Tag-based routing** — every skill has `tags:` in YAML frontmatter, enabling `skill-compass` to find the right skill by keyword
 - **SEO-optimized** — skill descriptions include keywords people search for (coding agent, email automation, PDF editing, arXiv search, etc.)
 - **Externally-sourced skills** — many skills are adapted from real open-source projects (Claude Code, OpenAI Codex, OpenCode, Himalaya CLI, xurl, Manim, p5.js, Google DESIGN.md, Karpathy's LLM Wiki, GSD spike workflow)
@@ -72,22 +72,22 @@ This is a **skills registry for Hermes Agent** — an AI agent framework that us
 |----------|-------|-------|
 | AI Coding Agents & Delegation | 3 | Claude Code, OpenAI Codex, OpenCode CLI, agent delegation |
 | Desktop Automation | 2 | Background-first desktop GUI driving (cua-driver), DOM/CSS inspect (CDP) |
-| Creative & Media | 17 | Infographics, SVG diagrams, ASCII video, Manim, p5.js, GIF search, motion graphics, design director, music, UI/UX, component library, design tokens |
+| Creative & Media | 18 | Infographics, SVG diagrams, ASCII video, Manim, p5.js, GIF search, motion graphics, design director, UI/UX, component library, design tokens, design-system search (webmxerz) |
 | Apple Ecosystem | 4 | Notes, Reminders, Find My, iMessage |
 | Email & Messaging | 2 | Terminal email (IMAP/SMTP), inbox triage |
 | Google Workspace & Cloud APIs | 5 | Gmail/Calendar/Drive/Docs/Sheets, Box, Airtable, Notion, Maps |
 | Research & Knowledge | 4 | arXiv, grounded citations, wiki knowledge base, competitor news |
 | Social Media | 1 | X/Twitter CLI (xurl) |
 | Software Development & QA | 12 | GitHub, code review, TDD, debugging, codebase inspection, dogfood QA, SDLC review |
-| Productivity & Documents | 9 | PDF, DOCX, XLSX, PPTX, meeting notes, weekly planning, price monitoring, doc→action items, Teams pipeline, Obsidian |
+| Productivity & Documents | 10 | PDF, DOCX, XLSX, PPTX, meeting notes, weekly planning, price monitoring, doc→action items, Teams pipeline, Obsidian |
 | Web & Infrastructure | 2 | Blocked page recovery (403/429/paywall), Flask webapp (Termux) |
 | Meta & Utilities | 10 | Skill-compass tag lookup, Hermes Agent orchestration, drytalk compression modes (7), swarm-brief investigator, skill authoring |
 
-**Total: 69 skills**
+**Total: 73 skills**
 
 ---
 
-## All 69 Skills — Detailed Descriptions
+## All 73 Skills — Detailed Descriptions
 
 ---
 
@@ -317,6 +317,12 @@ Skills for creating, reading, editing, and automating documents and productivity
 - **Main contents:** Transcript fetching (`scripts/fetch_transcript.py`), output format options (summary, thread, blog, etc.), content transformation, reference documentation for output formats.
 - **Keywords:** YouTube, transcript, summary, blog, thread, video, media, content generation, transcript-to-text, video summary, YouTube API, content repurposing.
 
+**webmxerz (UI/UX Design-System Search & Generation)**
+- **What it does:** A local, deterministic UI/UX knowledge base with a BM25 search engine over style, color, chart, landing-page, product, typography, icon, motion, and UX datasets — plus full design-system generation with variance/motion/density dials and persisted master/override files.
+- **Why use it:** When you need concrete, consistent design decisions instead of ad-hoc choices — pick styles, palettes, chart types, and landing patterns for a product type, audit a UI against accessibility/touch/performance rules, or generate a project design system offline.
+- **Main contents:** `scripts/search.py` CLI (free-text and domain/stack search, `--design-system`, `--variance/--motion/--density`, `--persist`/`--page`/`--output-dir`), aggregation engine (`design_system.py`), search core (`core.py`), decision-rule parsing (`reasoning_contract.py`), dataset validator (`validate_data.py`), 13 bundled domain CSV datasets (optional `data/stacks/` and catalog JSON files are not included), deep knowledge reference (accessibility, touch, forms, performance, React, rendering, color, charts, motion, landing, icons, product mappings), and bilingual prioritized quick-reference templates.
+- **Keywords:** UI, UX, design system, web design, color palette, typography, chart selection, landing page, accessibility, WCAG, touch targets, performance, React, Next.js, Tailwind, BM25, search, design tokens, style guide, webmxerz.
+
 ---
 
 ### Google Workspace & Cloud APIs
@@ -476,7 +482,7 @@ Skills for creating, reading, editing, and automating documents and productivity
 **skill-compass (Lookup Every Skill by Tag — Use Before Picking Any Tool)**
 - **What it does:** The master lookup skill for the entire Hermes skills collection. Maps every skill to short tags and provides a category tree and quick-reference lookup table. The golden rule: load skill-compass before using any tool, and check the list every time before picking a skill.
 - **Why use it:** Before using any skill, load skill-compass to find the right skill by tag. It's the routing layer for the entire skills collection — tells you which skill handles which task.
-- **Main contents:** Category tree (indented ├── structure showing all 14 categories and their skills), quick tag→skill lookup table (what you want to do → use skill → tags), refresh procedure (`skill-compass --refresh` re-reads every SKILL.md and rewrites the reference), tags on every skill (for lookup and routing), skill registration (when new skills are installed, run refresh to add them).
+- **Main contents:** Category tree (indented ├── structure showing all 12 categories and their skills), quick tag→skill lookup table (what you want to do → use skill → tags), refresh procedure (`skill-compass --refresh` re-reads every SKILL.md and rewrites the reference), tags on every skill (for lookup and routing), skill registration (when new skills are installed, run refresh to add them).
 - **Keywords:** compass, lookup, registry, skills, meta, index, routing, tool selection, skill lookup, tag-based routing, skill registry, Hermes Agent skills, skill index, skill catalog.
 
 **drytalk (Ultra-Short Communication Mode)**
@@ -563,11 +569,11 @@ Markdown body with usage instructions, prerequisites, procedures, pitfalls, and 
 ### Option 1: Clone this repository
 
 ```bash
-# Clone into your Hermes skills directory
-git clone https://github.com/V4TIME/V4SKILL.git ~/.hermes/skills
+# Clone into a subfolder of your Hermes skills directory
+git clone https://github.com/V4TIME/V4SKILL.git ~/.hermes/skills/v4skill
 
-# OR if skills already exist, pull updates
-cd ~/.hermes/skills
+# OR if you already cloned it, pull updates
+cd ~/.hermes/skills/v4skill
 git pull origin main
 ```
 
@@ -584,7 +590,8 @@ After adding or updating skills, refresh the skill-compass index:
 
 ```bash
 # The skill-compass reads every SKILL.md and rebuilds its lookup table
-# Trigger via the hermes-agent-skill-authoring skill or manually
+# Trigger via the hermes-agent-skill-authoring skill or manually:
+skill-compass --refresh
 ```
 
 ---
@@ -658,4 +665,4 @@ Skills in this repository inherit their original licenses where applicable:
 ---
 
 *Repository: https://github.com/V4TIME/V4SKILL*
-*Skills: 69 | Categories: 14 | Keywords: 400+*
+*Skills: 73 | Categories: 12 | Keywords: 400+*
