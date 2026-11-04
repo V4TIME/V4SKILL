@@ -3,6 +3,7 @@ name: systematic-agent
 description: Enforces disciplined coding practices — inspect before changing, plan before executing, verify after modifying, diagnose before retrying. Use for every coding task.
 version: 1.0.0
 platforms: [linux]
+tags: ["discipline", "verification", "debugging", "planning", "code-quality"]
 metadata:
   hermes:
     category: software-development

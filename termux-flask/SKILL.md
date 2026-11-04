@@ -2,6 +2,7 @@
 title: Local AI Web App in Termux
 name: termux-flask
 description: Build Flask AI apps in Termux with NaraRouter integration.
+tags: ["flask", "webapp", "ai", "nara", "termux", "localhost"]
 ---
 
 # Local AI Web App in Termux

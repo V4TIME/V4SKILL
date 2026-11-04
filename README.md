@@ -9,7 +9,6 @@
 | **Platform** | Hermes Agent on Linux, macOS, Windows |
 | **Install** | `git clone https://github.com/V4TIME/V4SKILL.git ~/.hermes/skills/v4skill` then `skill-compass --refresh` |
 | **Browse** | Load `skill-compass` to find any skill by tag, or scan the [Categories Overview](#categories-overview) below |
-| **License** | MIT (Hermes-authored) / original license (externally-sourced) — see each skill's SKILL.md |
 
 ---
 
@@ -40,7 +39,6 @@
 - [Using the Skill-Compass](#using-the-skill-compass)
 - [Search Keywords](#search-keywords)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -191,6 +189,18 @@ Skills for creating, reading, editing, and automating documents and productivity
 - **Main contents:** Box API authentication (OAuth), file CRUD, folder management, sharing and collaboration, search, metadata management, content workflows, hubs, SDK development patterns, webhooks and events, bulk operations, CLI guide, troubleshooting, OAuth setup.
 - **Keywords:** Box, cloud, file, share, search, metadata, content, collaboration, CLI, SDK, OAuth, webhooks, enterprise, storage, document management.
 
+**obsidian (Read, Search, Create, Edit Obsidian Vault Notes)**
+- **What it does:** Filesystem-first Obsidian vault work — read, list, search, create, append, and edit notes, and add wikilinks.
+- **Why use it:** When working with a local Obsidian vault and you need note read/search/create/edit operations without a GUI.
+- **Main contents:** Vault path configuration, read a note, list notes, search, create a note, append content, targeted edits, wikilinks.
+- **Keywords:** Obsidian, notes, vault, markdown, read, search, create, edit, wikilinks, note-taking.
+
+**teams-meeting-pipeline (Teams Meeting Summaries, Job Replay, Graph Subscriptions)**
+- **What it does:** Runs the Microsoft Teams meeting pipeline — scheduled summaries, job replay/debugging, and Microsoft Graph subscription management through the Hermes Teams gateway.
+- **Why use it:** When operating Teams meeting summaries on the Teams gateway channel or in cron jobs, including re-running jobs and managing Graph subscriptions.
+- **Main contents:** Status/inspection commands, job replay/debugging, subscription management, decision tree for common asks, and the 72-hour Graph subscription expiry pitfall. Requires MS Graph app credentials (`MSGRAPH_TENANT_ID`, `MSGRAPH_CLIENT_ID`, `MSGRAPH_CLIENT_SECRET`).
+- **Keywords:** Teams, Microsoft Graph, meetings, summary, pipeline, job replay, subscriptions, cron, gateway, operations.
+
 ---
 
 ### Email & Messaging
@@ -287,7 +297,7 @@ Skills for creating, reading, editing, and automating documents and productivity
 - **Main contents:** Manim CE setup (`scripts/setup.sh`), animation design thinking, animations reference, camera and 3D, decorations, equations (LaTeX), graphs and data, mobjects (geometric objects), paper explainer patterns, production quality, rendering, scene planning, updaters and trackers, troubleshooting, animations directory reference.
 - **Keywords:** Manim, Manim CE, 3Blue1Brown, math animation, algorithmic video, animation, mathematical visualization, LaTeX, graphs, 3D, camera, geometry, explainer video, education, math communication.
 
-**p5.js (p5.js Sketches — Gen Art, Shaders, Interactive, 3D)**
+**p5js (p5.js Sketches — Gen Art, Shaders, Interactive, 3D)**
 - **What it does:** Creates generative art, shader-based visuals, interactive sketches, and 3D scenes using p5.js — a JavaScript library for creative coding. Supports animation, color systems, core API, export pipeline, interaction, shapes/geometry, typography, visual effects, and WebGL/3D.
 - **Why use it:** When you want to create generative art, interactive visualizations, shader effects, or 3D creative coding pieces in the browser using p5.js.
 - **Main contents:** p5.js setup (`scripts/setup.sh`), viewer template (`templates/viewer.html`), animation techniques, color systems, core API reference, export pipeline (frames to video/GIF), interaction (mouse, keyboard, touch), shapes and geometry, typography, visual effects, WebGL and 3D rendering, troubleshooting, scripts (export-frames.js, render.sh, serve.sh).
@@ -322,6 +332,30 @@ Skills for creating, reading, editing, and automating documents and productivity
 - **Why use it:** When you need concrete, consistent design decisions instead of ad-hoc choices — pick styles, palettes, chart types, and landing patterns for a product type, audit a UI against accessibility/touch/performance rules, or generate a project design system offline.
 - **Main contents:** `scripts/search.py` CLI (free-text and domain/stack search, `--design-system`, `--variance/--motion/--density`, `--persist`/`--page`/`--output-dir`), aggregation engine (`design_system.py`), search core (`core.py`), decision-rule parsing (`reasoning_contract.py`), dataset validator (`validate_data.py`), 13 bundled domain CSV datasets (optional `data/stacks/` and catalog JSON files are not included), deep knowledge reference (accessibility, touch, forms, performance, React, rendering, color, charts, motion, landing, icons, product mappings), and bilingual prioritized quick-reference templates.
 - **Keywords:** UI, UX, design system, web design, color palette, typography, chart selection, landing page, accessibility, WCAG, touch targets, performance, React, Next.js, Tailwind, BM25, search, design tokens, style guide, webmxerz.
+
+**ai-text-detox (Humanize Text — Remove AI Writing Patterns)**
+- **What it does:** Identifies and removes signs of AI-generated text so writing sounds natural and human, using Wikipedia's "Signs of AI writing" guide plus voice-calibration and personality guidance.
+- **Why use it:** When text reads like AI slop — filler transitions, vague claims, telltale phrasing — and you want a real human voice with personality.
+- **Main contents:** AI-ism detection checklist, "signs of soulless writing", voice calibration from a writing sample, personality/soul rules, rewrite procedure, before/after examples, base prompt. Based on blader/humanizer (MIT).
+- **Keywords:** humanize, AI text, AI-isms, slop, voice, tone, rewrite, editing, prose, writing, natural language.
+
+**visual-repo-branding (Dark SVG Banner + Logo for GitHub READMEs)**
+- **What it does:** Creates a dark-themed SVG banner and square logo for a GitHub repository README, with embed and verification steps.
+- **Why use it:** When a repo README needs a professional banner/logo without external image hosting — SVGs are served straight from the repo.
+- **Main contents:** Banner SVG (title, subtitle, stats/keyword strip), square logo SVG, Markdown embed into `assets/banner.svg`, push-and-verify on GitHub, color/design reference.
+- **Keywords:** GitHub, banner, logo, SVG, branding, README, visual, dark theme, repo, asset.
+
+**human-first-ui (Make Web UIs Look Human-Built, Not AI)**
+- **What it does:** Encodes design principles and anti-pattern checks for building interfaces that look like a person with taste made them rather than an AI default.
+- **Why use it:** When a UI "looks AI-generated" and you want a minimal, premium, human result.
+- **Main contents:** Core principles (no emoji icons, no glow button shadows, no bounce/spring animations, no splash-screen welcome cards, contrast first, 14px minimum body text), anti-pattern checks, and tool/workflow guidance (Emil Kowalski, Impeccable, 21st.dev, webmxerz).
+- **Keywords:** UI, human, web design, not AI, polished, anti-pattern, contrast, typography, motion, design quality.
+
+**song-spectrum-cli (Audio Spectrograms & Features via songsee)**
+- **What it does:** Generates spectrograms and multi-panel audio feature visualizations (mel, chroma, MFCC) from audio files using the `songsee` CLI.
+- **Why use it:** When you need to visualize audio or extract audio features from the terminal.
+- **Main contents:** Prerequisites (`songsee`), quick start, visualization types (spectrogram, mel, chroma, MFCC), common flags, notes. Upstream: steipete/songsee.
+- **Keywords:** audio, spectrogram, mel, chroma, MFCC, feature, CLI, visualization, music, analysis.
 
 ---
 
@@ -465,6 +499,12 @@ Skills for creating, reading, editing, and automating documents and productivity
 - **Main contents:** pdb REPL usage, debugpy remote debugging, DAP support, breakpoints, post-mortem debugging, remote debugging sessions, integration with systematic-debugging and node-inspect-debugger.
 - **Keywords:** Python, debug, pdb, debugpy, breakpoints, DAP, Debug Adapter Protocol, post-mortem, remote debugging, Python debugging, interactive debugging.
 
+**sdlc-review (Review Kanban Handoffs, Route Verified Outcomes)**
+- **What it does:** Independently verifies work handed from a Kanban implementation run to the review lane, then approves, requests changes, or escalates — without taking over the implementer's work.
+- **Why use it:** When a Kanban task moves to review and you need an evidence-based verdict on the deliverable before it ships.
+- **Main contents:** When to use, prerequisites, review lenses, procedure (orient from the durable task record, verify the deliverable and its evidence), approve/request-changes/escalate routing, and ad-hoc review fan-out guidance. Requires the `kanban` toolset.
+- **Keywords:** devops, kanban, review, handoff, quality, verification, route, SDLC, code review, operations.
+
 ---
 
 ### Web & Infrastructure
@@ -474,6 +514,12 @@ Skills for creating, reading, editing, and automating documents and productivity
 - **Why use it:** When a web page blocks your fetch attempt — instead of giving up, use this skill to try archives, alternative URLs, and recovery strategies.
 - **Main contents:** Blocked page diagnosis (403, 429, paywall, WAF, bot wall identification), recovery strategies (Wayback Machine archive, alternative mirrors, cached versions, different user agents, rate-limit backoff), fallback approaches, archive integration, wayback machine usage, reference to grounded-citations for source verification.
 - **Keywords:** web, blocked, 403, 429, paywall, WAF, bot, fetch, archive, Wayback Machine, fallback, web scraping, blocked page, rate limit, bot detection, web recovery, archive.org, internet archive.
+
+**termux-flask (Local AI Web App in Termux)**
+- **What it does:** Builds and runs a local web application on Android/Termux — a Python/Flask app integrating AI APIs (especially NaraRouter), with optional Hermes Agent as the reasoning backend.
+- **Why use it:** When you want a local AI assistant/chat UI on your phone, a Flask app in Termux, description-driven API routing, browser voice mode, or session/memory management across chats.
+- **Main contents:** Architecture pattern, quick start, API integration patterns (NaraRouter primary, NVIDIA NIM, dispatch engine), stdlib `urllib` guidance instead of `requests`, session/memory handling, voice mode via the Web Speech API, and feasibility checks before installing dev tools on-device.
+- **Keywords:** Flask, webapp, AI, NaraRouter, Termux, localhost, Android, Web Speech API, NIM, local AI, chat UI.
 
 ---
 
@@ -651,16 +697,6 @@ If you're searching for this repository on GitHub, these are the keywords its de
 4. Add tags that people would search for
 5. Test the skill with `skill-compass --refresh`
 6. Submit a pull request to `V4TIME/V4SKILL`
-
----
-
-## License
-
-Skills in this repository inherit their original licenses where applicable:
-
-- **Externally-sourced skills** retain their original license (MIT, Apache, etc.) as noted in each skill's SKILL.md
-- **Hermes-authored skills** are MIT licensed
-- See individual skill files for specific license declarations
 
 ---
 

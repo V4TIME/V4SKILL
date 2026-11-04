@@ -2,6 +2,7 @@
 name: human-first-ui
 description: 'Make web UIs look human-built, not like AI output.'
 category: creative
+tags: ["ui", "human", "web", "design", "not-ai", "polished"]
 ---
 
 # Human-First UI
