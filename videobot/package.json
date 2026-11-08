@@ -1,8 +1,0 @@
-{
-  "name": "vidvault",
-  "version": "1.0.0",
-  "type": "module",
-  "main": "bot.js",
-  "scripts": { "start": "node bot.js" },
-  "engines": { "node": ">=18" }
-}
