@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: vidvault
+    runtime: node
+    plan: free
+    buildCommand: npm install --no-lockfile || true
+    startCommand: node bot.js
+    envVars:
+      - key: BOT_TOKEN
+        sync: false      # you set this in the Render dashboard (keep it secret)
+      - key: OWNER_NAME
+        value: V4TIME
