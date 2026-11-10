@@ -1,0 +1,27 @@
+# AI Coding Agents & Delegation
+
+[← Back to the skill catalog](../SKILLS.md) · [Main README](../../README.md)
+
+These skills let Hermes Agent delegate coding tasks to external AI coding CLI tools. Each skill teaches Hermes how to install, authenticate, and orchestrate a specific coding agent.
+
+**code-cli-ctrl (Claude Code CLI)**
+- **What it does:** Delegates coding tasks to Anthropic's Claude Code CLI via Hermes terminal tools. Handles feature building, refactoring, and PR reviews.
+- **Why use it:** When you want Claude's coding capability integrated into your Hermes agent session — write code, review PRs, fix issues with `claude-code` as the worker.
+- **Main contents:** Installation via `npm install -g @anthropic-ai/claude-code`, prerequisites (git repository required), one-shot tasks with `pty=true`, background mode for long tasks, PR review workflow with `gh pr checkout`, parallel issue fixing with git worktrees and `codex --sandbox workspace-write`, Hermes gateway caveats (bubblewrap namespace errors, `codex exec --sandbox danger-full-access` workaround), key flags (`exec`, `--sandbox workspace-write`, `--dangerously-bypass-approvals-and-sandbox`, `--sandbox danger-full-access`), rules (always `pty=true`, git repo required, use `exec` for one-shots, background for long tasks, don't interfere).
+- **Keywords:** Claude Code, Anthropic, coding agent, CLI, PR review, code delegation, refactoring, pty, terminal automation, OpenAI-compatible, autonomous coding.
+
+**code-task-runner (OpenAI Codex CLI)**
+- **What it does:** Delegates coding tasks to OpenAI's Codex CLI — an autonomous coding agent. Supports one-shot execution, background mode, PR reviews, and parallel issue fixing with worktrees.
+- **Why use it:** When you want OpenAI's Codex as your coding worker inside Hermes — build features, refactor code, review PRs, fix multiple issues in parallel.
+- **Main contents:** Installation via `npm install -g @openai/codex`, prerequisites (OpenAI auth via `OPENAI_API_KEY` or Codex OAuth, git repository required, `pty=true`), one-shot tasks with `codex exec 'task'`, background mode with `codex exec --sandbox workspace-write 'task'`, monitoring with `process` tool (poll, log, submit, kill), key flags (`exec`, `--sandbox workspace-write`, `--dangerously-bypass-approvals-and-sandbox`, `--sandbox danger-full-access`, deprecated `--full-auto`), Hermes gateway caveats (bubblewrap permission errors, `codex exec --sandbox danger-full-access` fallback), PR review cloning to temp directory, parallel issue fixing with `git worktree add` and multiple Codex processes, batch PR reviews fetching all PR refs and reviewing in parallel, rules (always use `pty=true`, git repo required, use `exec` for one-shots, `--sandbox workspace-write` for building, background for long tasks, don't interfere, parallel is fine).
+- **Keywords:** OpenAI Codex, coding agent, autonomous coding, CLI, PR review, code delegation, refactoring, sandbox, worktree, parallel issue fixing, OpenAI API.
+
+**ai-task-agent-cli (OpenCode CLI)**
+- **What it does:** Delegates coding to OpenCode CLI — a provider-agnostic, open-source AI coding agent with a TUI and CLI. Supports one-shot `opencode run`, interactive TUI sessions, PR reviews, and parallel work in isolated workdirs/worktrees.
+- **Why use it:** When you want an open-source, provider-agnostic coding agent inside Hermes — works with OpenRouter, Anthropic, OpenAI, and other providers.
+- **Main contents:** Installation via `npm i -g opencode-ai@latest` or `brew install anomalyco/tap/opencode`, auth via `opencode auth login` or provider env vars (OPENROUTER_API_KEY, etc.), binary resolution (`which -a opencode`, `opencode --version`, pinning `$HOME/.opencode/bin/opencode`), one-shot tasks with `opencode run 'prompt'` and `-f` file attachments, `--thinking` for model thinking display, `--model` to force a specific model, interactive TUI sessions with `background=true, pty=true`, TUI keybindings (Enter, Tab, Ctrl+P, Ctrl+X L/M/N/E, Ctrl+C), session resuming with `opencode -c` and `opencode -s ses_abc123`, common flags (`run`, `--continue`/`-c`, `--session`/`-s`, `--agent`, `--model`, `--format json`, `--file`/`-f`, `--thinking`, `--variant`, `--title`, `--attach`), procedure (verify tool readiness, use `opencode run` for bounded tasks, start `opencode` with background+pty for iterative tasks, monitor with `process`, respond via `process(action="submit")`, exit with Ctrl+C or kill, summarize outcomes), PR review with `opencode pr 42` or temporary clone, parallel work pattern with separate workdirs/worktrees, session & cost management (`opencode session list`, `opencode stats`, `opencode stats --days 7 --models`), pitfalls (interactive TUI requires pty, `/exit` is invalid, PATH mismatch, inspect logs before killing, avoid shared working directories across parallel sessions, Enter may need double-press), verification smoke test (`opencode run 'Respond with exactly: OPENCODE_SMOKE_OK'`), rules (prefer `opencode run` for one-shot automation, use interactive background only when iteration needed, scope to single repo/workdir, provide progress updates, report concrete outcomes, exit with Ctrl+C or kill never `/exit`).
+- **Keywords:** OpenCode, coding agent, autonomous coding, CLI, TUI, PR review, code delegation, open-source, provider-agnostic, refactoring, OpenRouter, Anthropic, OpenAI, terminal automation.
+
+---
+
+[← Back to the skill catalog](../SKILLS.md)
