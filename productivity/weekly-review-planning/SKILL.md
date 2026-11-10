@@ -2,14 +2,36 @@
 name: weekly-review-planning
 description: "Weekly reset: commitments, stalled work, next-week plan."
 version: 0.1.0
-author: Ben Barclay (benbarclay), Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: "Ben Barclay (benbarclay)"
 metadata:
   hermes:
-    tags: [Weekly-Review, Planning, Tasks, Calendar, Productivity]
+    tags:
+      - weekly
+      - review
+      - plan
+      - reset
+      - commitment
+      - tasks
+      - calendar
+      - productivity
+      - weekly-review
+      - planning
+    category: productivity
     related_skills: [obsidian, notion, airtable, google-workspace, email-inbox-triage]
-tags: ["weekly", "review", "plan", "reset", "commitment", "tasks", "calendar", "productivity"]
+tags:
+  - weekly
+  - review
+  - plan
+  - reset
+  - commitment
+  - tasks
+  - calendar
+  - productivity
+  - weekly-review
+  - planning
 ---
 
 # Weekly Review and Planning

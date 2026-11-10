@@ -2,14 +2,34 @@
 name: competitor-news-monitor
 description: "Watch named companies for material news; cited digests."
 version: 0.1.0
-author: Ben Barclay (benbarclay), Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: "Ben Barclay (benbarclay)"
 metadata:
   hermes:
-    tags: [Competitors, News, Market-Research, Monitoring]
-    related_skills: [blogwatcher]
-tags: ["news", "competitor", "company", "monitor", "digest", "cited", "market-research"]
+    tags:
+      - news
+      - competitor
+      - company
+      - monitor
+      - digest
+      - cited
+      - market-research
+      - competitors
+      - monitoring
+    category: research
+    related_skills: []
+tags:
+  - news
+  - competitor
+  - company
+  - monitor
+  - digest
+  - cited
+  - market-research
+  - competitors
+  - monitoring
 ---
 
 # Competitor News Monitor

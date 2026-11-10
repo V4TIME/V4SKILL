@@ -2,14 +2,37 @@
 name: idea-test-lab
 description: "Throwaway experiments to validate an idea before build."
 version: 1.0.0
-author: Hermes Agent (adapted from gsd-build/get-shit-done)
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+homepage: "https://github.com/gsd-build/get-shit-done"
+credits: gsd-build/get-shit-done
 metadata:
   hermes:
-    tags: [spike, prototype, experiment, feasibility, throwaway, exploration, research, planning, mvp, proof-of-concept]
-    related_skills: [sketch, subagent-driven-development]
-tags: ["spike", "prototype", "experiment", "feasibility", "throwaway", "exploration", "research", "planning", "mvp", "proof-of-concept"]
+    tags:
+      - spike
+      - prototype
+      - experiment
+      - feasibility
+      - throwaway
+      - exploration
+      - research
+      - planning
+      - mvp
+      - proof-of-concept
+    category: software-development
+    related_skills: []
+tags:
+  - spike
+  - prototype
+  - experiment
+  - feasibility
+  - throwaway
+  - exploration
+  - research
+  - planning
+  - mvp
+  - proof-of-concept
 ---
 
 # Spike

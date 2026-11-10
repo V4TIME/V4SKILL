@@ -121,17 +121,20 @@ def main() -> int:
     writer = PdfWriter()
     overlay_cache: dict[tuple[float, float], object] = {}
     for idx, page in enumerate(reader.pages, start=1):
+        # Attach the page to the writer before merging. pypdf >= 7 rejects
+        # PageObject.replace_contents() on pages that are not writer-owned.
+        writer.add_page(page)
         if idx in pages:
-            size = (float(page.mediabox.width), float(page.mediabox.height))
+            target = writer.pages[-1]
+            size = (float(target.mediabox.width), float(target.mediabox.height))
             if size not in overlay_cache:
                 overlay_pdf = PdfReader(io.BytesIO(build_overlay(args, *size)))
                 overlay_cache[size] = overlay_pdf.pages[0]
             stamp = overlay_cache[size]
             if args.under:
-                page.merge_page(stamp, over=False)
+                target.merge_page(stamp, over=False)
             else:
-                page.merge_page(stamp)
-        writer.add_page(page)
+                target.merge_page(stamp)
     with open(args.output, "wb") as fh:
         writer.write(fh)
     print(json.dumps({"output": args.output, "stamped_pages": sorted(pages),

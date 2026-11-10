@@ -1,16 +1,41 @@
 ---
 name: docx
-description: Create, read, edit, template, and review Word .docx files.
+description: "Create, read, edit, template, and review Word .docx files."
 version: 1.1.0
-author: Nous Research
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: "Nous Research"
 metadata:
   hermes:
-    tags: [word, docx, documents, office, templates, revisions, comments]
+    tags:
+      - word
+      - docx
+      - create
+      - read
+      - edit
+      - template
+      - review
+      - documents
+      - office
+      - revisions
+      - comments
+      - templates
     category: productivity
     related_skills: [pdf, xlsx, powerpoint]
-tags: ["word", "docx", "create", "read", "edit", "template", "review", "documents", "office", "revisions", "comments"]
+tags:
+  - word
+  - docx
+  - create
+  - read
+  - edit
+  - template
+  - review
+  - documents
+  - office
+  - revisions
+  - comments
+  - templates
 ---
 
 # Docx Skill

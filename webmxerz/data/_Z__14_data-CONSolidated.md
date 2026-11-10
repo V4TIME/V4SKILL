@@ -1,6 +1,6 @@
-# UI/UX Pro-Max — Consolidated Knowledge Reference
+# WebMXERZ — Consolidated Knowledge Reference
 
-> A unified reference combining all 6 data files from UI/UX Pro-Max into one searchable document. Organized by topic with reasoning explanations for each rule, not just listings. Use this when you need to understand WHY a design decision matters, not just WHAT the rule is.
+> A unified reference combining all 6 data files from WebMXERZ (derived from UI/UX Pro-Max) into one searchable document. Organized by topic with reasoning explanations for each rule, not just listings. Use this when you need to understand WHY a design decision matters, not just WHAT the rule is.
 
 ---
 

@@ -2,15 +2,37 @@
 name: compound-wiki
 description: "Karpathy's LLM Wiki: build/query interlinked markdown KB."
 version: 2.1.0
-author: Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [wiki, knowledge-base, research, notes, markdown, rag-alternative]
+    tags:
+      - wiki
+      - karpathy
+      - llm
+      - knowledge
+      - interlinked
+      - markdown
+      - rag
+      - research
+      - notes
+      - knowledge-base
+      - rag-alternative
     category: research
     related_skills: [obsidian, arxiv]
-tags: ["wiki", "karpathy", "llm", "knowledge", "interlinked", "markdown", "rag", "research", "notes"]
+tags:
+  - wiki
+  - karpathy
+  - llm
+  - knowledge
+  - interlinked
+  - markdown
+  - rag
+  - research
+  - notes
+  - knowledge-base
+  - rag-alternative
 ---
 
 # Karpathy's LLM Wiki

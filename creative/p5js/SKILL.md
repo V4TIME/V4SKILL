@@ -2,14 +2,42 @@
 name: p5js
 description: "p5.js sketches: gen art, shaders, interactive, 3D."
 version: 1.0.0
-author: SHL0MS, Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: SHL0MS
 metadata:
   hermes:
-    tags: [creative-coding, generative-art, p5js, canvas, interactive, visualization, webgl, shaders, animation]
-    related_skills: [ascii-video, manim-video, excalidraw]
-tags: ["p5js", "gen-art", "shader", "interactive", "3d", "creative-coding", "generative", "canvas", "webgl", "visualization", "animation"]
+    tags:
+      - p5js
+      - gen-art
+      - shader
+      - interactive
+      - 3d
+      - creative-coding
+      - generative
+      - canvas
+      - webgl
+      - visualization
+      - animation
+      - generative-art
+      - shaders
+    category: creative-media
+    related_skills: [ascii-video, manim-video]
+tags:
+  - p5js
+  - gen-art
+  - shader
+  - interactive
+  - 3d
+  - creative-coding
+  - generative
+  - canvas
+  - webgl
+  - visualization
+  - animation
+  - generative-art
+  - shaders
 ---
 
 # p5.js Production Pipeline

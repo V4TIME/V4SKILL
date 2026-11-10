@@ -1,8 +1,16 @@
 ---
 name: human-first-ui
-description: 'Make web UIs look human-built, not like AI output.'
-category: creative
-tags: ["ui", "human", "web", "design", "not-ai", "polished"]
+description: "Make web UIs look human-built, not like AI output."
+version: 1.0.0
+author: V4TIME
+license: MIT
+platforms: [linux, macos, windows]
+metadata:
+  hermes:
+    tags: [ui, human, web, design, not-ai, polished]
+    category: creative-media
+    related_skills: []
+tags: [ui, human, web, design, not-ai, polished]
 ---
 
 # Human-First UI

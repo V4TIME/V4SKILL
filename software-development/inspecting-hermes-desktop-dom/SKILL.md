@@ -2,14 +2,15 @@
 name: inspecting-hermes-desktop-dom
 description: "Read the live Hermes desktop DOM/CSS over CDP."
 version: 1.0.0
-author: Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [desktop, electron, cdp, dom, ui-verification, self-inspection]
+    tags: [desktop, electron, cdp, dom, css, ui-verification, self-inspection, inspector]
+    category: desktop-automation
     related_skills: [node-inspect-debugger, systematic-debugging, dogfood]
-tags: ["desktop", "electron", "cdp", "dom", "css", "ui-verification", "self-inspection", "inspector"]
+tags: [desktop, electron, cdp, dom, css, ui-verification, self-inspection, inspector]
 ---
 
 # Inspecting the live Hermes desktop DOM

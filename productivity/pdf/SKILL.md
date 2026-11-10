@@ -2,15 +2,48 @@
 name: pdf
 description: "PDF files: create, read, merge, fill, OCR, edit text."
 version: 1.1.0
-author: Nous Research
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: "Nous Research"
 metadata:
   hermes:
-    tags: [pdf, documents, forms, ocr, text-extraction, reportlab, pypdf, pdfplumber, pymupdf, marker]
+    tags:
+      - pdf
+      - create
+      - read
+      - merge
+      - fill
+      - ocr
+      - edit
+      - text
+      - documents
+      - reportlab
+      - pypdf
+      - pdfplumber
+      - pymupdf
+      - marker
+      - forms
+      - text-extraction
     category: productivity
     related_skills: [docx, xlsx, powerpoint]
-tags: ["pdf", "create", "read", "merge", "fill", "ocr", "edit", "text", "documents", "reportlab", "pypdf", "pdfplumber", "pymupdf", "marker"]
+tags:
+  - pdf
+  - create
+  - read
+  - merge
+  - fill
+  - ocr
+  - edit
+  - text
+  - documents
+  - reportlab
+  - pypdf
+  - pdfplumber
+  - pymupdf
+  - marker
+  - forms
+  - text-extraction
 ---
 
 # PDF Skill

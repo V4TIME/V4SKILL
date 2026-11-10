@@ -2,9 +2,14 @@
 name: skill-compass
 description: "Lookup every skill by tag. Use before picking any tool."
 version: 1.0.0
-author: Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+metadata:
+  hermes:
+    tags: [compass, lookup, registry, skills, meta, index, routing, tool-selection]
+    category: meta
+    related_skills: []
 tags: [compass, lookup, registry, skills, meta, index, routing, tool-selection]
 ---
 
@@ -32,105 +37,101 @@ Before using ANY tool or skill, load `skill-compass` and confirm the skill exist
 
 ```
 apple (4)
-├── apple-notes      — notes, apple, create, search, edit, memo
-├── apple-reminders  — reminders, apple, todo, add, list, complete, remindctl
-├── findmy          — findmy, apple, track, device, airtag, locate
-└── imessage        — imessage, sms, send, receive, imsg, apple
+├── apple-notes — apple, notes, memo, create, search, edit
+├── apple-reminders — apple, reminders, todo, tasks, add, list
+├── findmy — apple, findmy, track, airtag, locate, device
+└── imessage — apple, imessage, sms, messaging, send, receive
 
-autonomous-ai-agents (5)
-├── code-cli-ctrl       — coding, delegate, claude, cli, pr, agent
-├── code-task-runner       — coding, delegate, openai, cli, pr, agent
-├── desk-automation-bg     — desktop, automate, drive, background, escalate, ui
-├── hermes-agent      — hermes, configure, theme, extend, orchestrate, bot, gateway
-└── ai-task-agent-cli      — coding, delegate, opencode, cli, pr, review, agent
+ai-coding-agents (3)
+├── ai-task-agent-cli — coding, delegate, opencode, cli, pr, review
+├── code-cli-ctrl — coding, delegate, claude, anthropic, cli, pr
+└── code-task-runner — coding, delegate, openai, cli, pr, agent
 
-creative (11)
-├── svg-arch-diagram — diagram, svg, architecture, cloud, infra, html, dark
-├── ascii-video          — video, ascii, convert, colored, mp4, gif
-├── infographic-generator    — infographic, info, chart, 可视化, 信息图, template
-├── claude-design        — design, html, landing, deck, prototype, one-off
-├── design-tokens-spec      — design, token, spec, google, validate, export
-├── ai_text-detox        — humanize, text, voice, ai-isms, rewrite, tone
-├── manim-video          — video, math, animation, 3blue1brown, manim, algo
-├── p5js                 — p5js, gen-art, shader, interactive, 3d, creative-coding
-├── popular-web-designs  — design, web, stripe, linear, vercel, system, html
-├── songwriting-and-ai-music — song, music, suno, prompt, writing, audio
-└── craft-director       — design, ui, ux, critique, audit, polish, layout, type, motion, a11y
+desktop-automation (2)
+├── desk-automation-bg — desktop, automate, drive, background, escalate, gui
+└── inspecting-hermes-desktop-dom — desktop, electron, cdp, dom, css, ui-verification
 
-devops (1)
-└── sdlc-review          — devops, kanban, review, handoff, route, verified
+creative-media (18)
+├── ai-text-detox — humanize, text, voice, ai-isms, rewrite, tone
+├── ascii-video — video, ascii, convert, colored, mp4, gif
+├── claude-design — design, html, prototype, ux, ui, creative
+├── craft-director — design, frontend, ui, ux, critique, audit
+├── design-tokens-spec — design, design-system, tokens, ui, accessibility, wcag
+├── gif-search — gif, search, download, tenor, curl, image
+├── human-first-ui — ui, human, web, design, not-ai, polished
+├── infographic-generator — infographic, visual-summary, chart, 可视化, 信息图, template
+├── manim-video — video, math, animation, 3blue1brown, manim, algo
+├── motion-craft-kit — motion, animation, video, kinetic-typography, gsap, framer-motion
+├── p5js — p5js, gen-art, shader, interactive, 3d, creative-coding
+├── popular-web-designs — design, css, html, ui, web-development, design-systems
+├── song-spectrum-cli — audio, spectrogram, mel, chroma, mfcc, feature
+├── songwriting-and-ai-music — songwriting, music, suno, parody, lyrics, creative
+├── svg-arch-diagram — diagram, svg, architecture, cloud, infra, html
+├── visual-repo-branding — github, banner, logo, svg, branding, readme
+├── webmxerz — ui, ux, design-system, web-design, color, typography
+└── youtube-content — youtube, transcript, summary, blog, thread, video
 
 email (2)
 ├── email-inbox-triage — email, triage, inbox, prioritize, draft, reply
-└── term-mail-cli           — email, imap, smtp, cli, send, receive
+└── term-mail-cli — email, imap, smtp, cli, send, receive
 
-human-first-ui (1)
-└── human-first-ui        — ui, human, web, design, not-ai, polished
-
-termux-flask (1)
-└── termux-flask       — flask, webapp, ai, nara, termux, localhost
-
-media (4)
-├── gif-search        — gif, search, download, tenor, curl, image
-├── motion-craft-kit — motion, animation, video, gsap, 3d, webgl, manim
-├── song-spectrum-cli           — audio, spectrogram, mel, chroma, mfcc, feature, cli
-└── youtube-content   — youtube, transcript, summary, blog, thread, video
-
-note-taking (1)
-└── obsidian          — note, obsidian, vault, read, search, create, edit
-
-productivity (21)
-├── airtable               — airtable, api, curl, record, crud, filter, upsert
-├── box                    — box, cloud, file, share, search, metadata
-├── swarm-brief            — delegate, investigator, locate, code, task, subagent
-├── drytalk                — compress, ultra-short, mode, communication, terse
-├── commit-shorthand       — commit, conventional, compress, git, message
-├── memoshrink             — compress, memory, file, shorten, backup
-├── brevity-card           — help, brevity, quick-ref, mode, card, reference
-├── pr-shorthand           — review, code, compressed, line, finding, pr
-├── token-audit            — stats, token, usage, savings, estimate, session
-├── document-to-action-items — document, action, obligation, deadline, task
-├── docx                   — word, docx, create, read, edit, template, review
-├── google-workspace       — google, gmail, calendar, drive, docs, sheets, gws
-├── maps                   — map, geocode, poi, route, timezone, osrm, osm
-├── meeting-action-items   — meeting, action, decision, owner, ticket, notes
-├── notion                 — notion, api, page, database, markdown, ntn
-├── pdf                    — pdf, create, read, merge, fill, ocr, edit
-├── powerpoint             — powerpoint, pptx, create, read, edit, python-pptx
-├── product-price-monitor  — price, monitor, product, flight, alert, watch
+productivity (10)
+├── document-to-action-items — document, action, obligation, deadline, task, extraction
+├── docx — word, docx, create, read, edit, template
+├── meeting-action-items — meeting, action, decision, owner, ticket, notes
+├── obsidian — note, obsidian, vault, markdown, read, search
+├── pdf — pdf, create, read, merge, fill, ocr
+├── powerpoint — powerpoint, pptx, create, read, edit, presentation
+├── product-price-monitor — price, monitor, product, flight, alert, watch
 ├── teams-meeting-pipeline — teams, meeting, summary, job, graph, subscription
-├── weekly-review-planning — weekly, review, plan, reset, commitment
-└── xlsx                   — excel, xlsx, create, read, edit, csv
+├── weekly-review-planning — weekly, review, plan, reset, commitment, tasks
+└── xlsx — excel, xlsx, csv, spreadsheet, openpyxl, create
+
+google-cloud (5)
+├── airtable — airtable, api, crud, record, filter, upsert
+├── box — box, cloud, file, share, search, metadata
+├── google-workspace — google, gmail, calendar, drive, docs, sheets
+├── maps — map, geocode, poi, route, timezone, osrm
+└── notion — notion, api, page, database, markdown, workers
 
 research (4)
-├── arxiv               — arxiv, paper, search, academic, author, category
+├── arxiv — arxiv, paper, search, academic, author, category
 ├── competitor-news-monitor — news, competitor, company, monitor, digest, cited
-├── grounded-citations  — citation, source, ground, verify, document, answer
-└── compound-wiki            — wiki, karpathy, llm, knowledge, interlinked, markdown
+├── compound-wiki — wiki, karpathy, llm, knowledge, interlinked, markdown
+└── grounded-citations — citation, source, ground, verify, document, answer
 
 social-media (1)
-└── x-twitter-api-cli            — x, twitter, post, search, dm, media, x-twitter
+└── x-twitter-api-cli — x, twitter, post, search, dm, media
 
-software-development (13)
-├── codebase-inspection   — codebase, inspect, loc, language, ratio, pygount
-├── dogfood               — qa, webapp, bug, explore, evidence, report
-├── github               — github, gh, pr, issue, review, repo, auth
-├── hermes-agent-skill-authoring — skill, author, skil.md, frontmatter, structure
-├── inspecting-hermes-desktop-dom — desktop, dom, css, cdp, live, inspector
-├── node-inspect-debugger  — node, debug, inspect, chrome-devtools, dap
-├── python-debugpy         — python, debug, pdb, debugpy, remote, dap
+software-development (12)
+├── codebase-inspection — codebase, inspect, loc, language, ratio, pygount
+├── dogfood — qa, testing, browser, web, dogfood, bug
+├── github — github, gh, git, pull-requests, issues, code-review
+├── idea-test-lab — spike, prototype, experiment, feasibility, throwaway, exploration
+├── node-inspect-debugger — node, debug, inspect, chrome-devtools, cdp, breakpoints
+├── python-debugpy — python, debug, pdb, debugpy, breakpoints, dap
 ├── requesting-code-review — review, code, pre-commit, security, quality, auto-fix
-├── simplify-code          — simplify, cleanup, parallel, agent, recent
-├── idea-test-lab                 — experiment, prototype, throwaway, validate, idea
-├── systematic-debugging   — debug, root-cause, 4-phase, understand, fix
-├── test-driven-development — tdd, test, red-green-refactor, enforce
-└── systematic-agent       — coding, disciplined, inspect, plan, verify, diagnose
+├── sdlc-review — devops, kanban, review, handoff, route, verified
+├── simplify-code — simplify, cleanup, refactor, delegation, subagent, parallel
+├── systematic-agent — discipline, verification, debugging, planning, code-quality
+├── systematic-debugging — debug, root-cause, 4-phase, troubleshooting, problem-solving, investigation
+└── test-driven-development — tdd, test, red-green-refactor, testing, development, quality
 
-webmxerz (1)
-└── webmxerz      — ui, ux, design, system, component, max
+web-infrastructure (2)
+├── blocked-page-recovery — web, blocked, 403, 429, paywall, waf
+└── termux-flask — flask, webapp, ai, nara, termux, localhost
 
-web (1)
-└── blocked-page-recovery — web, blocked, 403, 429, paywall, waf, bot, fetch
+meta (10)
+├── brevity-card — drytalk, help, quick-ref, reference, modes, commands
+├── commit-shorthand — drytalk, commit, conventional, git, terse, message
+├── drytalk — drytalk, compress, ultra-short, mode, communication, terse
+├── hermes-agent — hermes, configure, theme, extend, orchestrate, bot
+├── hermes-agent-skill-authoring — skill, author, skill-md, frontmatter, structure, conventions
+├── memoshrink — drytalk, compress, memory, tokens, backup, shorten
+├── pr-shorthand — drytalk, review, code, compressed, pr, diff
+├── skill-compass — compass, lookup, registry, skills, meta, index
+├── swarm-brief — swarm-brief, delegate, subagent, investigator, builder, reviewer
+└── token-audit — drytalk, stats, token, usage, savings, estimate
 ```
 
 ## Quick Tag → Skill Lookup
@@ -149,7 +150,7 @@ web (1)
 | Systematic bug hunt | `systematic-debugging` | debug, root-cause, 4-phase |
 | Code review before commit | `requesting-code-review` | review, code, pre-commit, security |
 | Simplify recent code | `simplify-code` | simplify, cleanup, parallel |
-|| Throwaway experiment | `idea-test-lab` | experiment, prototype, throwaway ||
+| Throwaway experiment | `idea-test-lab` | experiment, prototype, throwaway |
 | Create diagrams (SVG/HTML) | `svg-arch-diagram` | diagram, svg, architecture, cloud |
 | ASCII video from media | `ascii-video` | video, ascii, convert, mp4, gif |
 | Infographics | `infographic-generator` | infographic, chart, 可视化 |
@@ -158,10 +159,10 @@ web (1)
 | p5.js gen-art/shader | `p5js` | p5js, gen-art, shader, interactive |
 | Real design systems (Stripe/etc) | `popular-web-designs` | design, web, stripe, linear |
 | Songwriting + Suno prompts | `songwriting-and-ai-music` | song, music, suno, prompt |
-|| GIF search/download | `gif-search` | gif, search, download, tenor |
-|| Motion graphics/animation/video reference | `motion-craft-kit` | motion, animation, video, gsap, 3d, webgl, manim |
-|| Audio features/spectrogram | `song-spectrum-cli` | audio, spectrogram, mel, chroma ||
-| Send/receive email (IMAP/SMTP) | `term-mail-cli` | email, imap, smtp, cli ||
+| GIF search/download | `gif-search` | gif, search, download, tenor |
+| Motion graphics/animation/video reference | `motion-craft-kit` | motion, animation, video, gsap, 3d, webgl, manim |
+| Audio features/spectrogram | `song-spectrum-cli` | audio, spectrogram, mel, chroma |
+| Send/receive email (IMAP/SMTP) | `term-mail-cli` | email, imap, smtp, cli |
 | Triage an inbox | `email-inbox-triage` | email, triage, inbox, draft |
 | Read/create Obsidian notes | `obsidian` | note, obsidian, vault |
 | Apple Notes | `apple-notes` | notes, apple, memo |
@@ -186,8 +187,8 @@ web (1)
 | Codebase LOC / language stats | `codebase-inspection` | codebase, loc, language |
 | QA / exploratory testing | `dogfood` | qa, webapp, bug |
 | Kanban / SDLC handoff review | `sdlc-review` | devops, kanban, review |
-| Herms config/theme/bots | `hermes-agent` | hermes, configure, theme, bot |
-| Write a new skill | `hermes-agent-skill-authoring` | skill, author, skil.md |
+| Hermes config/theme/bots | `hermes-agent` | hermes, configure, theme, bot |
+| Write a new skill | `hermes-agent-skill-authoring` | skill, author, SKILL.md |
 | Desktop app DOM/CSS inspect | `inspecting-hermes-desktop-dom` | desktop, dom, css, cdp |
 | Ultra-short communication | `drytalk` | compress, ultra-short |
 | Conventional commit (compressed) | `commit-shorthand` | commit, conventional, compress |
@@ -197,8 +198,17 @@ web (1)
 | Caveman quick reference | `brevity-card` | help, drytalk, quick-ref |
 | Delegate to investigator | `swarm-brief` | delegate, investigator |
 | Make web UI look human-built | `human-first-ui` | ui, human, web, not-ai |
-| Make UI component library | `webmxerz` | ui, ux, design, system |
+| Search UI/UX data or generate a design system | `webmxerz` | ui, ux, design-system, search |
 | Disciplined coding (every task) | `systematic-agent` | coding, disciplined, inspect |
+| Find the right skill by tag | `skill-compass` | compass, lookup, registry, skills |
+| Monitor competitor news | `competitor-news-monitor` | news, competitor, monitor, digest |
+| Build an interlinked LLM wiki | `compound-wiki` | wiki, karpathy, llm, knowledge |
+| Design, critique, or polish a frontend | `craft-director` | design, ui, ux, critique, audit |
+| Drive the desktop in the background | `desk-automation-bg` | desktop, automate, cua-driver, background |
+| Ground answers in verified sources | `grounded-citations` | citation, source, verify, ground |
+| Render Manim math animations | `manim-video` | video, math, animation, manim |
+| Brand a repo visually | `visual-repo-branding` | branding, repo, visual, assets |
+| Post/search/DM on X (Twitter) | `x-twitter-api-cli` | x, twitter, post, search, dm |
 
 ## Refresh Procedure
 

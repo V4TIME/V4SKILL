@@ -2,14 +2,16 @@
 name: ascii-video
 description: "ASCII video: convert video/audio to colored ASCII MP4/GIF."
 version: 1.0.0
-author: SHL0MS, Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: SHL0MS
 metadata:
   hermes:
-    tags: [ASCII, Video, FFmpeg, Terminal-Art]
+    tags: [video, ascii, convert, colored, mp4, gif, ffmpeg, terminal-art]
+    category: creative-media
     related_skills: []
-tags: ["video", "ascii", "convert", "colored", "mp4", "gif", "ffmpeg", "terminal-art"]
+tags: [video, ascii, convert, colored, mp4, gif, ffmpeg, terminal-art]
 ---
 
 # ASCII Video Production Pipeline

@@ -1,18 +1,55 @@
 ---
 name: webmxerz
-description: "UI/UX design-system engine: BM25 search over style, color, chart, landing, typography, icon and UX datasets, plus full design-system generation with variance/motion/density dials and persisted master overrides."
+description: >-
+  UI/UX design-system engine: BM25 search over style, color, chart, landing, typography, icon and
+  UX datasets, plus full design-system generation with variance/motion/density dials and persisted
+  master overrides.
 version: 1.0.0
 author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+homepage: "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
+credits: "Next Level Builder (ui-ux-pro-max)"
 metadata:
   hermes:
-    tags: [ui, ux, design-system, web-design, color, typography, charts, landing-page, accessibility, react, nextjs, tailwind, bm25, design-tokens, style-guide]
-    category: creative
+    tags:
+      - ui
+      - ux
+      - design-system
+      - web-design
+      - color
+      - typography
+      - charts
+      - landing-page
+      - accessibility
+      - react
+      - tailwind
+      - bm25
+      - design-tokens
+      - style-guide
+      - search
+      - nextjs
+    category: creative-media
     related_skills: [claude-design, craft-director, design-tokens-spec, popular-web-designs, human-first-ui]
+tags:
+  - ui
+  - ux
+  - design-system
+  - web-design
+  - color
+  - typography
+  - charts
+  - landing-page
+  - accessibility
+  - react
+  - tailwind
+  - bm25
+  - design-tokens
+  - style-guide
+  - search
+  - nextjs
 prerequisites:
   commands: [python3]
-tags: ["ui", "ux", "design-system", "web-design", "color", "typography", "charts", "landing-page", "accessibility", "react", "tailwind", "bm25", "design-tokens", "style-guide", "search"]
 ---
 
 # WebMXERZ Skill
@@ -52,10 +89,10 @@ cd webmxerz/scripts
 python3 search.py "minimal premium fintech dashboard"
 
 # Restrict to a domain
-python3 search.py "accessible color palette" --domain color
+python3 search.py "fintech dashboard" --domain color
 
 # Stack-specific guidance (react, nextjs, vue, svelte, astro, tailwind, etc.)
-python3 search.py "data table" --stack react
+python3 search.py "form validation" --stack react
 
 # Generate a full design system (ASCII or markdown)
 python3 search.py "SaaS dashboard" --design-system --project-name "Acme" --format markdown
@@ -79,9 +116,9 @@ python3 search.py "SaaS dashboard" --design-system --persist \
 `flutter`, `nuxtjs`, `nuxt-ui`, `html-tailwind`, `shadcn`, `jetpack-compose`,
 `threejs`, `angular`, `laravel`, `javafx`, `wpf`, `winui`, `avalonia`, `uno`, `uwp`.
 
-`--stack` reads `data/stacks/<name>.csv`. Those files are **not bundled** in this
-repository snapshot, so stack-specific search requires adding them. Domain search
-and `--design-system` work with the bundled `data/*.csv` files out of the box.
+`--stack` reads `data/stacks/<name>.csv`. All 22 stack datasets are bundled in
+this repository, so stack-specific search and domain search both work out of the
+box.
 
 ## Design Dials
 
@@ -109,11 +146,18 @@ cd webmxerz/scripts
 python3 validate_data.py
 ```
 
-The validator also checks `data/stacks/` and the optional catalog JSON files
+The validator also checks `data/stacks/` and the catalog JSON files
 (`google-font-licenses.json`, `phosphor-icons-upstream.json`,
-`catalog-summary.json`, `data-provenance.json`). Because those optional
-datasets are not bundled here, it will report them as missing; the domain CSV
-checks still run and report real problems.
+`catalog-summary.json`, `data-provenance.json`). All of those datasets are
+bundled, so the validator runs a full check and should print `OK`.
+
+The stdlib-only regression suite covers tokenization, search, design-system
+generation, data contracts, RTL support, and IME handling:
+
+```bash
+cd webmxerz/scripts
+python3 -m unittest discover -s tests
+```
 
 ## Files
 
@@ -122,6 +166,7 @@ checks still run and report real problems.
 - `scripts/core.py` — search primitives and data loading.
 - `scripts/reasoning_contract.py` — decision-rule parsing.
 - `scripts/validate_data.py` — dataset integrity guardrail.
+- `scripts/tests/` — stdlib `unittest` regression suite (153 tests).
 - `data/*.csv` — style, color, chart, landing, product, motion, UX, typography,
   icon, Google Fonts, and consolidated knowledge datasets.
 - `references/webmxerz-knowledge.md` — deep "why" reference (accessibility,

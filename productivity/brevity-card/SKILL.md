@@ -1,8 +1,17 @@
 ---
 name: brevity-card
-description: >
-  Quick-reference card for drytalk modes, skills and commands.
-  Trigger: /brevity-card or "drytalk help".
+description: >-
+  Quick-reference card for drytalk modes, skills and commands. Trigger: /brevity-card or "drytalk
+  help".
+version: 1.0.0
+author: V4TIME
+license: MIT
+platforms: [linux, macos, windows]
+metadata:
+  hermes:
+    tags: [drytalk, help, quick-ref, reference, modes, commands, card]
+    category: meta
+    related_skills: []
 tags: [drytalk, help, quick-ref, reference, modes, commands, card]
 ---
 

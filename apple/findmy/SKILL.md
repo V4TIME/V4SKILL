@@ -2,13 +2,33 @@
 name: findmy
 description: "Track Apple devices/AirTags via FindMy.app on macOS."
 version: 1.0.0
-author: Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [macos]
 metadata:
   hermes:
-    tags: [FindMy, AirTag, location, tracking, macOS, Apple]
-tags: ["apple", "findmy", "track", "airtag", "locate", "device", "location", "macos"]
+    tags:
+      - apple
+      - findmy
+      - track
+      - airtag
+      - locate
+      - device
+      - location
+      - macos
+      - tracking
+    category: apple
+    related_skills: []
+tags:
+  - apple
+  - findmy
+  - track
+  - airtag
+  - locate
+  - device
+  - location
+  - macos
+  - tracking
 ---
 
 # Find My (Apple)

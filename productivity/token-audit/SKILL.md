@@ -1,8 +1,17 @@
 ---
 name: token-audit
-description: >
-  Show real token usage and estimated savings for the current session, read
-  from the session log. Trigger: /token-audit.
+description: >-
+  Show real token usage and estimated savings for the current session, read from the session log.
+  Trigger: /token-audit.
+version: 1.0.0
+author: V4TIME
+license: MIT
+platforms: [linux, macos, windows]
+metadata:
+  hermes:
+    tags: [drytalk, stats, token, usage, savings, estimate, session, overhead]
+    category: meta
+    related_skills: []
 tags: [drytalk, stats, token, usage, savings, estimate, session, overhead]
 ---
 

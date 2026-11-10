@@ -1,14 +1,19 @@
 ---
 name: systematic-agent
-description: Enforces disciplined coding practices — inspect before changing, plan before executing, verify after modifying, diagnose before retrying. Use for every coding task.
+description: >-
+  Enforces disciplined coding practices — inspect before changing, plan before executing, verify
+  after modifying, diagnose before retrying. Use for every coding task.
 version: 1.0.0
-platforms: [linux]
-tags: ["discipline", "verification", "debugging", "planning", "code-quality"]
+author: V4TIME
+license: MIT
+platforms: [linux, macos, windows]
 metadata:
   hermes:
-    category: software-development
     tags: [discipline, verification, debugging, planning, code-quality]
+    category: software-development
+    related_skills: []
     requires_toolsets: [terminal]
+tags: [discipline, verification, debugging, planning, code-quality]
 ---
 
 # Systematic Agent — Disciplined Coding Practices

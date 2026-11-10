@@ -2,16 +2,39 @@
 name: notion
 description: "Notion API + ntn CLI: pages, databases, markdown, Workers."
 version: 2.0.0
-author: community
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
-prerequisites:
-  env_vars: [NOTION_API_KEY]
+credits: community
 metadata:
   hermes:
-    tags: [Notion, Productivity, Notes, Database, API, CLI, Workers]
-    homepage: https://developers.notion.com
-tags: ["notion", "api", "page", "database", "markdown", "workers", "ntn", "cli", "productivity", "notes"]
+    tags:
+      - notion
+      - api
+      - page
+      - database
+      - markdown
+      - workers
+      - ntn
+      - cli
+      - productivity
+      - notes
+    category: google-cloud
+    related_skills: []
+    homepage: "https://developers.notion.com"
+tags:
+  - notion
+  - api
+  - page
+  - database
+  - markdown
+  - workers
+  - ntn
+  - cli
+  - productivity
+  - notes
+prerequisites:
+  env_vars: [NOTION_API_KEY]
 ---
 
 # Notion

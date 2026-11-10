@@ -1,15 +1,35 @@
 ---
 name: obsidian
-description: Read, search, create, and edit notes in the Obsidian vault.
+description: "Read, search, create, and edit notes in the Obsidian vault."
 version: 1.0.0
-author: Teknium (teknium1), Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: "Teknium (teknium1)"
 metadata:
   hermes:
-    tags: [Obsidian, Notes, Markdown, Vault]
+    tags:
+      - note
+      - obsidian
+      - vault
+      - markdown
+      - read
+      - search
+      - create
+      - edit
+      - notes
+    category: productivity
     related_skills: []
-tags: ["note", "obsidian", "vault", "markdown", "read", "search", "create", "edit"]
+tags:
+  - note
+  - obsidian
+  - vault
+  - markdown
+  - read
+  - search
+  - create
+  - edit
+  - notes
 ---
 
 # Obsidian Vault

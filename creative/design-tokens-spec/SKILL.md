@@ -1,15 +1,40 @@
 ---
 name: design-tokens-spec
-description: Author/validate/export Google's DESIGN.md token spec files.
+description: "Author/validate/export Google's DESIGN.md token spec files."
 version: 1.1.0
-author: Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [design, design-system, tokens, ui, accessibility, wcag, tailwind, dtcg, google]
-    related_skills: [popular-web-designs, claude-design, excalidraw, svg-arch-diagram]
-tags: ["design", "design-system", "tokens", "ui", "accessibility", "wcag", "tailwind", "dtcg", "google", "spec", "validate", "export"]
+    tags:
+      - design
+      - design-system
+      - tokens
+      - ui
+      - accessibility
+      - wcag
+      - tailwind
+      - dtcg
+      - google
+      - spec
+      - validate
+      - export
+    category: creative-media
+    related_skills: [popular-web-designs, claude-design, svg-arch-diagram]
+tags:
+  - design
+  - design-system
+  - tokens
+  - ui
+  - accessibility
+  - wcag
+  - tailwind
+  - dtcg
+  - google
+  - spec
+  - validate
+  - export
 ---
 
 # DESIGN.md Skill

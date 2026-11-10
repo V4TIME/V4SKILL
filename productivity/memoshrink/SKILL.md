@@ -1,8 +1,17 @@
 ---
 name: memoshrink
-description: >
-  Compress a memory file such as CLAUDE.md or a todo list into drytalk format
-  to save input tokens, keeping a readable backup. Trigger: /memoshrink.
+description: >-
+  Compress a memory file such as CLAUDE.md or a todo list into drytalk format to save input
+  tokens, keeping a readable backup. Trigger: /memoshrink.
+version: 1.0.0
+author: V4TIME
+license: MIT
+platforms: [linux, macos, windows]
+metadata:
+  hermes:
+    tags: [drytalk, compress, memory, tokens, backup, shorten, markdown]
+    category: meta
+    related_skills: []
 tags: [drytalk, compress, memory, tokens, backup, shorten, markdown]
 ---
 

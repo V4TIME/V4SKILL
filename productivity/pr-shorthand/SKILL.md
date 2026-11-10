@@ -1,9 +1,36 @@
 ---
 name: pr-shorthand
-description: >
-  Compressed code review - one line per finding with location, problem and fix.
-  Use for /pr-shorthand, "review this PR", or "review the diff".
-tags: [drytalk, review, code, compressed, pr, diff, finding, one-line, severity]
+description: >-
+  Compressed code review - one line per finding with location, problem and fix. Use for
+  /pr-shorthand, "review this PR", or "review the diff".
+version: 1.0.0
+author: V4TIME
+license: MIT
+platforms: [linux, macos, windows]
+metadata:
+  hermes:
+    tags:
+      - drytalk
+      - review
+      - code
+      - compressed
+      - pr
+      - diff
+      - finding
+      - one-line
+      - severity
+    category: meta
+    related_skills: []
+tags:
+  - drytalk
+  - review
+  - code
+  - compressed
+  - pr
+  - diff
+  - finding
+  - one-line
+  - severity
 ---
 
 Write code review comments terse and actionable. One line per finding. Location, problem, fix. No throat-clearing.

@@ -1,16 +1,35 @@
 ---
 name: xlsx
-description: Create, read, edit Excel .xlsx workbooks and CSVs.
+description: "Create, read, edit Excel .xlsx workbooks and CSVs."
 version: 1.1.0
-author: Nous Research
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: "Nous Research"
 metadata:
   hermes:
-    tags: [excel, spreadsheet, xlsx, csv, openpyxl, productivity]
+    tags:
+      - excel
+      - xlsx
+      - csv
+      - spreadsheet
+      - openpyxl
+      - create
+      - read
+      - edit
+      - productivity
     category: productivity
     related_skills: [docx, pdf, powerpoint]
-tags: ["excel", "xlsx", "csv", "spreadsheet", "openpyxl", "create", "read", "edit", "productivity"]
+tags:
+  - excel
+  - xlsx
+  - csv
+  - spreadsheet
+  - openpyxl
+  - create
+  - read
+  - edit
+  - productivity
 ---
 
 # Xlsx Skill

@@ -1,18 +1,46 @@
 ---
 name: box
-description: Box manages cloud files, sharing, search, and metadata.
+description: "Box manages cloud files, sharing, search, and metadata."
 version: 1.0.0
-author: Chris Kim (iskysun96), Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
-prerequisites:
-  commands: [box]
+credits: "Chris Kim (iskysun96)"
 metadata:
   hermes:
-    tags: [Box, Productivity, Cloud Storage, Collaboration, Metadata, Content Extraction, CLI, SDK]
+    tags:
+      - box
+      - cloud
+      - file
+      - share
+      - search
+      - metadata
+      - content
+      - collaboration
+      - cli
+      - sdk
+      - productivity
+      - cloud-storage
+      - content-extraction
+    category: google-cloud
     related_skills: [google-workspace]
-    homepage: https://developer.box.com/
-tags: ["box", "cloud", "file", "share", "search", "metadata", "content", "collaboration", "cli", "sdk"]
+    homepage: "https://developer.box.com/"
+tags:
+  - box
+  - cloud
+  - file
+  - share
+  - search
+  - metadata
+  - content
+  - collaboration
+  - cli
+  - sdk
+  - productivity
+  - cloud-storage
+  - content-extraction
+prerequisites:
+  commands: [box]
 ---
 
 # Box

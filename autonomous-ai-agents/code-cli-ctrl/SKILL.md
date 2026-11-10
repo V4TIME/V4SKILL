@@ -2,14 +2,40 @@
 name: code-cli-ctrl
 description: "Delegate coding to Claude Code CLI (features, PRs)."
 version: 2.2.1
-author: Hermes Agent + Teknium
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: Teknium
 metadata:
   hermes:
-    tags: [Coding-Agent, Claude, Anthropic, Code-Review, Refactoring, PTY, Automation]
-    related_skills: [code-cli-ctrl, code-task-runner, ai-task-agent-cli]
-tags: ["coding", "delegate", "claude", "anthropic", "cli", "pr", "agent", "code-review", "refactoring", "pty", "automation"]
+    tags:
+      - coding
+      - delegate
+      - claude
+      - anthropic
+      - cli
+      - pr
+      - agent
+      - code-review
+      - refactoring
+      - pty
+      - automation
+      - coding-agent
+    category: ai-coding-agents
+    related_skills: [code-task-runner, ai-task-agent-cli]
+tags:
+  - coding
+  - delegate
+  - claude
+  - anthropic
+  - cli
+  - pr
+  - agent
+  - code-review
+  - refactoring
+  - pty
+  - automation
+  - coding-agent
 ---
 
 # Claude Code — Hermes Orchestration Guide

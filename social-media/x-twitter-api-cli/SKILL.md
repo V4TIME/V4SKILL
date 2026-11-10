@@ -2,17 +2,39 @@
 name: x-twitter-api-cli
 description: "X/Twitter via xurl CLI: raw post search, posting, DM, media."
 version: 1.1.3
-author: xdevplatform + openclaw + Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos]
-prerequisites:
-  commands: [xurl]
+homepage: "https://github.com/xdevplatform/xurl"
+credits: "xdevplatform + openclaw"
 metadata:
   hermes:
-    tags: [twitter, x, social-media, xurl, official-api]
-    homepage: https://github.com/xdevplatform/xurl
-    upstream_skill: https://github.com/openclaw/openclaw/blob/main/skills/xurl/SKILL.md
-tags: ["x", "twitter", "post", "search", "dm", "media", "xurl", "social-media", "official-api"]
+    tags:
+      - x
+      - twitter
+      - post
+      - search
+      - dm
+      - media
+      - xurl
+      - social-media
+      - official-api
+    category: social-media
+    related_skills: []
+    homepage: "https://github.com/xdevplatform/xurl"
+    upstream_skill: "https://github.com/openclaw/openclaw/blob/main/skills/xurl/SKILL.md"
+tags:
+  - x
+  - twitter
+  - post
+  - search
+  - dm
+  - media
+  - xurl
+  - social-media
+  - official-api
+prerequisites:
+  commands: [xurl]
 ---
 
 # xurl — X (Twitter) API via the Official CLI

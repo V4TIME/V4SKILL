@@ -1,25 +1,47 @@
 ---
 name: teams-meeting-pipeline
-description: Teams meeting summaries, job replay, Graph subscriptions.
+description: "Teams meeting summaries, job replay, Graph subscriptions."
 version: 1.1.0
-author: Hermes Agent + Teknium
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
-prerequisites:
-  env_vars: [MSGRAPH_TENANT_ID, MSGRAPH_CLIENT_ID, MSGRAPH_CLIENT_SECRET]
-  commands: [hermes]
+credits: Teknium
 metadata:
   hermes:
-    tags: [Teams, Microsoft Graph, Meetings, Productivity, Operations]
-    # Channel-gated: this pipeline only makes sense on the Teams gateway
-    # channel (and in cron jobs, where its scheduled summary/replay work
-    # actually runs). Hidden from every other session's skills index.
+    tags:
+      - teams
+      - meeting
+      - summary
+      - job
+      - graph
+      - subscription
+      - microsoft
+      - operations
+      - productivity
+      - microsoft-graph
+      - meetings
+    category: productivity
+    related_skills: []
     session_platforms: [teams, cron]
     related_docs:
       - /docs/guides/microsoft-graph-app-registration
       - /docs/user-guide/messaging/teams-meetings
       - /docs/guides/operate-teams-meeting-pipeline
-tags: ["teams", "meeting", "summary", "job", "graph", "subscription", "microsoft", "operations", "productivity"]
+tags:
+  - teams
+  - meeting
+  - summary
+  - job
+  - graph
+  - subscription
+  - microsoft
+  - operations
+  - productivity
+  - microsoft-graph
+  - meetings
+prerequisites:
+  env_vars: [MSGRAPH_TENANT_ID, MSGRAPH_CLIENT_ID, MSGRAPH_CLIENT_SECRET]
+  commands: [hermes]
 ---
 
 # Teams Meeting Pipeline

@@ -1,15 +1,39 @@
 ---
 name: claude-design
-description: Design one-off HTML artifacts (landing, deck, prototype).
+description: "Design one-off HTML artifacts (landing, deck, prototype)."
 version: 1.1.0
-author: BadTechBandit
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: BadTechBandit
 metadata:
   hermes:
-    tags: [design, html, prototype, ux, ui, creative, artifact, deck, motion, design-system]
-    related_skills: [design-tokens-spec, popular-web-designs, excalidraw, svg-arch-diagram]
-tags: ["design", "html", "prototype", "ux", "ui", "creative", "artifact", "deck", "motion", "design-system", "landing"]
+    tags:
+      - design
+      - html
+      - prototype
+      - ux
+      - ui
+      - creative
+      - artifact
+      - deck
+      - motion
+      - design-system
+      - landing
+    category: creative-media
+    related_skills: [design-tokens-spec, popular-web-designs, svg-arch-diagram]
+tags:
+  - design
+  - html
+  - prototype
+  - ux
+  - ui
+  - creative
+  - artifact
+  - deck
+  - motion
+  - design-system
+  - landing
 ---
 
 # Claude Design for CLI/API Agents

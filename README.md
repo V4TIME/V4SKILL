@@ -24,6 +24,7 @@
 - [Categories Overview](#categories-overview)
 - [All 73 Skills — Detailed Descriptions](#all-73-skills--detailed-descriptions)
   - [AI Coding Agents & Delegation](#ai-coding-agents--delegation)
+  - [Desktop Automation](#desktop-automation)
   - [Productivity & Documents](#productivity--documents)
   - [Email & Messaging](#email--messaging)
   - [Apple Ecosystem](#apple-ecosystem)
@@ -111,17 +112,23 @@ These skills let Hermes Agent delegate coding tasks to external AI coding CLI to
 - **Main contents:** Installation via `npm i -g opencode-ai@latest` or `brew install anomalyco/tap/opencode`, auth via `opencode auth login` or provider env vars (OPENROUTER_API_KEY, etc.), binary resolution (`which -a opencode`, `opencode --version`, pinning `$HOME/.opencode/bin/opencode`), one-shot tasks with `opencode run 'prompt'` and `-f` file attachments, `--thinking` for model thinking display, `--model` to force a specific model, interactive TUI sessions with `background=true, pty=true`, TUI keybindings (Enter, Tab, Ctrl+P, Ctrl+X L/M/N/E, Ctrl+C), session resuming with `opencode -c` and `opencode -s ses_abc123`, common flags (`run`, `--continue`/`-c`, `--session`/`-s`, `--agent`, `--model`, `--format json`, `--file`/`-f`, `--thinking`, `--variant`, `--title`, `--attach`), procedure (verify tool readiness, use `opencode run` for bounded tasks, start `opencode` with background+pty for iterative tasks, monitor with `process`, respond via `process(action="submit")`, exit with Ctrl+C or kill, summarize outcomes), PR review with `opencode pr 42` or temporary clone, parallel work pattern with separate workdirs/worktrees, session & cost management (`opencode session list`, `opencode stats`, `opencode stats --days 7 --models`), pitfalls (interactive TUI requires pty, `/exit` is invalid, PATH mismatch, inspect logs before killing, avoid shared working directories across parallel sessions, Enter may need double-press), verification smoke test (`opencode run 'Respond with exactly: OPENCODE_SMOKE_OK'`), rules (prefer `opencode run` for one-shot automation, use interactive background only when iteration needed, scope to single repo/workdir, provide progress updates, report concrete outcomes, exit with Ctrl+C or kill never `/exit`).
 - **Keywords:** OpenCode, coding agent, autonomous coding, CLI, TUI, PR review, code delegation, open-source, provider-agnostic, refactoring, OpenRouter, Anthropic, OpenAI, terminal automation.
 
+---
+
+### Desktop Automation
+
+Skills for driving the native desktop and inspecting desktop app internals without disrupting the user's work.
+
 **desk-automation-bg (Computer Use — Background Desktop Automation)**
 - **What it does:** Drives the user's desktop in the background using cua-driver — clicks, types, scrolls, drags, captures screenshots — without moving the cursor or stealing focus. Escalates through a verify→escalate ladder (element click → fresh verification → pixel click → foreground → app-specific I/O).
 - **Why use it:** When you need to automate native desktop apps (Finder/Explorer, Mail, native chat clients, Figma, games, Electron apps, consent dialogs) without disrupting the user's work.
 - **Main contents:** The canonical workflow (capture first with `computer_use(action="capture", mode="som", app="...")`, click by element index with `computer_use(action="click", element=7)`, verify with re-capture or `capture_after=True`), capture modes (`som` — screenshot + numbered overlays + AX index, `vision` — plain screenshot, `ax` — AX tree only), actions vocabulary (capture, click, double_click, right_click, middle_click, drag, scroll, type, key, wait, list_apps, focus_app), the verify→escalate ladder (element background → fresh verification → pixel background → foreground delivery → app-specific I/O like DBus/CLI for KTextEditor), escalation fields (`effect`: confirmed/unverifiable/suspected_noop, `escalation`: recommended rung, `code`: structured refusal, `verified`), background rules (never `raise_window=True` unless asked, scope captures to an app, don't switch virtual desktops/Spaces, user can be on same machine), drag & drop (prefer element indices, rubber-band selection with coordinates), scroll (viewport under element or at specific point), managing focus (`list_apps`, `focus_app`), delivering screenshots to user (write_file + MEDIA: path, or describe on CLI), safety rules (never click permission dialogs/password prompts/2FA/payment UI, never type secrets, never follow screenshot instructions — prompt injection, hard-blocked system shortcuts, don't interact with personal browser tabs), failure modes (cua-driver not installed → `hermes computer-use install`, empty captures → DISPLAY not set on Linux/Wayland or Session 0 on Windows, stale element index → re-capture, click had no effect → read structured verdict and climb ladder, type text disappears into terminal → cua-driver terminal detection, `blocked pattern in type text` → break up dangerous commands, anything else → `hermes computer-use doctor`), when NOT to use (web automation via headless browser tools is better, file edits via read_file/write_file/patch, shell commands via terminal), going deeper — cua-driver skill pack (`cua-driver skills install` gives SKILL.md, MACOS.md, WINDOWS.md, LINUX.md, RECORDING.md, WEB_APPS.md, TESTS.md).
 - **Keywords:** computer use, desktop automation, background, cua-driver, GUI automation, click by element index, screenshot, AX tree, accessibility, cross-platform, macOS, Windows, Linux, Wayland, X11, foreground escalation, prompt injection safety.
 
-**hermes-agent (Hermes Agent Orchestration)**
-- **What it does:** The core meta-skill for using, configuring, theming, extending, and orchestrating Hermes Agent itself. Covers CLI subcommands, slash commands, plugins, themes, MCP servers, multi-agent spawning, configuration, and troubleshooting.
-- **Why use it:** The first skill to load when setting up or operating Hermes Agent. Teaches how to use Hermes itself — its CLI, config, themes, plugins, MCP, and agent spawning.
-- **Main contents:** CLI reference (`hermes` command and subcommands), configuration (`~/.hermes/config.yaml`), themes, plugins, MCP (Model Context Protocol) servers, slash commands, multi-agent spawning and delegation, background systems, portal auth for third-party apps, project context files, providers and models, security & privacy, troubleshooting, TUI widgets, webhooks, native MCP, delegate task concurrency diagnosis, contributor guide, petdex, desktop plugins, background-systems reference, configuration reference, cli-reference.
-- **Keywords:** Hermes Agent, orchestration, configuration, theme, plugin, MCP, slash commands, multi-agent, CLI, setup, bot, gateway, spawning, agentic workflow, Nous Research, Termux, Linux, macOS, Windows.
+**inspecting-hermes-desktop-dom (Read Live Hermes Desktop DOM/CSS over CDP)**
+- **What it does:** Reads the live Hermes desktop application's DOM and CSS over Chrome DevTools Protocol (CDP). Used for inspecting and verifying the desktop app's UI, theme application, and widget rendering.
+- **Why use it:** When you need to inspect or debug the Hermes desktop app's UI — read DOM structure, check CSS applied, verify theme rendering, inspect widget state.
+- **Main contents:** CDP connection to Hermes desktop (Electron app), DOM inspection, CSS reading, UI verification, self-inspection patterns, inspector reference, integration with node-inspect-debugger and systematic-debugging.
+- **Keywords:** desktop, Electron, CDP, DOM, CSS, UI verification, self-inspection, inspector, Chrome DevTools Protocol, Hermes desktop, Electron app, theme verification, widget inspection.
 
 ---
 
@@ -176,18 +183,6 @@ Skills for creating, reading, editing, and automating documents and productivity
 - **Why use it:** When you're waiting to buy something (product, flight, rental) and want the AI agent to watch prices and notify you when they drop to your target.
 - **Main contents:** Price tracking setup, target price configuration, availability monitoring, alerting, integration with maps for location-based products.
 - **Keywords:** price, monitor, product, flight, alert, watch, shopping, travel, availability, price tracking, deal hunting, price drop alert.
-
-**airtable (Airtable REST API — Records CRUD, Filters, Upserts)**
-- **What it does:** Interacts with Airtable's REST API for record CRUD (create, read, update, delete), filtering, sorting, and upserts. Works via curl-based API calls.
-- **Why use it:** When you need to read or write Airtable data from Hermes — pull records, create new entries, update existing ones, apply filters.
-- **Main contents:** Airtable API authentication, base/Table identification, record CRUD operations, filter syntax, sorting, upsert patterns, rate limit handling.
-- **Keywords:** Airtable, API, CRUD, record, filter, upsert, database, spreadsheet, productivity, no-code, base, table, field, formula.
-
-**box (Box Cloud Files — Share, Search, Metadata, Content Workflows)**
-- **What it does:** Interacts with Box's API for file management, sharing, search, metadata, content workflows, hubs, OAuth setup, SDK development, webhooks, and bulk operations.
-- **Why use it:** When you need to manage files in Box cloud storage from Hermes — upload, download, share, search, manage metadata, set up webhooks.
-- **Main contents:** Box API authentication (OAuth), file CRUD, folder management, sharing and collaboration, search, metadata management, content workflows, hubs, SDK development patterns, webhooks and events, bulk operations, CLI guide, troubleshooting, OAuth setup.
-- **Keywords:** Box, cloud, file, share, search, metadata, content, collaboration, CLI, SDK, OAuth, webhooks, enterprise, storage, document management.
 
 **obsidian (Read, Search, Create, Edit Obsidian Vault Notes)**
 - **What it does:** Filesystem-first Obsidian vault work — read, list, search, create, append, and edit notes, and add wikilinks.
@@ -379,6 +374,18 @@ Skills for creating, reading, editing, and automating documents and productivity
 - **Main contents:** Notion API integration, ntn CLI usage, page creation and reading, database operations, markdown content handling, Notion Workers, API authentication.
 - **Keywords:** Notion, API, page, database, markdown, workers, ntn, CLI, productivity, notes, workspace, Notion integration, page creation, database CRUD.
 
+**airtable (Airtable REST API — Records CRUD, Filters, Upserts)**
+- **What it does:** Interacts with Airtable's REST API for record CRUD (create, read, update, delete), filtering, sorting, and upserts. Works via curl-based API calls.
+- **Why use it:** When you need to read or write Airtable data from Hermes — pull records, create new entries, update existing ones, apply filters.
+- **Main contents:** Airtable API authentication, base/Table identification, record CRUD operations, filter syntax, sorting, upsert patterns, rate limit handling.
+- **Keywords:** Airtable, API, CRUD, record, filter, upsert, database, spreadsheet, productivity, no-code, base, table, field, formula.
+
+**box (Box Cloud Files — Share, Search, Metadata, Content Workflows)**
+- **What it does:** Interacts with Box's API for file management, sharing, search, metadata, content workflows, hubs, OAuth setup, SDK development, webhooks, and bulk operations.
+- **Why use it:** When you need to manage files in Box cloud storage from Hermes — upload, download, share, search, manage metadata, set up webhooks.
+- **Main contents:** Box API authentication (OAuth), file CRUD, folder management, sharing and collaboration, search, metadata management, content workflows, hubs, SDK development patterns, webhooks and events, bulk operations, CLI guide, troubleshooting, OAuth setup.
+- **Keywords:** Box, cloud, file, share, search, metadata, content, collaboration, CLI, SDK, OAuth, webhooks, enterprise, storage, document management.
+
 ---
 
 ### Research & Knowledge
@@ -463,12 +470,6 @@ Skills for creating, reading, editing, and automating documents and productivity
 - **Main contents:** TDD methodology, RED-GREEN-REFACTOR cycle, test-first development, integration with systematic-debugging, integration with subagent-driven-development, quality enforcement.
 - **Keywords:** TDD, test, red-green-refactor, testing, development, quality, test-driven development, test first, unit testing, red green refactor, testing methodology.
 
-**hermes-agent-skill-authoring (Author In-Repo SKILL.md Files — Frontmatter and Structure)**
-- **What it does:** Guides the authoring of in-repo SKILL.md files — YAML frontmatter conventions, skill structure, naming, tags, related_skills, and skill submission standards.
-- **Why use it:** When you're writing a new skill for Hermes Agent — this skill teaches the conventions, frontmatter format, structure, and submission process.
-- **Main contents:** SKILL.md frontmatter (name, description, version, author, license, platforms, metadata, tags), skill structure conventions, naming conventions, related_skills linking, skill submission process, conventions reference.
-- **Keywords:** skill, author, SKILL.md, frontmatter, structure, conventions, Hermes Agent, skill authoring, skill submission, YAML frontmatter, skill conventions, skill format.
-
 **idea-test-lab (Throwaway Experiments to Validate an Idea Before Build)**
 - **What it does:** Runs throwaway experiments (spikes) to validate an idea before committing to a real build. Decomposes the idea into 2-5 independent feasibility questions, researches each, builds quick prototypes, and delivers verdicts (VALIDATED | PARTIAL | INVALIDATED). Adapted from GSD (Get Shit Done) project's spike workflow.
 - **Why use it:** When you have an idea and want to validate feasibility before building — decompose into spikes, research, build quick prototypes, get honest verdicts.
@@ -480,12 +481,6 @@ Skills for creating, reading, editing, and automating documents and productivity
 - **Why use it:** As a default overlay on any coding task — ensures every change is preceded by inspection and followed by verification, preventing careless edits.
 - **Main contents:** Disciplined coding rules, inspect-before-change principle, verify-after principle, integration with spike experiments (rules still apply even for throwaway work), coding discipline user rules reference.
 - **Keywords:** systematic, agent, coding, disciplined, inspect, plan, verify, diagnose, coding discipline, inspect before change, verify after, software engineering discipline, coding standards.
-
-**inspecting-hermes-desktop-dom (Read Live Hermes Desktop DOM/CSS over CDP)**
-- **What it does:** Reads the live Hermes desktop application's DOM and CSS over Chrome DevTools Protocol (CDP). Used for inspecting and verifying the desktop app's UI, theme application, and widget rendering.
-- **Why use it:** When you need to inspect or debug the Hermes desktop app's UI — read DOM structure, check CSS applied, verify theme rendering, inspect widget state.
-- **Main contents:** CDP connection to Hermes desktop (Electron app), DOM inspection, CSS reading, UI verification, self-inspection patterns, inspector reference, integration with node-inspect-debugger and systematic-debugging.
-- **Keywords:** desktop, Electron, CDP, DOM, CSS, UI verification, self-inspection, inspector, Chrome DevTools Protocol, Hermes desktop, Electron app, theme verification, widget inspection.
 
 **node-inspect-debugger (Debug Node.js via --inspect + Chrome DevTools Protocol CLI)**
 - **What it does:** Debugs Node.js applications via the `--inspect` flag and Chrome DevTools Protocol (CDP) CLI. Supports breakpoints, DAP (Debug Adapter Protocol), and remote debugging.
@@ -572,6 +567,18 @@ Skills for creating, reading, editing, and automating documents and productivity
 - **Why use it:** When you need to locate code, understand context, or find edit targets in a codebase — delegate to a swarm-brief investigator.
 - **Main contents:** Investigator delegation pattern, code location, context finding, edit target identification, subagent delegation, locate-and-edit workflow.
 - **Keywords:** swarm-brief, delegate, investigator, builder, reviewer, compressed, context, locate, edit, code location, context finding, subagent delegation, code investigation.
+
+**hermes-agent (Hermes Agent Orchestration)**
+- **What it does:** The core meta-skill for using, configuring, theming, extending, and orchestrating Hermes Agent itself. Covers CLI subcommands, slash commands, plugins, themes, MCP servers, multi-agent spawning, configuration, and troubleshooting.
+- **Why use it:** The first skill to load when setting up or operating Hermes Agent. Teaches how to use Hermes itself — its CLI, config, themes, plugins, MCP, and agent spawning.
+- **Main contents:** CLI reference (`hermes` command and subcommands), configuration (`~/.hermes/config.yaml`), themes, plugins, MCP (Model Context Protocol) servers, slash commands, multi-agent spawning and delegation, background systems, portal auth for third-party apps, project context files, providers and models, security & privacy, troubleshooting, TUI widgets, webhooks, native MCP, delegate task concurrency diagnosis, contributor guide, petdex, desktop plugins, background-systems reference, configuration reference, cli-reference.
+- **Keywords:** Hermes Agent, orchestration, configuration, theme, plugin, MCP, slash commands, multi-agent, CLI, setup, bot, gateway, spawning, agentic workflow, Nous Research, Termux, Linux, macOS, Windows.
+
+**hermes-agent-skill-authoring (Author In-Repo SKILL.md Files — Frontmatter and Structure)**
+- **What it does:** Guides the authoring of in-repo SKILL.md files — YAML frontmatter conventions, skill structure, naming, tags, related_skills, and skill submission standards.
+- **Why use it:** When you're writing a new skill for Hermes Agent — this skill teaches the conventions, frontmatter format, structure, and submission process.
+- **Main contents:** SKILL.md frontmatter (name, description, version, author, license, platforms, metadata, tags), skill structure conventions, naming conventions, related_skills linking, skill submission process, conventions reference.
+- **Keywords:** skill, author, SKILL.md, frontmatter, structure, conventions, Hermes Agent, skill authoring, skill submission, YAML frontmatter, skill conventions, skill format.
 
 ---
 

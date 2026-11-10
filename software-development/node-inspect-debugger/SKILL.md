@@ -2,14 +2,37 @@
 name: node-inspect-debugger
 description: "Debug Node.js via --inspect + Chrome DevTools Protocol CLI."
 version: 1.0.0
-author: Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [debugging, nodejs, node-inspect, cdp, breakpoints, ui-tui]
+    tags:
+      - node
+      - debug
+      - inspect
+      - chrome-devtools
+      - cdp
+      - breakpoints
+      - dap
+      - nodejs
+      - debugging
+      - node-inspect
+      - ui-tui
+    category: software-development
     related_skills: [systematic-debugging, python-debugpy]
-tags: ["node", "debug", "inspect", "chrome-devtools", "cdp", "breakpoints", "dap", "nodejs"]
+tags:
+  - node
+  - debug
+  - inspect
+  - chrome-devtools
+  - cdp
+  - breakpoints
+  - dap
+  - nodejs
+  - debugging
+  - node-inspect
+  - ui-tui
 ---
 
 # Node.js Inspect Debugger

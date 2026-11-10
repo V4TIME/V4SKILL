@@ -1,8 +1,17 @@
 ---
 name: commit-shorthand
-description: >
-  Write a Conventional Commits message compressed to intent only. Use for
-  "write a commit", "commit message", /commit or /commit-shorthand.
+description: >-
+  Write a Conventional Commits message compressed to intent only. Use for "write a commit",
+  "commit message", /commit or /commit-shorthand.
+version: 1.0.0
+author: V4TIME
+license: MIT
+platforms: [linux, macos, windows]
+metadata:
+  hermes:
+    tags: [drytalk, commit, conventional, git, terse, message, version-control]
+    category: meta
+    related_skills: []
 tags: [drytalk, commit, conventional, git, terse, message, version-control]
 ---
 

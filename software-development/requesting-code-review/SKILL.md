@@ -2,14 +2,35 @@
 name: requesting-code-review
 description: "Pre-commit review: security scan, quality gates, auto-fix."
 version: 2.0.0
-author: Hermes Agent (adapted from obra/superpowers + MorAlekss)
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+homepage: "https://github.com/obra/superpowers"
+credits: "obra/superpowers + MorAlekss"
 metadata:
   hermes:
-    tags: [code-review, security, verification, quality, pre-commit, auto-fix]
-    related_skills: [subagent-driven-development, test-driven-development, github]
-tags: ["review", "code", "pre-commit", "security", "quality", "auto-fix", "verification", "gates"]
+    tags:
+      - review
+      - code
+      - pre-commit
+      - security
+      - quality
+      - auto-fix
+      - verification
+      - gates
+      - code-review
+    category: software-development
+    related_skills: [test-driven-development, github]
+tags:
+  - review
+  - code
+  - pre-commit
+  - security
+  - quality
+  - auto-fix
+  - verification
+  - gates
+  - code-review
 ---
 
 # Pre-Commit Code Verification

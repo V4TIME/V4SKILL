@@ -2,14 +2,16 @@
 name: youtube-content
 description: "YouTube transcripts to summaries, threads, blogs."
 version: 1.0.0
-author: Teknium (teknium1), Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: "Teknium (teknium1)"
 metadata:
   hermes:
-    tags: [YouTube, Video, Transcripts, Media]
+    tags: [youtube, transcript, summary, blog, thread, video, media, transcripts]
+    category: creative-media
     related_skills: []
-tags: ["youtube", "transcript", "summary", "blog", "thread", "video", "media"]
+tags: [youtube, transcript, summary, blog, thread, video, media, transcripts]
 ---
 
 # YouTube Content Tool
@@ -31,20 +33,25 @@ uv pip install youtube-transcript-api
 
 ## Helper Script
 
-`SKILL_DIR` is the directory containing this SKILL.md file. The script accepts any standard YouTube URL format, short links (youtu.be), shorts, embeds, live links, or a raw 11-character video ID.
+Set `SKILL_DIR` to the directory containing this SKILL.md file, then run the
+commands from that directory. The script accepts any standard YouTube URL
+format, short links (youtu.be), shorts, embeds, live links, or a raw
+11-character video ID.
 
 ```bash
+cd "$SKILL_DIR"
+
 # JSON output with metadata
-uv run python SKILL_DIR/scripts/fetch_transcript.py "https://youtube.com/watch?v=VIDEO_ID"
+uv run python scripts/fetch_transcript.py "https://youtube.com/watch?v=VIDEO_ID"
 
 # Plain text (good for piping into further processing)
-uv run python SKILL_DIR/scripts/fetch_transcript.py "URL" --text-only
+uv run python scripts/fetch_transcript.py "URL" --text-only
 
 # With timestamps
-uv run python SKILL_DIR/scripts/fetch_transcript.py "URL" --timestamps
+uv run python scripts/fetch_transcript.py "URL" --timestamps
 
 # Specific language with fallback chain
-uv run python SKILL_DIR/scripts/fetch_transcript.py "URL" --language tr,en
+uv run python scripts/fetch_transcript.py "URL" --language tr,en
 ```
 
 ## Output Formats

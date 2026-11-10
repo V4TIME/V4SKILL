@@ -2,14 +2,36 @@
 name: code-task-runner
 description: "Delegate coding to OpenAI Codex CLI (features, PRs)."
 version: 1.0.1
-author: Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+homepage: "https://github.com/openai/codex"
 metadata:
   hermes:
-    tags: [Coding-Agent, Codex, OpenAI, Code-Review, Refactoring]
+    tags:
+      - coding
+      - delegate
+      - openai
+      - cli
+      - pr
+      - agent
+      - code-review
+      - refactoring
+      - coding-agent
+      - codex
+    category: ai-coding-agents
     related_skills: [code-cli-ctrl, hermes-agent]
-tags: ["coding", "delegate", "openai", "cli", "pr", "agent", "code-review", "refactoring"]
+tags:
+  - coding
+  - delegate
+  - openai
+  - cli
+  - pr
+  - agent
+  - code-review
+  - refactoring
+  - coding-agent
+  - codex
 ---
 
 # Codex CLI

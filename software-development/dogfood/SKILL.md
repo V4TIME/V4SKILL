@@ -2,14 +2,34 @@
 name: dogfood
 description: "Exploratory QA of web apps: find bugs, evidence, reports."
 version: 1.0.0
-author: Teknium (teknium1), Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: "Teknium (teknium1)"
 metadata:
   hermes:
-    tags: [qa, testing, browser, web, dogfood]
+    tags:
+      - qa
+      - testing
+      - browser
+      - web
+      - dogfood
+      - bug
+      - explore
+      - evidence
+      - report
+    category: software-development
     related_skills: []
-tags: ["qa", "testing", "browser", "web", "dogfood", "bug", "explore", "evidence", "report"]
+tags:
+  - qa
+  - testing
+  - browser
+  - web
+  - dogfood
+  - bug
+  - explore
+  - evidence
+  - report
 ---
 
 # Dogfood: Systematic Web Application QA Testing

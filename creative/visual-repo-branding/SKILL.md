@@ -1,8 +1,15 @@
 ---
 name: visual-repo-branding
+description: "Dark SVG banner + logo for GitHub READMEs. Create, verify."
 version: 1.0.0
-description: Dark SVG banner + logo for GitHub READMEs. Create, verify.
-category: creative
+author: V4TIME
+license: MIT
+platforms: [linux, macos, windows]
+metadata:
+  hermes:
+    tags: [github, banner, logo, svg, branding, readme, visual]
+    category: creative-media
+    related_skills: []
 tags: [github, banner, logo, svg, branding, readme, visual]
 ---
 

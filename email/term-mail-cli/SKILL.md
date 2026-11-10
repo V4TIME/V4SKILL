@@ -2,16 +2,19 @@
 name: term-mail-cli
 description: "Himalaya CLI: IMAP/SMTP email from terminal."
 version: 1.1.0
-author: community
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: community
 metadata:
   hermes:
-    tags: [Email, IMAP, SMTP, CLI, Communication]
-    homepage: https://github.com/pimalaya/himalaya
+    tags: [email, imap, smtp, cli, send, receive, communication, himalaya]
+    category: email
+    related_skills: []
+    homepage: "https://github.com/pimalaya/himalaya"
+tags: [email, imap, smtp, cli, send, receive, communication, himalaya]
 prerequisites:
   commands: [himalaya]
-tags: ["email", "imap", "smtp", "cli", "send", "receive", "communication", "himalaya"]
 ---
 
 # Himalaya Email CLI

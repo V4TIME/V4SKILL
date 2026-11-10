@@ -2,15 +2,37 @@
 name: svg-arch-diagram
 description: "Dark-themed SVG architecture/cloud/infra diagrams as HTML."
 version: 1.0.0
-author: Cocoon AI (hello@cocoon-ai.com), ported by Hermes Agent
+author: V4TIME
 license: MIT
-dependencies: []
 platforms: [linux, macos, windows]
+credits: "Cocoon AI (hello@cocoon-ai.com)"
 metadata:
   hermes:
-    tags: [architecture, diagrams, SVG, HTML, visualization, infrastructure, cloud]
-    related_skills: [concept-diagrams, excalidraw]
-tags: ["diagram", "svg", "architecture", "cloud", "infra", "html", "dark", "visualization", "infrastructure"]
+    tags:
+      - diagram
+      - svg
+      - architecture
+      - cloud
+      - infra
+      - html
+      - dark
+      - visualization
+      - infrastructure
+      - diagrams
+    category: creative-media
+    related_skills: []
+tags:
+  - diagram
+  - svg
+  - architecture
+  - cloud
+  - infra
+  - html
+  - dark
+  - visualization
+  - infrastructure
+  - diagrams
+dependencies: []
 ---
 
 # Architecture Diagram Skill

@@ -2,14 +2,38 @@
 name: product-price-monitor
 description: "Watch product, flight, or listing prices; alert on target."
 version: 0.1.0
-author: Ben Barclay (benbarclay), Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: "Ben Barclay (benbarclay)"
 metadata:
   hermes:
-    tags: [Prices, Availability, Shopping, Travel, Alerts]
+    tags:
+      - price
+      - monitor
+      - product
+      - flight
+      - alert
+      - watch
+      - shopping
+      - travel
+      - availability
+      - prices
+      - alerts
+    category: productivity
     related_skills: [maps]
-tags: ["price", "monitor", "product", "flight", "alert", "watch", "shopping", "travel", "availability"]
+tags:
+  - price
+  - monitor
+  - product
+  - flight
+  - alert
+  - watch
+  - shopping
+  - travel
+  - availability
+  - prices
+  - alerts
 ---
 
 # Product Price Monitor

@@ -2,15 +2,35 @@
 name: desk-automation-bg
 description: "Drive the desktop background-first; escalate on signal."
 version: 2.0.0
-author: Francesco Bonacci (f-trycua), Hermes Agent
+author: V4TIME
 license: MIT
-platforms: [macos, windows, linux]
+platforms: [linux, macos, windows]
+homepage: "https://github.com/trycua/cua"
+credits: "Francesco Bonacci (f-trycua)"
 metadata:
   hermes:
-    tags: [computer-use, desktop, automation, gui, cross-platform]
-    category: desktop
+    tags:
+      - desktop
+      - automate
+      - drive
+      - background
+      - escalate
+      - gui
+      - cross-platform
+      - computer-use
+      - automation
+    category: desktop-automation
     related_skills: []
-tags: ["desktop", "automate", "drive", "background", "escalate", "gui", "cross-platform", "computer-use"]
+tags:
+  - desktop
+  - automate
+  - drive
+  - background
+  - escalate
+  - gui
+  - cross-platform
+  - computer-use
+  - automation
 ---
 
 # Computer Use (universal, any-model, cross-platform)

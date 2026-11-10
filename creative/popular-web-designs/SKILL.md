@@ -1,21 +1,28 @@
 ---
 name: popular-web-designs
-description: 54 real design systems (Stripe, Linear, Vercel) as HTML/CSS.
+description: "54 real design systems (Stripe, Linear, Vercel) as HTML/CSS."
 version: 1.0.0
-author: Hermes Agent + Teknium (design systems sourced from VoltAgent/awesome-design-md)
+author: V4TIME
 license: MIT
-tags: [design, css, html, ui, web-development, design-systems, templates]
 platforms: [linux, macos, windows]
+homepage: "https://github.com/VoltAgent/awesome-design-md"
+credits: "Teknium (design systems sourced from VoltAgent/awesome-design-md)"
+metadata:
+  hermes:
+    tags: [design, css, html, ui, web-development, design-systems, templates]
+    category: creative-media
+    related_skills: []
+tags: [design, css, html, ui, web-development, design-systems, templates]
 triggers:
-  - build a page that looks like
-  - make it look like stripe
-  - design like linear
-  - vercel style
-  - create a UI
-  - web design
-  - landing page
-  - dashboard design
-  - website styled like
+  - "build a page that looks like"
+  - "make it look like stripe"
+  - "design like linear"
+  - "vercel style"
+  - "create a UI"
+  - "web design"
+  - "landing page"
+  - "dashboard design"
+  - "website styled like"
 ---
 
 # Popular Web Designs

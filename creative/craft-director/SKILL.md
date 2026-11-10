@@ -1,24 +1,51 @@
 ---
 name: craft-director
-version: 1.0.0
-author: V4TIME — reverse-engineered from pbakaus/impeccable (github.com/pbakaus/impeccable, Apache 2.0)
-license: Apache 2.0
-platforms:
-  - Claude Code
-  - Cursor
-  - Codex
-  - any agent that reads SKILL.md
-description: >
+description: >-
   One consolidated design-direction skill for AI coding agents, rebuilt from Paul Bakaus's
   Impeccable (github.com/pbakaus/impeccable, Apache 2.0, 66k stars). Covers the full design
-  guidance surface: product-truth capture separate from visual direction, four visitor
-  modes, twenty conductor commands, quality floor with absolute bans, anti-pattern
-  detector rules, dual-assessment UX critique, audit with 5-dimension scoring, polish
-  triage, shape discovery-to-brief flow, init/product-truth interview, document/extract
-  for existing systems, and the Operate/Read depth rules. Restructured, renamed, order
-  shuffled, explanations rewritten for roughly half. Use when the user wants to design,
-  redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adapt,
-  animate, colorize, typeset, layout, delight, or otherwise improve a frontend interface.
+  guidance surface: product-truth capture separate from visual direction, four visitor modes,
+  twenty conductor commands, quality floor with absolute bans, anti-pattern detector rules,
+  dual-assessment UX critique, audit with 5-dimension scoring, polish triage, shape
+  discovery-to-brief flow, init/product-truth interview, document/extract for existing systems,
+  and the Operate/Read depth rules. Restructured, renamed, order shuffled, explanations rewritten
+  for roughly half. Use when the user wants to design, redesign, shape, critique, audit, polish,
+  clarify, distill, harden, optimize, adapt, animate, colorize, typeset, layout, delight, or
+  otherwise improve a frontend interface.
+version: 1.0.0
+author: V4TIME
+license: "Apache 2.0"
+platforms: [linux, macos, windows]
+homepage: "https://github.com/pbakaus/impeccable"
+metadata:
+  hermes:
+    tags:
+      - design
+      - frontend
+      - ui
+      - ux
+      - critique
+      - audit
+      - polish
+      - typography
+      - layout
+      - motion
+      - accessibility
+      - performance
+      - responsive
+      - design-system
+      - product-truth
+      - landing-page
+      - dashboard
+      - component
+      - web-design
+    category: creative-media
+    related_skills:
+      - webmxerz
+      - design-tokens-spec
+      - infographic-generator
+      - svg-arch-diagram
+      - motion-craft-kit
+      - human-first-ui
 tags:
   - design
   - frontend
@@ -39,13 +66,6 @@ tags:
   - dashboard
   - component
   - web-design
-related_skills:
-  - webmxerz
-  - design-tokens-spec
-  - infographic-generator
-  - svg-arch-diagram
-  - motion-craft-kit
-  - human-first-ui
 ---
 
 # Craft Director

@@ -1,10 +1,37 @@
 ---
 name: drytalk
-description: >
-  Ultra-compressed communication mode that cuts output tokens while keeping
-  technical accuracy. Levels: lite, full, ultra and the wenyan variants. Use for
-  /drytalk, "drytalk mode", "talk dry", "be brief" or "less tokens".
-tags: [drytalk, compress, ultra-short, mode, communication, terse, tokens, session, style]
+description: >-
+  Ultra-compressed communication mode that cuts output tokens while keeping technical accuracy.
+  Levels: lite, full, ultra and the wenyan variants. Use for /drytalk, "drytalk mode", "talk dry",
+  "be brief" or "less tokens".
+version: 1.0.0
+author: V4TIME
+license: MIT
+platforms: [linux, macos, windows]
+metadata:
+  hermes:
+    tags:
+      - drytalk
+      - compress
+      - ultra-short
+      - mode
+      - communication
+      - terse
+      - tokens
+      - session
+      - style
+    category: meta
+    related_skills: []
+tags:
+  - drytalk
+  - compress
+  - ultra-short
+  - mode
+  - communication
+  - terse
+  - tokens
+  - session
+  - style
 ---
 
 Respond terse like smart drytalk. All technical substance stay. Only fluff die.

@@ -2,14 +2,33 @@
 name: hermes-agent-skill-authoring
 description: "Author in-repo SKILL.md files: frontmatter and structure."
 version: 2.0.0
-author: Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [skills, authoring, hermes-agent, conventions, skill-md]
+    tags:
+      - skill
+      - author
+      - skill-md
+      - frontmatter
+      - structure
+      - conventions
+      - hermes-agent
+      - skills
+      - authoring
+    category: meta
     related_skills: [requesting-code-review]
-tags: ["skill", "author", "skil.md", "frontmatter", "structure", "conventions", "hermes-agent"]
+tags:
+  - skill
+  - author
+  - skill-md
+  - frontmatter
+  - structure
+  - conventions
+  - hermes-agent
+  - skills
+  - authoring
 ---
 
 # Authoring Hermes-Agent Skills (in-repo)

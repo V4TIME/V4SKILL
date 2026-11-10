@@ -2,14 +2,38 @@
 name: ai-task-agent-cli
 description: "Delegate coding to OpenCode CLI (features, PR review)."
 version: 1.2.0
-author: Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+homepage: "https://github.com/sst/opencode"
 metadata:
   hermes:
-    tags: [Coding-Agent, OpenCode, Autonomous, Refactoring, Code-Review]
-    related_skills: [code-cli-ctrl, code-task-runner, opencode]
-tags: ["coding", "delegate", "opencode", "cli", "pr", "review", "agent", "autonomous", "refactoring"]
+    tags:
+      - coding
+      - delegate
+      - opencode
+      - cli
+      - pr
+      - review
+      - agent
+      - autonomous
+      - refactoring
+      - coding-agent
+      - code-review
+    category: ai-coding-agents
+    related_skills: [code-cli-ctrl, code-task-runner]
+tags:
+  - coding
+  - delegate
+  - opencode
+  - cli
+  - pr
+  - review
+  - agent
+  - autonomous
+  - refactoring
+  - coding-agent
+  - code-review
 ---
 
 # OpenCode CLI

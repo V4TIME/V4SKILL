@@ -1,10 +1,39 @@
 ---
 name: swarm-brief
-description: >
-  When to delegate to `swarm-brief-investigator` (locate code), `swarm-brief-builder`
-  (1-2 file edit) or `swarm-brief-reviewer` (diff review) instead of working inline
-  or using `Explore`. Their output is compressed, so main context lasts longer.
-tags: [swarm-brief, delegate, subagent, investigator, builder, reviewer, compressed, context, locate, edit]
+description: >-
+  When to delegate to `swarm-brief-investigator` (locate code), `swarm-brief-builder` (1-2 file
+  edit) or `swarm-brief-reviewer` (diff review) instead of working inline or using `Explore`.
+  Their output is compressed, so main context lasts longer.
+version: 1.0.0
+author: V4TIME
+license: MIT
+platforms: [linux, macos, windows]
+metadata:
+  hermes:
+    tags:
+      - swarm-brief
+      - delegate
+      - subagent
+      - investigator
+      - builder
+      - reviewer
+      - compressed
+      - context
+      - locate
+      - edit
+    category: meta
+    related_skills: []
+tags:
+  - swarm-brief
+  - delegate
+  - subagent
+  - investigator
+  - builder
+  - reviewer
+  - compressed
+  - context
+  - locate
+  - edit
 ---
 
 Cavecrew = three subagent presets that emit drytalk output. Same job as Anthropic defaults (`Explore`, edit-style agents, reviewer); difference is the tool-result they return is compressed, so main context shrinks per delegation.

@@ -2,15 +2,59 @@
 name: hermes-agent
 description: "Use, configure, theme, extend, and orchestrate Hermes Agent."
 version: 3.2.0
-author: Hermes Agent + Teknium
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: Teknium
 metadata:
   hermes:
-    tags: [hermes, setup, configuration, multi-agent, spawning, cli, gateway, bots, bot-mode, features, themes, skins, desktop-plugins, tui-widgets, petdex, development]
-    homepage: https://github.com/NousResearch/hermes-agent
+    tags:
+      - hermes
+      - configure
+      - theme
+      - extend
+      - orchestrate
+      - bot
+      - gateway
+      - cli
+      - setup
+      - multi-agent
+      - spawning
+      - configuration
+      - bots
+      - bot-mode
+      - features
+      - themes
+      - skins
+      - desktop-plugins
+      - tui-widgets
+      - petdex
+      - development
+    category: meta
     related_skills: [code-cli-ctrl, code-task-runner, ai-task-agent-cli]
-tags: ["hermes", "configure", "theme", "extend", "orchestrate", "bot", "gateway", "cli", "setup", "multi-agent", "spawning"]
+    homepage: "https://github.com/NousResearch/hermes-agent"
+tags:
+  - hermes
+  - configure
+  - theme
+  - extend
+  - orchestrate
+  - bot
+  - gateway
+  - cli
+  - setup
+  - multi-agent
+  - spawning
+  - configuration
+  - bots
+  - bot-mode
+  - features
+  - themes
+  - skins
+  - desktop-plugins
+  - tui-widgets
+  - petdex
+  - development
 ---
 
 # Hermes Agent

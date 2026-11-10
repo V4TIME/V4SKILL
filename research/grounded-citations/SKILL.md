@@ -2,15 +2,40 @@
 name: grounded-citations
 description: "Ground answers and documents in cited, verifiable sources."
 version: 1.1.0
-author: Hermes Agent + Teknium
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: Teknium
 metadata:
   hermes:
-    tags: [Research, Citations, Grounding, Sources, Web, Reports]
+    tags:
+      - citation
+      - source
+      - ground
+      - verify
+      - document
+      - answer
+      - research
+      - web
+      - reports
+      - citations
+      - grounding
+      - sources
     category: research
     related_skills: [arxiv, pdf]
-tags: ["citation", "source", "ground", "verify", "document", "answer", "research", "web", "reports"]
+tags:
+  - citation
+  - source
+  - ground
+  - verify
+  - document
+  - answer
+  - research
+  - web
+  - reports
+  - citations
+  - grounding
+  - sources
 ---
 
 # Grounded Citations

@@ -1,21 +1,43 @@
 ---
 name: motion-craft-kit
+description: >-
+  One consolidated skill packing 51 motion-graphics workflows from 14 open-source packs
+  (github.com/iart-ai/motion-skills, MIT) — short-form video, kinetic typography, data-driven
+  charts, explainers, TikTok/Reels, WebGL/Three.js, Manim math animation, web motion
+  (GSAP/Framer/Lottie/SVG), freelance business tools, and brand motion systems. Reorganized by
+  workflow, explanations rewritten, order shuffled. Install any original pack separately via `npx
+  skills add iart-ai/<pack>` or this skill for the full reference.
 version: 1.0.0
-author: iart-ai (github.com/iart-ai/motion-skills) — consolidated & rewritten by V4TIME
+author: V4TIME
 license: MIT
-platforms:
-  - Claude Code
-  - Cursor
-  - Codex
-  - any agent that reads SKILL.md
-description: >
-  One consolidated skill packing 51 motion-graphics workflows from 14 open-source
-  packs (github.com/iart-ai/motion-skills, MIT) — short-form video, kinetic
-  typography, data-driven charts, explainers, TikTok/Reels, WebGL/Three.js,
-  Manim math animation, web motion (GSAP/Framer/Lottie/SVG), freelance business
-  tools, and brand motion systems. Reorganized by workflow, explanations rewritten,
-  order shuffled. Install any original pack separately via `npx skills add
-  iart-ai/<pack>` or this skill for the full reference.
+platforms: [linux, macos, windows]
+homepage: "https://github.com/iart-ai/motion-skills"
+credits: "iart-ai (github.com/iart-ai/motion-skills)"
+metadata:
+  hermes:
+    tags:
+      - motion
+      - animation
+      - video
+      - kinetic-typography
+      - gsap
+      - framer-motion
+      - lottie
+      - threejs
+      - webgl
+      - glsl
+      - manim
+      - remotion
+      - after-effects
+      - explainer-video
+      - tiktok
+      - reels
+      - data-visualization
+      - chart-animation
+      - freelance
+      - brand-motion
+    category: creative-media
+    related_skills: [webmxerz, infographic-generator, design-tokens-spec, svg-arch-diagram]
 tags:
   - motion
   - animation
@@ -37,11 +59,6 @@ tags:
   - chart-animation
   - freelance
   - brand-motion
-related_skills:
-  - webmxerz
-  - infographic-generator
-  - design-tokens-spec
-  - svg-arch-diagram
 ---
 
 # Motion Craft Kit

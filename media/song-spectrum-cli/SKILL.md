@@ -2,16 +2,39 @@
 name: song-spectrum-cli
 description: "Audio spectrograms/features (mel, chroma, MFCC) via CLI."
 version: 1.0.0
-author: community
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: community
 metadata:
   hermes:
-    tags: [Audio, Visualization, Spectrogram, Music, Analysis]
-    homepage: https://github.com/steipete/songsee
+    tags:
+      - audio
+      - spectrogram
+      - mel
+      - chroma
+      - mfcc
+      - feature
+      - cli
+      - visualization
+      - music
+      - analysis
+    category: creative-media
+    related_skills: []
+    homepage: "https://github.com/steipete/songsee"
+tags:
+  - audio
+  - spectrogram
+  - mel
+  - chroma
+  - mfcc
+  - feature
+  - cli
+  - visualization
+  - music
+  - analysis
 prerequisites:
   commands: [songsee]
-tags: ["audio", "spectrogram", "mel", "chroma", "mfcc", "feature", "cli", "visualization", "music", "analysis"]
 ---
 
 # songsee

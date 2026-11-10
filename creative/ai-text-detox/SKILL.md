@@ -2,16 +2,38 @@
 name: ai-text-detox
 description: "Humanize text: strip AI-isms and add real voice."
 version: 2.5.1
-author: Siqi Chen (@blader, https://github.com/blader/humanizer), ported by Hermes Agent
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+homepage: "https://github.com/blader/humanizer"
+credits: "Siqi Chen (@blader, https://github.com/blader/humanizer)"
 metadata:
   hermes:
-    tags: [writing, editing, humanize, anti-ai-slop, voice, prose, text]
-    category: creative
-    homepage: https://github.com/blader/humanizer
+    tags:
+      - humanize
+      - text
+      - voice
+      - ai-isms
+      - rewrite
+      - tone
+      - writing
+      - editing
+      - prose
+      - anti-ai-slop
+    category: creative-media
     related_skills: [songwriting-and-ai-music]
-tags: ["humanize", "text", "voice", "ai-isms", "rewrite", "tone", "writing", "editing", "prose", "anti-ai-slop"]
+    homepage: "https://github.com/blader/humanizer"
+tags:
+  - humanize
+  - text
+  - voice
+  - ai-isms
+  - rewrite
+  - tone
+  - writing
+  - editing
+  - prose
+  - anti-ai-slop
 ---
 
 # Humanizer: Remove AI Writing Patterns

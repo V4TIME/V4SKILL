@@ -2,16 +2,54 @@
 name: maps
 description: "Geocode, POIs, routes, timezones via OpenStreetMap/OSRM."
 version: 1.2.0
-author: Mibayy
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+credits: Mibayy
 metadata:
   hermes:
-    tags: [maps, geocoding, places, routing, distance, directions, nearby, location, openstreetmap, nominatim, overpass, osrm]
-    category: productivity
+    tags:
+      - map
+      - geocode
+      - poi
+      - route
+      - timezone
+      - osrm
+      - osm
+      - openstreetmap
+      - nominatim
+      - distance
+      - directions
+      - maps
+      - geocoding
+      - places
+      - routing
+      - nearby
+      - location
+      - overpass
+    category: google-cloud
+    related_skills: []
     requires_toolsets: [terminal]
     supersedes: [find-nearby]
-tags: ["map", "geocode", "poi", "route", "timezone", "osrm", "osm", "openstreetmap", "nominatim", "distance", "directions"]
+tags:
+  - map
+  - geocode
+  - poi
+  - route
+  - timezone
+  - osrm
+  - osm
+  - openstreetmap
+  - nominatim
+  - distance
+  - directions
+  - maps
+  - geocoding
+  - places
+  - routing
+  - nearby
+  - location
+  - overpass
 ---
 
 # Maps Skill

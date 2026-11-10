@@ -2,14 +2,36 @@
 name: infographic-generator
 description: "Infographics: 21 layouts x 21 styles (信息图, 可视化)."
 version: 1.56.1
-author: 宝玉 (JimLiu)
+author: V4TIME
 license: MIT
 platforms: [linux, macos, windows]
+homepage: "https://github.com/JimLiu/baoyu-skills"
+credits: "宝玉 (JimLiu)"
 metadata:
   hermes:
-    tags: [infographic, visual-summary, creative, image-generation]
-    homepage: https://github.com/JimLiu/baoyu-skills#baoyu-infographic
-tags: ["infographic", "visual-summary", "chart", "可视化", "信息图", "template", "creative", "image"]
+    tags:
+      - infographic
+      - visual-summary
+      - chart
+      - "可视化"
+      - "信息图"
+      - template
+      - creative
+      - image
+      - image-generation
+    category: creative-media
+    related_skills: []
+    homepage: "https://github.com/JimLiu/baoyu-skills#baoyu-infographic"
+tags:
+  - infographic
+  - visual-summary
+  - chart
+  - "可视化"
+  - "信息图"
+  - template
+  - creative
+  - image
+  - image-generation
 ---
 
 # Infographic Generator
