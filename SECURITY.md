@@ -46,3 +46,52 @@ skill path, a description, and reproduction steps if possible.
 
 The latest commit on `main` is the only supported version. Security fixes are
 applied there.
+
+## Repository audit — November 2026
+
+A full audit of the repository (commit `ff85d36` plus the installer changes)
+found **no malware, backdoor, API-key stealer, credential exfiltration, or
+hidden remote-code execution**. Nothing malicious was removed because nothing
+malicious was present.
+
+Scope of the audit:
+
+- **Every executable file:** 63 Python, 5 shell, and 3 JavaScript/MJS scripts,
+  plus all `SKILL.md` and reference Markdown.
+- **Network destinations:** only documented service endpoints appear
+  (`googleapis.com`, `archive.org`, `r.jina.ai`, `export.arxiv.org`,
+  `nominatim.openstreetmap.org`, `router.project-osrm.org`, `timeapi.io`,
+  `github.com`, `fonts.googleapis.com`, `example.com`, `w3.org`, and
+  `localhost`). No unknown collection hosts.
+- **Credential access:** searches for `~/.ssh`, `~/.aws`, `~/.gnupg`, `~/.kube`,
+  `~/.docker`, `.netrc`, `id_rsa`, keychains, `/etc/passwd`, and cloud/API token
+  names. Every hit is documented, user-facing behavior (see below).
+- **Dangerous APIs:** no `eval`, dynamic `exec`, `pickle.loads`,
+  `marshal.loads`, `shell=True` subprocesses, or obfuscated/base64 payloads.
+  The only `vm.runInNewContext` call is a unit test evaluating a fixed CSV
+  example string.
+- **Git history:** two commits, no deleted files, and no secret patterns in any
+  revision. There are no binary blobs, symlinks, or hidden Unicode control
+  characters in the tree.
+- **Dependencies:** no `package.json`, lockfile, or install hooks. The only
+  dependency installer is `productivity/google-workspace/scripts/setup.py`,
+  which installs the official Google API client packages with `pip`/`uv`.
+
+Sensitive-looking behavior that is intentional and local-only:
+
+- `software-development/github/scripts/git-credential-token.py` reads the
+  local `~/.git-credentials` file and prints a GitHub token to its caller so
+  `gh`/`curl` auth works. It makes no network request and does not write the
+  token anywhere else.
+- `software-development/github/scripts/gh-env.sh` reads `GITHUB_TOKEN` from the
+  environment or `~/.hermes/.env` for local CLI authentication.
+- `productivity/memoshrink/scripts/compress.py` **refuses** to compress
+  `.env`, `.ssh`, `.aws`, `.gnupg`, `.kube`, credential, key, and similar files
+  rather than sending them to an LLM.
+- `productivity/google-workspace/` stores OAuth tokens in the Hermes home and
+  passes them only to the official `gws` CLI.
+- `web/blocked-page-recovery/` contacts archive.org and archive.today for
+  snapshots, and `r.jina.ai` only when `JINA_API_KEY` is set.
+- Skills that install external CLIs sometimes document an upstream
+  `curl … | bash` command. Those commands come from the vendor's own docs, not
+  from this repository; review them as you would any vendor installer.

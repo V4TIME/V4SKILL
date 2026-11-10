@@ -7,14 +7,14 @@
 |---|---|
 | **What it is** | A collection of 73 Hermes Agent skills across 12 categories — AI coding agents, email automation, document processing, research tools, creative media, Apple ecosystem, cloud APIs, social media, debugging, QA, design direction, and meta utilities |
 | **Platform** | Hermes Agent on Linux, macOS, Windows |
-| **Install** | `git clone https://github.com/V4TIME/V4SKILL.git ~/.hermes/skills/v4skill` then `skill-compass --refresh` |
+| **Install** | One command: `curl -fsSL https://raw.githubusercontent.com/V4TIME/V4SKILL/main/install.sh \| bash` — installs all 73 skills and verifies them. Manual: `git clone https://github.com/V4TIME/V4SKILL.git && cd V4SKILL && ./install.sh` |
 | **Browse** | Load `skill-compass` to find any skill by tag, or scan the [Categories Overview](#categories-overview) below |
 
 ---
 
 # Hermes Agent Skills — 73 AI Agent Skills for Productivity, Coding, Research, Creative Work & System Automation
 
-> A comprehensive collection of **73 Hermes Agent skills** spanning **12 categories** — AI coding assistants (Claude Code, OpenAI Codex, OpenCode), email automation (IMAP/SMTP, Gmail, inbox triage), document processing (PDF, DOCX, XLSX, PPTX), research tools (arXiv, grounded citations, wiki knowledge bases), creative tools (infographics, SVG architecture diagrams, ASCII video, Manim math animations, p5.js generative art), Apple ecosystem automation (Notes, Reminders, iMessage, Find My), cloud APIs (Google Workspace, Box, Airtable, Notion), social media (X/Twitter CLI), debugging & code review (systematic debugging, TDD, pre-commit security scans), and meta skills (skill-compass tag lookup, drytalk ultra-short communication modes). All skills include **YAML frontmatter with tags** for instant skill-compass lookup. Designed for **Hermes Agent** on Linux, macOS, and Windows — install via `skill-compass --refresh` or clone this repo into `~/.hermes/skills/v4skill/`.
+> A comprehensive collection of **73 Hermes Agent skills** spanning **12 categories** — AI coding assistants (Claude Code, OpenAI Codex, OpenCode), email automation (IMAP/SMTP, Gmail, inbox triage), document processing (PDF, DOCX, XLSX, PPTX), research tools (arXiv, grounded citations, wiki knowledge bases), creative tools (infographics, SVG architecture diagrams, ASCII video, Manim math animations, p5.js generative art), Apple ecosystem automation (Notes, Reminders, iMessage, Find My), cloud APIs (Google Workspace, Box, Airtable, Notion), social media (X/Twitter CLI), debugging & code review (systematic debugging, TDD, pre-commit security scans), and meta skills (skill-compass tag lookup, drytalk ultra-short communication modes). All skills include **YAML frontmatter with tags** for instant skill-compass lookup. Designed for **Hermes Agent** on Linux, macOS, and Windows — install all 73 in one command with `curl -fsSL https://raw.githubusercontent.com/V4TIME/V4SKILL/main/install.sh | bash`, or clone the repo and run `./install.sh`.
 
 ---
 
@@ -36,7 +36,7 @@
   - [Web & Infrastructure](#web--infrastructure)
   - [Meta & Utilities](#meta--utilities)
 - [Skill Format & Conventions](#skill-format--conventions)
-- [Installation](#installation)
+- [Installation & Setup](#installation--setup)
 - [Using the Skill-Compass](#using-the-skill-compass)
 - [Search Keywords](#search-keywords)
 - [Contributing](#contributing)
@@ -617,34 +617,95 @@ Markdown body with usage instructions, prerequisites, procedures, pitfalls, and 
 
 ---
 
-## Installation
+## Installation & Setup
 
-### Option 1: Clone this repository
+### Quick install — all 73 skills in one command
 
 ```bash
-# Clone into a subfolder of your Hermes skills directory
-git clone https://github.com/V4TIME/V4SKILL.git ~/.hermes/skills/v4skill
-
-# OR if you already cloned it, pull updates
-cd ~/.hermes/skills/v4skill
-git pull origin main
+curl -fsSL https://raw.githubusercontent.com/V4TIME/V4SKILL/main/install.sh | bash
 ```
 
-### Option 2: Copy specific skills
+The installer:
+
+- copies every skill into `${HERMES_HOME:-~/.hermes}/skills/v4skill`
+- skips `.git`, `__pycache__`, and other generated artifacts
+- verifies that all **73** `SKILL.md` files exist with valid YAML frontmatter
+- exits non-zero if any skill is missing or malformed
+
+See [`SECURITY.md`](SECURITY.md) for the audit scope and the list of intentionally credential-aware scripts.
+
+Prefer to read the script before running it? Clone and use the same installer locally:
 
 ```bash
-# Copy a single skill folder
-cp -r /path/to/V4SKILL/creative/ai-text-detox ~/.hermes/skills/creative/
+git clone https://github.com/V4TIME/V4SKILL.git
+cd V4SKILL
+./install.sh            # copy install (self-contained)
+./install.sh --link     # symlink install (git pull updates skills live)
 ```
 
-### Refresh skill-compass
+### Installer options
 
-After adding or updating skills, refresh the skill-compass index:
+| Option | What it does |
+|---|---|
+| `--copy` | Copy skills into the target directory (default) |
+| `--link` | Symlink the checkout into the target; `git pull` updates skills live |
+| `--force`, `-f` | Replace an existing install |
+| `--target DIR` | Install somewhere other than `$HERMES_HOME/skills/v4skill` |
+| `--repo URL` | Clone a different remote when not running from a checkout |
+| `--branch NAME` | Clone a different branch (default: `main`) |
+| `--help` | Show usage and examples |
+
+Use a named Hermes profile or non-default home:
 
 ```bash
-# The skill-compass reads every SKILL.md and rebuilds its lookup table
-# Trigger via the hermes-agent-skill-authoring skill or manually:
+HERMES_HOME=~/.hermes/profiles/work ./install.sh
+./install.sh --target /opt/hermes/skills/v4skill
+```
+
+On Windows, run the same script from **Git Bash** or **WSL**.
+
+### Verify the install
+
+```bash
+find -L "$HOME/.hermes/skills/v4skill" -name SKILL.md | wc -l   # 73
+```
+
+The installer already performs this count plus frontmatter validation. To re-check manually, load `skill-compass` and ask Hermes to list the registry; it should show 73 skills across 12 categories.
+
+### Refresh the skill index
+
+After installing or updating:
+
+```bash
 skill-compass --refresh
+```
+
+Or ask Hermes: **"refresh skill-compass"**. This re-reads every `SKILL.md` so the lookup table includes all 73 skills.
+
+### Update
+
+```bash
+# link mode: pull once, skills update in place
+cd /path/to/V4SKILL && git pull
+
+# copy mode: pull, then reinstall
+cd /path/to/V4SKILL && git pull && ./install.sh --force
+```
+
+### Copy a single skill
+
+```bash
+cp -r /path/to/V4SKILL/creative/ai-text-detox ~/.hermes/skills/
+```
+
+### Per-skill dependencies
+
+Most skills are Markdown-only and need nothing beyond Hermes Agent. Script-backed skills list their prerequisites in the skill body and fail with an install hint if something is missing. Common optional tools: `python3`, `uv`, `node`, `ffmpeg`, `poppler-utils` (`pdftoppm`), `gh`, `himalaya`, and `xurl`. The installer does **not** install system packages or global CLIs.
+
+### Uninstall
+
+```bash
+rm -rf "${HERMES_HOME:-$HOME/.hermes}/skills/v4skill"
 ```
 
 ---

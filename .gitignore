@@ -17,6 +17,10 @@ __pycache__/
 *.pyo
 *.egg-info/
 .dist-info/
+.pytest_cache/
+
+# Local installer/runtime state
+.caveman-hermes-ownership.json
 
 # Node
 node_modules/
